@@ -2,10 +2,13 @@ import os
 import sys
 from pathlib import Path
 
-ROOT_DIR = Path(__file__).resolve().parent.parent
+ROOT_DIR = Path(__file__).resolve().parent.parent.parent
+
 if str(ROOT_DIR) not in sys.path:
     sys.path.insert(0, str(ROOT_DIR))
 
+print(f"sys.path:\n{sys.path}")
+print(f"ROOT_DIR:\n{ROOT_DIR}")
 from infrastructure.scraper.imdb_scraper import ImdbScraper
 from infrastructure.factory.use_case_factory import get_composite_use_case
 def main():

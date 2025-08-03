@@ -5,7 +5,7 @@ from typing import List, Optional
 from concurrent.futures import ThreadPoolExecutor
 from application.use_cases.save_movie_with_actors_csv_use_case import SaveMovieWithActorsCsvUseCase
 from domain.models import Movie, Actor
-from domain.scraper_interface import ScraperInterface
+from domain.interfaces.scraper_interface import ScraperInterface
 from infrastructure.scraper.utils import make_request
 from shared.config import config
 from infrastructure.scraper.network_utils import get_random_user_agent
