@@ -4,7 +4,8 @@ from domain.models.actor import Actor
 
 @dataclass
 class Movie:
-    id: int
+    id: Optional[int]
+    imdb_id: str         
     title: str
     year: int
     rating: float

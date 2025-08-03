@@ -1,5 +1,4 @@
 # docker/docker-compose.yml
-version: '3.9'
 
 services:
   postgres:
@@ -14,7 +13,7 @@ services:
       - "${POSTGRES_PORT}:5432"
     volumes:
       - pgdata:/var/lib/postgresql/data
-      - ../sql/schema.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./sql/schema.sql:/docker-entrypoint-initdb.d/init.sql
     networks:
       - app_net
 

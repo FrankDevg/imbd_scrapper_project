@@ -30,7 +30,7 @@ class ImdbScraper(ScraperInterface):
             logger.error("No se pudieron obtener IDs desde HTML o GraphQL.")
             return
 
-        with ThreadPoolExecutor(max_workers=10) as executor:
+        with ThreadPoolExecutor(max_workers=config.MAX_THREADS) as executor:
             executor.map(
                 lambda indexed: self._scrape_and_save_movie_detail(indexed),
                 enumerate(movie_ids[:config.NUM_MOVIES], start=1)
@@ -88,6 +88,7 @@ class ImdbScraper(ScraperInterface):
 
             return Movie(
                 id=movie_id_counter,
+                imdb_id=imdb_id,
                 title=title,
                 year=year,
                 rating=rating,
@@ -105,6 +106,7 @@ class ImdbScraper(ScraperInterface):
         # HTML
         chart_url = config.BASE_URL + config.CHART_TOP_PATH
         resp = make_request(chart_url, use_tor=config.USE_TOR)
+        cookies = resp.cookies if resp else None
         if resp and resp.status_code == 200:
             soup = BeautifulSoup(resp.text, "html.parser")
             html_ids = [
@@ -125,6 +127,7 @@ class ImdbScraper(ScraperInterface):
             resp_graphql = requests.post(
                 config.GRAPHQL_URL,
                 headers=headers,
+                cookies=cookies,
                 json={
                     "operationName": config.GRAPHQL_OPERATION,
                     "variables": {

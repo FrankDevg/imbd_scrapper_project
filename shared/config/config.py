@@ -1,5 +1,5 @@
 # shared/config/config.py
-
+import os
 # --- Configuración base de IMDb ---
 BASE_URL = "https://www.imdb.com"
 CHART_TOP_PATH = "/chart/top/"
@@ -11,7 +11,7 @@ GRAPHQL_HASH = "2db1d515844c69836ea8dc532d5bff27684fdce990c465ebf52d36d185a187b3
 GRAPHQL_OPERATION = "Top250MoviesPagination"
 GRAPHQL_LOCALE = "en-US"
 GRAPHQL_VERSION = 1
-NUM_MOVIES = 50
+NUM_MOVIES = 100
 # --- User-Agent Rotation ---
 USER_AGENTS = [
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36",
@@ -35,7 +35,7 @@ USE_TOR = True
 MAX_RETRIES = 3
 RETRY_DELAYS = [1, 3, 5]
 REQUEST_TIMEOUT = 10
-
+MAX_THREADS = 100
 # --- GraphQL Config ---
 GRAPHQL_URL = "https://caching.graphql.imdb.com/"
 GRAPHQL_HASH = "2db1d515844c69836ea8dc532d5bff27684fdce990c465ebf52d36d185a187b3"
@@ -48,3 +48,9 @@ SELECTORS = {
     "metascore": "span.metacritic-score-box",
     "actors": "a[data-testid='title-cast-item__actor']"
 }
+ # PostgreSQL config
+POSTGRES_DB = os.getenv("POSTGRES_DB", "imdb_scraper")
+POSTGRES_USER = os.getenv("POSTGRES_USER", "aruiz")
+POSTGRES_PASSWORD = os.getenv("POSTGRES_PASSWORD", "@ndresruiz@123")
+POSTGRES_HOST = os.getenv("POSTGRES_HOST", "localhost")  # Cambia a "postgres" si usas docker-compose
+POSTGRES_PORT = os.getenv("POSTGRES_PORT", "5432")

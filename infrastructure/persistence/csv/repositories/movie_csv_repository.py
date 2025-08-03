@@ -5,7 +5,7 @@ from domain.models.movie import Movie
 from domain.repositories.movie_repository import MovieRepository
 
 MOVIES_CSV = "data/movies.csv"
-MOVIE_HEADERS = ["id", "title", "year", "rating", "duration_minutes", "metascore","actors"]
+MOVIE_HEADERS = ["id", "imbd_id", "title", "year", "rating", "duration_minutes", "metascore","actors"]
 movie_lock = threading.Lock()
 
 class MovieCsvRepository(MovieRepository):
@@ -22,6 +22,7 @@ class MovieCsvRepository(MovieRepository):
                 writer = csv.writer(f)
                 writer.writerow([
                     movie.id,
+                    movie.imdb_id,
                     movie.title,
                     movie.year,
                     movie.rating,
