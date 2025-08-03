@@ -1,0 +1,48 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.env/
+.venv/
+
+# Logs
+logs/
+*.log
+
+# Scraped data outputs
+data/
+*.csv
+
+# Temp files
+temp/
+*.tmp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDEs / editors
+.vscode/
+.idea/
+
+# Pytest cache
+.pytest_cache/
+
+# Jupyter/IPython
+.ipynb_checkpoints/
+
+# Compiled C files
+*.so
+
+# MySQL dumps / backups / DB
+*.sql
+
+# Gitignore itself 
+!.gitignore
+*.zip
+*.png
+*.jpg
+*.pdf
