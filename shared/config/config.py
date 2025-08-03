@@ -11,7 +11,7 @@ GRAPHQL_HASH = "2db1d515844c69836ea8dc532d5bff27684fdce990c465ebf52d36d185a187b3
 GRAPHQL_OPERATION = "Top250MoviesPagination"
 GRAPHQL_LOCALE = "en-US"
 GRAPHQL_VERSION = 1
-NUM_MOVIES = 150
+NUM_MOVIES = 50
 # --- User-Agent Rotation ---
 USER_AGENTS = [
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36",

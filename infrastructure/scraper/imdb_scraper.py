@@ -1,12 +1,14 @@
+# infrastructure/scraper/imdb_scraper.py
+
 from bs4 import BeautifulSoup
 from typing import List, Optional
 from concurrent.futures import ThreadPoolExecutor
+from application.use_cases.save_movie_with_actors_csv_use_case import SaveMovieWithActorsCsvUseCase
 from domain.models import Movie, Actor
 from domain.scraper_interface import ScraperInterface
 from infrastructure.scraper.utils import make_request
 from shared.config import config
 from infrastructure.scraper.network_utils import get_random_user_agent
-from application.use_cases.save_movies_to_csv_use_case import SaveMoviesToCsvUseCase
 
 import logging
 import os
@@ -17,11 +19,10 @@ import re
 logger = logging.getLogger(__name__)
 
 class ImdbScraper(ScraperInterface):
-    def __init__(self, base_url: str = config.BASE_URL):
+    def __init__(self,use_case: SaveMovieWithActorsCsvUseCase,  base_url: str = config.BASE_URL):
         self.base_url = base_url
-        self.use_case = SaveMoviesToCsvUseCase()  
-
-    def scrape(self) -> None:
+        self.use_case = use_case
+    def scrape(self, save_use_case=None) -> None:
         logger.info(f"Iniciando scraping desde IMDb...")
 
         movie_ids = self.get_combined_movie_ids()
@@ -30,14 +31,17 @@ class ImdbScraper(ScraperInterface):
             return
 
         with ThreadPoolExecutor(max_workers=10) as executor:
-            executor.map(self._scrape_and_save_movie_detail, enumerate(movie_ids[:config.NUM_MOVIES], start=1))
+            executor.map(
+                lambda indexed: self._scrape_and_save_movie_detail(indexed),
+                enumerate(movie_ids[:config.NUM_MOVIES], start=1)
+            )
 
         logger.info(f"Scraping completado.")
 
     def _scrape_and_save_movie_detail(self, indexed_id: tuple[int, str]) -> None:
         movie = self._scrape_movie_detail(indexed_id)
         if movie:
-            self.use_case.execute(movie)  
+            self.use_case.execute(movie)
 
     def _scrape_movie_detail(self, indexed_id: tuple[int, str]) -> Optional[Movie]:
         movie_id_counter, imdb_id = indexed_id
@@ -78,7 +82,7 @@ class ImdbScraper(ScraperInterface):
 
             cast_tags = detail_soup.select(config.SELECTORS["actors"])
             actors = [
-                Actor(id=movie_id_counter * 10 + i, name=cast.text.strip(), movie_id=movie_id_counter)
+                Actor(id=movie_id_counter * 10 + i, name=cast.text.strip())
                 for i, cast in enumerate(cast_tags[:3], start=1)
             ]
 

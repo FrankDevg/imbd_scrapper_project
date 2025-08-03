@@ -37,9 +37,9 @@ def make_request(url: str, use_tor: bool = False) -> Optional[requests.Response]
                 logger.warning(f"[WARNING] Respuesta inesperada: HTTP {response.status_code}")
 
         except RequestException as e:
-            logger.error(f"[❌ ERROR] Request fallida a {url}: {e}")
+            logger.error(f"[ERROR] Request fallida a {url}: {e}")
 
         time.sleep(delay)
 
-    logger.error(f"[❌ ERROR] Fallo total tras {config.MAX_RETRIES} intentos → {url}")
+    logger.error(f"[ERROR] Fallo total tras {config.MAX_RETRIES} intentos → {url}")
     return None
