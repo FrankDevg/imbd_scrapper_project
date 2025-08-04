@@ -9,11 +9,11 @@ El diseño se fundamenta en principios de **Clean Architecture** y **Domain-Driv
 
 - [✅ Objetivos Cumplidos y Cobertura de Requisitos](#-objetivos-cumplidos-y-cobertura-de-requisitos)
 - [🏛️ Filosofía de Arquitectura y Decisiones Técnicas](#️-filosofía-de-arquitectura-y-decisiones-técnicas)
-- [🧱 Estructura del Proyecto](#️-estructura-del-proyecto)
-- [🧩 Estrategia de Red Distribuida: VPN + Proxies + TOR](#️-estrategia-de-red-distribuida-vpn--proxies--tor)
+- [🧱 Estructura del Proyecto](#-estructura-del-proyecto)
+- [🧩 Estrategia de Red Distribuida: VPN + Proxies + TOR](#-estrategia-de-red-distribuida-vpn--proxies--tor)
 - [🐳 Instrucciones de Despliegue con Docker](#-instrucciones-de-despliegue-con-docker)
 - [🧠 SQL Analítico](#-sql-analítico)
-- [🕸️ Comparación Técnica – Scrapy vs Playwright/Selenium](#️-comparación-técnica--scrapy-vs-playwrightselenium)
+- [4️⃣ Comparación y Escalabilidad: Scrapy vs. Playwright/Selenium](#4️⃣-comparación-y-escalabilidad-scrapy-vs-playwrightselenium)
 - [🧵 Concurrencia Aplicada en el Scraper](#-concurrencia-aplicada-en-el-scraper)
 - [🔍 Decisiones Técnicas Clave](#-decisiones-técnicas-clave)
 - [📦 Entregables Finales](#-entregables-finales)
@@ -235,7 +235,7 @@ Incluye:
 
 ---
 
-## 4️⃣ Comparación Técnica: Selenium o Playwright
+## 4️⃣ Comparación y Escalabilidad: Scrapy vs. Playwright/Selenium
 
 Aunque este proyecto está construido con `requests` y `BeautifulSoup` por su requerimiento y control detallado del flujo, está preparado para escalar hacia herramientas como **Playwright** o **Selenium** en los siguientes escenarios:
 
@@ -264,6 +264,52 @@ Estas herramientas deben considerarse cuando:
 - Se desea simular comportamiento humano real (scroll, clics, etc.).
 
 En este proyecto no fueron necesarias porque IMDb expone los datos principales vía HTML y GraphQL, pero se documenta cómo escalar si cambia el comportamiento del sitio.
+
+## 🧩 Implementación con Playwright o Selenium
+
+Este proyecto puede ser escalado con **Playwright** o **Selenium** en caso de que IMDb modifique su comportamiento o protección contra bots. A continuación, se describe cómo se implementaría esta adaptación.
+
+### 🔧 Configuración avanzada de navegador
+Ambas herramientas permiten lanzar navegadores con configuraciones avanzadas:
+
+- **Modo headless o visible** (`headless=True/False`).
+- **Modificación de headers personalizados** como User-Agent, Referer, Accept-Language, etc.
+- **Evasión de detección WebDriver**:
+  - Redefinir `navigator.webdriver`.
+  - Inyectar scripts personalizados en el contexto de la página.
+  - Usar extensiones anti-bot o librerías como `stealth.min.js` en Playwright.
+
+### 🎯 Selectores dinámicos con espera explícita
+- **Playwright**: `page.wait_for_selector("selector")` asegura que el DOM esté listo.
+- **Selenium**: `WebDriverWait(driver, timeout).until(expected_conditions.presence_of_element_located(...))` permite esperar elementos dinámicos cargados vía JavaScript.
+
+Esto evita fallos comunes en scraping dinámico (ej: `element not found` o `NoneType`).
+
+### 🛡️ Manejo de JavaScript rendering y CAPTCHAs
+- **Renderizado completo del DOM** habilitado por defecto al usar navegadores reales.
+- **CAPTCHAs**:
+  - Detectar presencia de CAPTCHA mediante selectores.
+  - Resolverlo usando APIs de servicios como **2Captcha**, **AntiCaptcha**, **DeathByCaptcha**.
+  - Alternativamente, utilizar OCR básico si el CAPTCHA es visualmente simple.
+
+### ⚙️ Control de concurrencia
+- **Playwright**:
+  - Permite abrir múltiples contextos (`browser.new_context()`) o múltiples páginas en paralelo.
+  - Ideal para scraping distribuido sin overhead de múltiples procesos.
+
+- **Selenium**:
+  - Compatible con **Selenium Grid** para distribuir instancias en múltiples nodos.
+  - Puede ejecutarse en contenedores paralelos coordinados mediante colas (ej. **Celery**, **RabbitMQ**).
+
+- **Ambas** pueden integrarse en workers asíncronos si se envuelven correctamente.
+
+### 📌 Justificación vs Scrapy
+Aunque **Scrapy** es potente y extensible, **Playwright** y **Selenium** ofrecen ventajas cuando:
+- El contenido depende de **JavaScript o eventos del navegador**.
+- Se requiere **simular interacción humana real**: scroll, clics, selección dinámica.
+- El sitio tiene **bloqueos activos** como CAPTCHAs, honeypots o detección de tráfico automatizado.
+
+> En este proyecto, Scrapy no era necesario porque IMDb expone sus datos principales vía HTML y GraphQL. No obstante, el sistema está preparado para adaptarse si eso cambia.
 
 ---
 
