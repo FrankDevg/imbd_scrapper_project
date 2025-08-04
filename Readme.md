@@ -1,0 +1,228 @@
+# 🎬 IMDb Scraper – Arquitectura Limpia para Scraping Distribuido y Persistencia Híbrida
+
+Este proyecto es la solución integral a la prueba técnica, demostrando la capacidad de construir un sistema de extracción de datos robusto, escalable y mantenible. Se ha desarrollado un scraper para el Top 250 de IMDb, implementando técnicas avanzadas de evasión de bloqueos, persistencia en PostgreSQL y una arquitectura de software desacoplada, lista para evolucionar.
+
+El diseño se fundamenta en principios de **Clean Architecture** y **Domain-Driven Design (DDD)**, está completamente **orquestado con Docker**, y documenta una estrategia clara para escalar hacia herramientas como Playwright o Selenium si las defensas del sitio objetivo lo requiriesen.
+
+---
+
+## ✅ Objetivos Cumplidos y Cobertura de Requisitos
+
+Se ha cumplido con el 100% de los requisitos solicitados, tanto obligatorios como opcionales, para demostrar una competencia exhaustiva en cada área evaluada.
+
+| Área de Evaluación | ✅ Implementado | Detalle Técnico de la Implementación |
+| :--- | :---: | :--- |
+| **Scraping (60%)** | ✅ Sí | Se extraen las 250 películas del chart, obteniendo Título, Año, Calificación, Duración, Metascore y Actores desde las páginas de detalle. La solución es modular y maneja errores con reintentos y backoff exponencial. |
+| **Arquitectura Avanzada** | ✅ Sí | Se implementó **Clean Architecture + DDD** y el patrón **Factory** para desacoplar la lógica de negocio de la infraestructura (ej. persistencia, scraping). |
+| **Persistencia CSV + SQL** | ✅ Sí | Los datos se persisten de forma híbrida en archivos CSV y en un esquema relacional PostgreSQL con una relación `N:M` entre películas y actores. |
+| **SQL Analítico (20%)** | ✅ Sí | Se crearon consultas analíticas complejas utilizando **funciones de ventana (`OVER/PARTITION BY`)**, vistas, índices y justificación de particionamiento. |
+| **Proxies y Red (10%)** | ✅ Sí | Se implementó una estrategia de rotación de IPs utilizando la **red TOR**, con logs que evidencian el cambio de IP por request y la capacidad de reintentar ante fallos de conexión. |
+| **Dockerizado y Portable** | ✅ Sí | Todo el entorno (scraper, base de datos) se levanta con un solo comando (`docker-compose up`), garantizando la replicabilidad del entorno. |
+| **Comparación Herramientas (10%)** | ✅ Sí | Se incluye una sección detallada justificando cuándo y cómo migrar a **Playwright/Selenium** para escenarios de JavaScript dinámico y CAPTCHAs. |
+| **Evidencia y Documentación** | ✅ Sí | El repositorio incluye logs, scripts SQL, CSVs generados y este README detallado como evidencia del trabajo realizado. |
+
+---
+
+## 🏛️ Filosofía de Arquitectura y Decisiones Técnicas
+
+### ¿Por qué Clean Architecture + Domain-Driven Design (DDD)?
+Un enfoque profesional exige construir un **sistema mantenible y escalable**.
+
+- **Separación de Responsabilidades (SoC):** Las dependencias apuntan hacia adentro. La lógica de negocio no sabe nada sobre la base de datos ni el scraping.
+- **Testabilidad Aislada:** Las capas `domain` y `application` se pueden testear unitariamente sin dependencias externas.
+- **Modelado del Dominio:** Entidades como `Movie` y `Actor` reflejan el lenguaje del problema, con validaciones integradas.
+
+### ¿Por qué el Patrón Factory?
+Se utiliza para desacoplar la lógica de negocio de las implementaciones concretas.
+
+- Permite cambiar la fuente de persistencia (CSV, PostgreSQL, MongoDB) sin modificar la lógica del caso de uso.
+- Cumple con el Principio Abierto/Cerrado.
+
+### ¿Por qué TOR para la Rotación de IPs?
+TOR ofrece:
+
+- **Rotación efectiva de IPs** sin costo adicional.
+- **Independencia del proveedor:** Se puede sustituir fácilmente por otros proxies comerciales o VPNs.
+
+---
+
+## 🧱 Estructura del Proyecto
+
+```
+imbd_scraper_project/
+├── application/                  # Casos de uso orquestando lógica de dominio
+│   └── use_cases/
+│       ├── composite_save_movie_with_actors_use_case.py
+│       ├── save_movie_with_actors_csv_use_case.py
+│       ├── save_movie_with_actors_postgres_use_case.py
+│       └── __init__.py
+│
+├── data/                         # Archivos CSV generados automáticamente
+│   ├── actors.csv
+│   ├── movies.csv
+│   └── movie_actor.csv
+│
+├── domain/                       # Modelos, interfaces y contratos de repositorio
+│   ├── interfaces/               # Interfaces de scraper, proxy, etc.
+│   │   ├── proxy_interface.py
+│   │   ├── scraper_interface.py
+│   │   ├── tor_interface.py
+│   │   └── __init__.py
+│   ├── models/                   # Entidades del dominio
+│   │   ├── actor.py
+│   │   ├── movie.py
+│   │   ├── movie_actor.py
+│   │   └── __init__.py
+│   └── repositories/            # Contratos de repositorios
+│       ├── actor_repository.py
+│       ├── movie_actor_repository.py
+│       ├── movie_repository.py
+│       └── __init__.py
+│
+├── infrastructure/              # Implementaciones tecnológicas
+│   ├── factory/                 # Factories para desacoplar la creación de objetos
+│   │   ├── db_factory.py
+│   │   ├── proxy_factory.py
+│   │   ├── scraper_factory.py
+│   │   ├── tor_factory.py
+│   │   ├── use_case_factory.py
+│   │   └── __init__.py
+│   ├── persistence/             # Implementaciones concretas de persistencia
+│   │   ├── csv/
+│   │   │   ├── init_csv_files.py
+│   │   │   └── repositories/
+│   │   │       ├── actor_csv_repository.py
+│   │   │       ├── movie_actor_csv_repository.py
+│   │   │       └── movie_csv_repository.py
+│   │   └── postgres/
+│   │       ├── postgres_connection.py
+│   │       └── repositories/
+│   │           ├── actor_postgres_repository.py
+│   │           ├── movie_actor_postgres_repository.py
+│   │           └── movie_postgres_repository.py
+│   ├── proxy_rotation/          # Lógica de rotación TOR
+│   │   └── tor_rotator.py
+│   ├── provider/                # Lógica de selección de proxy (ej. TOR, otros)
+│   │   └── proxy_provider.py
+│   └── scraper/                 # Implementación del scraper principal
+│       ├── imdb_scraper.py
+│       ├── utils.py
+│       └── __init__.py
+│
+├── logs/                        # Archivos de logs del scraper
+│   └── scraper.log
+│
+├── presentation/                # CLI o interfaces externas
+│   └── cli/
+│       ├── run_scraper.py       # Punto de entrada principal
+│       └── __init__.py
+│
+├── shared/                      # Utilidades globales
+│   ├── config/                  # Configuraciones centralizadas
+│   │   └── config.py
+│   └── logger/                  # Configuración de logging
+│       └── logging_config.py
+│
+├── sql/                         # Scripts SQL para DB
+│   ├── 01_schema.sql
+│   ├── 02_procedures.sql
+│   ├── 03_views.sql
+│   ├── load_from_csv.sql
+│   └── queries.sql
+│
+├── .env                         # Configuraciones de entorno (no versionar)
+├── .gitignore                   # Ignora .env, __pycache__, etc.
+├── docker-compose.yml           # Orquestación del proyecto con PostgreSQL
+├── Dockerfile                   # Imagen del scraper
+├── requirements.txt             # Dependencias del proyecto
+└── README.md                    # Documentación completa del sistema
+
+```
+
+---
+
+## 🐳 Instrucciones de Despliegue con Docker
+
+1. Crear el archivo `.env` 
+### 📄 Archivo `.env` (proporcionado solo con fines de evaluación)
+
+Este archivo contiene la configuración necesaria para conectar con los servicios de base de datos, proxies y VPN utilizados en el entorno del scraper.
+
+**⚠️ Importante:** Las credenciales contenidas en este archivo son simuladas y han sido incluidas únicamente para facilitar la evaluación del proyecto. En un entorno real, se recomienda gestionar estas variables de forma segura mediante servicios como Docker Secrets, AWS Parameter Store o `.env` ignorado por `.gitignore`.
+
+Ejemplo de `.env`:
+
+```env
+
+POSTGRES_DB=imdb_scraper
+POSTGRES_USER=aruiz
+POSTGRES_PASSWORD=@ndresruiz@123
+POSTGRES_PORT=5432
+POSTGRES_HOST=postgres
+
+
+PROXY_HOST=gw.dataimpulse.com
+PROXY_PORT=823
+PROXY_USER=f1bdc8e207aafe131216
+PROXY_PASS=6c1b9cdd85f65f0b
+
+VPN_PROVIDER=protonvpn
+VPN_USERNAME=qlT5gZGnlHi2Y1uh
+VPN_PASSWORD=mUiXGzoM9SeYHhYocElsEMuQwUUGuLFL
+VPN_COUNTRY=Argentina
+
+```
+2. Ejecutar:
+```bash
+docker-compose up --build
+```
+
+- PostgreSQL expuesto en `localhost:5432`.
+- Scraper inicia automáticamente.
+- Logs en `logs/scraper.log`.
+- Archivos `movies.csv`, `actors.csv`, `movie_actor.csv` generados en `/data`.
+
+---
+
+## 🧠 SQL Analítico
+
+Incluye:
+
+- 🎞️ **Top 5 por duración promedio por década** – con `ROW_NUMBER()` y `PARTITION BY`.
+- 📈 **Desviación estándar de calificación por año** – mide dispersión de opiniones.
+- ⚖️ **Comparación IMDb vs Metascore** – normalizado y filtrado por delta > 20%.
+- 👥 **Vista Actor-Película** – facilita filtrado y joins.
+- ⚡ **Índices y vistas materializadas** – optimización de rendimiento.
+
+---
+
+## 🕸️ Comparación Técnica – Scrapy vs Playwright/Selenium
+
+Scrapy fue descartado por su sobreestructura para este caso. Usamos Requests + BeautifulSoup por ser más liviano.
+
+**¿Cuándo escalar?**  
+Cuando el sitio use JS dinámico, CAPTCHAs o detección de bots.
+
+### Con Playwright o Selenium:
+- Modo headless configurable.
+- Esperas explícitas para selectores dinámicos.
+- Resolución de CAPTCHA con IP rotativa o servicios como 2Captcha.
+- Control de concurrencia con workers o browser context.
+
+---
+
+## 📦 Entregables Finales
+
+- 🗃️ Código en GitHub
+- 🐘 Scripts SQL en `/sql/`
+- 📄 CSVs generados en `/data/`
+- 🧾 Logs con rotación IP en `/logs/`
+- 📘 Documentación técnica (este archivo)
+
+---
+
+## 📣 Créditos
+
+Proyecto desarrollado por **Andrés Ruiz** para la prueba técnica de Scraping Senior.  
+📫 Email: franklindbruiz@gmail.com  
+🔗 GitHub: [frankdevg](https://github.com/frankdevg)

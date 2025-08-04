@@ -8,13 +8,9 @@ venv/
 .env/
 .venv/
 
-# Logs
-logs/
-*.log
 
-# Scraped data outputs
-data/
-*.csv
+
+
 
 # Temp files
 temp/
@@ -37,8 +33,6 @@ Thumbs.db
 # Compiled C files
 *.so
 
-# MySQL dumps / backups / DB
-*.sql
 
 # Gitignore itself 
 !.gitignore

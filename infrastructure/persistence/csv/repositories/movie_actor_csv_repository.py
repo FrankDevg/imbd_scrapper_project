@@ -10,7 +10,18 @@ MOVIE_ACTOR_HEADERS = ["movie_id", "actor_id"]
 relation_lock = threading.Lock()
 
 class MovieActorCsvRepository(MovieActorRepository):
+    """
+    Implementación del repositorio para guardar relaciones N:M entre películas y actores en un archivo CSV.
+
+    Esta clase garantiza que el archivo `movie_actor.csv` exista y esté correctamente inicializado,
+    y permite guardar nuevas relaciones de forma segura en entornos concurrentes.
+    """
+
     def __init__(self):
+        """
+        Inicializa el repositorio asegurando que exista el archivo CSV `movie_actor.csv`
+        y que contenga los encabezados correspondientes.
+        """
         os.makedirs(os.path.dirname(MOVIE_ACTOR_CSV), exist_ok=True)
         if not os.path.exists(MOVIE_ACTOR_CSV):
             with open(MOVIE_ACTOR_CSV, "w", newline="", encoding="utf-8") as f:
@@ -18,6 +29,14 @@ class MovieActorCsvRepository(MovieActorRepository):
                 writer.writerow(MOVIE_ACTOR_HEADERS)
 
     def save(self, relation: MovieActor) -> None:
+        """
+        Guarda una relación entre una película y un actor en el archivo CSV `movie_actor.csv`.
+
+        Utiliza un lock para garantizar que no haya condiciones de carrera cuando múltiples hilos escriban al archivo.
+
+        Args:
+            relation (MovieActor): Objeto que representa la relación entre una película y un actor.
+        """
         with relation_lock:
             with open(MOVIE_ACTOR_CSV, "a", newline="", encoding="utf-8") as f:
                 writer = csv.writer(f)

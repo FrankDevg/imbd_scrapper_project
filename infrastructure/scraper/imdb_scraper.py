@@ -1,4 +1,3 @@
-# infrastructure/scraper/imdb_scraper.py
 
 from bs4 import BeautifulSoup
 from typing import List, Optional
@@ -17,12 +16,30 @@ import random
 logger = logging.getLogger(__name__)
 
 class ImdbScraper(ScraperInterface):
+    """
+    Scraper de películas desde IMDb que obtiene información de las películas más populares
+    combinando scraping HTML y llamadas a la API GraphQL de IMDb.
+
+    Guarda los resultados utilizando un caso de uso que persiste en CSV (u otra capa de infraestructura).
+    """
+
     def __init__(self, use_case: SaveMovieWithActorsCsvUseCase, base_url: str = config.BASE_URL):
+        """
+        Constructor del scraper.
+
+        Args:
+            use_case (SaveMovieWithActorsCsvUseCase): Caso de uso para persistencia de datos.
+            base_url (str): URL base de IMDb (por defecto config.BASE_URL).
+        """
         self.base_url = base_url
         self.use_case = use_case
-        self.total_bytes_used = 0
+        self.total_bytes_used = 0  # Para medir el tráfico total usado
 
     def scrape(self, save_use_case=None) -> None:
+        """
+        Punto de entrada principal. Obtiene los IDs de películas y ejecuta scraping detallado
+        en paralelo con ThreadPoolExecutor.
+        """
         logger.info(f"Iniciando scraping desde IMDb...")
 
         movie_ids = self.get_combined_movie_ids()
@@ -41,11 +58,26 @@ class ImdbScraper(ScraperInterface):
         print('Tráfico total usado por el scraper: {:.2f} MB'.format(self.total_bytes_used / (1024 ** 2)))
 
     def _scrape_and_save_movie_detail(self, indexed_id: tuple[int, str]) -> None:
+        """
+        Método auxiliar que ejecuta el scraping y guarda el resultado si es válido.
+
+        Args:
+            indexed_id (tuple[int, str]): Tupla (índice, imdb_id).
+        """
         movie = self._scrape_movie_detail(indexed_id)
         if movie:
             self.use_case.execute(movie)
 
     def _scrape_movie_detail(self, indexed_id: tuple[int, str]) -> Optional[Movie]:
+        """
+        Realiza el scraping del detalle de una película individual.
+
+        Args:
+            indexed_id (tuple[int, str]): Índice local e ID IMDb.
+
+        Returns:
+            Optional[Movie]: Objeto Movie con los datos parseados o None si hubo error.
+        """
         movie_id_counter, imdb_id = indexed_id
         try:
             detail_path = config.TITLE_DETAIL_PATH.format(id=imdb_id)
@@ -58,6 +90,7 @@ class ImdbScraper(ScraperInterface):
             detail_soup = BeautifulSoup(detail_resp.text, "html.parser")
             self.total_bytes_used += len(detail_resp.content)
 
+            # Datos básicos
             title_tag = detail_soup.select_one(config.SELECTORS["title"])
             year_tag = detail_soup.select_one(config.SELECTORS["year"])
             rating_tag = detail_soup.select_one(config.SELECTORS["rating"])
@@ -66,7 +99,7 @@ class ImdbScraper(ScraperInterface):
             year = int(year_tag.text.strip()) if year_tag else 0
             rating = float(rating_tag.text.strip()) if rating_tag else 0.0
 
-            # Duración
+            # Duración en minutos
             duration = None
             for ul in detail_soup.select(config.SELECTORS["duration_container"]):
                 for li in ul.select('li'):
@@ -81,9 +114,11 @@ class ImdbScraper(ScraperInterface):
                 if duration:
                     break
 
+            # Metascore
             metascore_tag = detail_soup.select_one(config.SELECTORS["metascore"])
             metascore = int(metascore_tag.text.strip()) if metascore_tag else None
 
+            # Actores principales (máximo 3)
             cast_tags = detail_soup.select(config.SELECTORS["actors"])
             actors = [
                 Actor(id=movie_id_counter * 10 + i, name=cast.text.strip())
@@ -105,9 +140,15 @@ class ImdbScraper(ScraperInterface):
             return None
 
     def get_combined_movie_ids(self) -> List[str]:
+        """
+        Obtiene los IDs de las películas combinando scraping HTML y llamada GraphQL.
+
+        Returns:
+            List[str]: Lista de IDs de películas IMDb.
+        """
         ids = set()
 
-        # HTML
+        # HTML scraping desde /chart/top/
         chart_url = config.BASE_URL + config.CHART_TOP_PATH
         resp = make_request(chart_url)
         cookies = resp.cookies if resp else None
@@ -121,7 +162,7 @@ class ImdbScraper(ScraperInterface):
             logger.info(f"[HTML] IDs obtenidos: {len(html_ids)}")
             ids.update(html_ids)
 
-        # GraphQL
+        # GraphQL scraping
         graphql_ids = self.fetch_graphql_ids(cookies)
         ids.update(graphql_ids)
 
@@ -130,6 +171,12 @@ class ImdbScraper(ScraperInterface):
     def fetch_graphql_ids(self, cookies: Optional[dict]) -> List[str]:
         """
         Realiza la petición GraphQL para obtener IDs adicionales de películas.
+
+        Args:
+            cookies (Optional[dict]): Cookies obtenidas de la sesión HTML, reutilizadas para autenticidad.
+
+        Returns:
+            List[str]: Lista de IMDb IDs obtenidos desde la API GraphQL.
         """
         try:
             headers = {

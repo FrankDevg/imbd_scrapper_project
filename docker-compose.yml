@@ -1,4 +1,5 @@
 version: "3.9"
+
 services:
   postgres:
     image: postgres:15
@@ -20,10 +21,25 @@ services:
     image: dperson/torproxy
     container_name: tor_proxy
     ports:
-      - "9050:9050"  # puerto SOCKS5
-    command: "-a 'ImbdScraper' -p 9050"
+      - "9050:9050"
+    command: "-p 9050"
     networks:
       - app_net
+
+  vpn:
+    image: qmcgaw/gluetun
+    container_name: vpn
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - VPN_SERVICE_PROVIDER=protonvpn
+      - OPENVPN_USER=${VPN_USERNAME}
+      - OPENVPN_PASSWORD=${VPN_PASSWORD}
+      - SERVER_COUNTRIES=Argentina
+    ports:
+      - "8888:8888" 
+    networks:
+      - vpn_net
 
   scraper:
     build:
@@ -33,22 +49,32 @@ services:
     depends_on:
       - postgres
       - tor
+      - vpn
     networks:
       - app_net
+      - vpn_net
     env_file:
       - .env
     volumes:
       - .:/app
     command: >
-      sh -c "echo 'Esperando a que Postgres esté listo...' &&
-            while ! nc -z postgres 5432; do sleep 1; done &&
-            echo 'Postgres listo. Iniciando scraper...' &&
-            python presentation/run_scraper.py"
-
+      sh -c "
+        echo 'Esperando a que Postgres esté listo...' &&
+        while ! nc -z postgres 5432; do sleep 1; done &&
+        echo 'Postgres listo. Iniciando scraper...' &&
+        python presentation/cli/run_scraper.py &&
+        echo 'Scraper finalizado. Ejecutando queries.sql...' &&
+        apt update && apt install -y postgresql-client &&
+        PGPASSWORD=$POSTGRES_PASSWORD psql -h postgres -U $POSTGRES_USER -d $POSTGRES_DB -f sql/queries.sql &&
+        echo 'Consultas SQL ejecutadas. Manteniendo contenedor activo...' &&
+        tail -f /dev/null
+      "
 
 volumes:
   pgdata:
 
 networks:
   app_net:
+    driver: bridge
+  vpn_net:
     driver: bridge
