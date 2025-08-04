@@ -9573,3 +9573,1055 @@
 2025-08-04 06:56:20,522 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0108052/
 2025-08-04 06:56:29,419 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt0119698/ | IP: N/A | N/A, N/A | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
 2025-08-04 06:56:33,171 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0119698/
+2025-08-04 07:03:28,363 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/chart/top/ | IP: 14.225.43.26 | Hanoi, VN | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:03:33,270 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/chart/top/
+2025-08-04 07:03:36,016 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/chart/top/ | IP: 51.9.184.232 | Aberystwyth, GB | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:03:38,846 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/chart/top/
+2025-08-04 07:03:43,541 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/chart/top/ | IP: 86.24.232.229 | Wolverhampton, GB | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:03:47,561 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/chart/top/
+2025-08-04 07:03:50,132 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0017925/ | IP: 31.192.85.15 | Hodonín, CZ | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:03:50,165 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0050976/ | IP: 31.205.18.150 | Newport, GB | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:03:50,269 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0758758/ | IP: 80.2.211.132 | Tamworth, GB | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:03:50,285 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0074958/ | IP: 67.213.103.127 | Aylmer, CA | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:03:50,325 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0105695/ | IP: 181.118.53.163 | Laventille, TT | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:03:50,334 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0211915/ | IP: 94.240.189.62 | Kropyvnytskyy, UA | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:03:50,340 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0075314/ | IP: 185.211.100.141 | Istanbul, TR | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:03:50,360 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0032551/ | IP: 90.253.108.217 | Grays, GB | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:03:50,387 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0027977/ | IP: 51.198.232.242 | London, GB | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:03:50,478 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0059742/ | IP: 90.202.108.102 | London, GB | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:03:50,500 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0060196/ | IP: 85.255.232.240 | London, GB | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:03:50,523 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0252488/ | IP: 2.219.87.109 | London, GB | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:03:50,576 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0405159/ | IP: 126.48.235.250 | Nagoya, JP | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:03:50,641 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0036775/ | IP: 41.234.180.121 | Giza, EG | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:03:50,646 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0064116/ | IP: 194.140.212.248 | Inverness, GB | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:03:50,886 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0120382/ | IP: 86.138.152.84 | Glasgow, GB | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:03:50,999 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt1392190/ | IP: 14.166.28.177 | Việt Trì, VN | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:03:51,094 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt1745960/ | IP: 93.171.240.104 | Kyiv, UA | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:03:51,253 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0468569/ | IP: 114.108.237.14 | Las Piñas, PH | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:03:51,254 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt1205489/ | IP: 136.158.24.67 | Tunasan, PH | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:03:51,284 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt9362722/ | IP: 193.239.176.229 | Bucharest, RO | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:03:51,398 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0054215/ | IP: 82.23.227.16 | San José, CR | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:03:51,488 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0073486/ | IP: 123.31.97.20 | Ho Chi Minh City, VN | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:03:51,496 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0078748/ | IP: 62.201.226.82 | As Sulaymānīyah, IQ | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:03:51,572 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0353969/ | IP: 86.107.58.183 | Bucharest, RO | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:03:51,581 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0091763/ | IP: 123.17.245.3 | Cao Bằng, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:03:51,591 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0056172/ | IP: 37.238.13.15 | Ar Rifā‘ī, IQ | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:03:51,618 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0052618/ | IP: 14.224.179.15 | Ho Chi Minh City, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:03:51,622 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0044741/ | IP: 113.164.185.112 | Hanoi, VN | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:03:51,641 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0120815/ | IP: 123.20.88.178 | Ho Chi Minh City, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:03:51,829 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0032553/ | IP: 123.21.213.174 | Ho Chi Minh City, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:03:51,884 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0071853/ | IP: 113.178.207.223 | Biên Hòa, VN | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:03:51,910 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0112573/ | IP: 14.189.250.97 | Thái Nguyên, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:03:52,009 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0095327/ | IP: 123.21.241.127 | Ho Chi Minh City, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:03:52,093 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt1895587/ | IP: 123.18.76.227 | Thuan Thiện, VN | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:03:52,102 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0078788/ | IP: 195.35.100.165 | Bucharest, RO | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:03:52,163 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0482571/ | IP: 123.20.75.6 | Ho Chi Minh City, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:03:52,300 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0057115/ | IP: 14.169.173.112 | Ho Chi Minh City, VN | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:03:52,326 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0118715/ | IP: 123.26.201.39 | Cao Bằng, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:03:52,398 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0119488/ | IP: 123.17.246.96 | Cao Bằng, VN | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:03:52,419 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0021749/ | IP: 14.249.59.151 | Hạ Long, VN | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:03:52,427 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt11032374/ | IP: 14.168.1.193 | Ðà Lạt, VN | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:03:52,456 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0978762/ | IP: 14.169.175.248 | Ho Chi Minh City, VN | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:03:52,522 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0110413/ | IP: 14.225.62.77 | Hanoi, VN | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:03:52,599 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt1954470/ | IP: 14.169.201.71 | Ho Chi Minh City, VN | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:03:52,695 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0198781/ | IP: 14.244.179.214 | Thanh Hóa, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:03:52,720 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0055031/ | IP: 123.20.95.51 | Ho Chi Minh City, VN | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:03:52,776 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0113247/ | IP: 14.245.165.144 | Da Nang, VN | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:03:53,010 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0109830/ | IP: 14.190.213.159 | Bắc Ninh, VN | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:03:53,223 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0075314/
+2025-08-04 07:03:53,258 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0027977/
+2025-08-04 07:03:53,382 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0105695/
+2025-08-04 07:03:53,430 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0074958/
+2025-08-04 07:03:53,448 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0017925/
+2025-08-04 07:03:53,553 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0059742/
+2025-08-04 07:03:53,553 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0758758/
+2025-08-04 07:03:53,608 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0064116/
+2025-08-04 07:03:53,659 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0036775/
+2025-08-04 07:03:53,776 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0211915/
+2025-08-04 07:03:53,825 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0032551/
+2025-08-04 07:03:53,826 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0044741/
+2025-08-04 07:03:53,905 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0060196/
+2025-08-04 07:03:53,968 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt1392190/
+2025-08-04 07:03:54,026 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0071562/ | IP: 222.253.135.84 | Ho Chi Minh City, VN | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:03:54,178 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0120382/
+2025-08-04 07:03:54,321 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0353969/
+2025-08-04 07:03:54,408 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0468569/
+2025-08-04 07:03:54,590 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt1205489/
+2025-08-04 07:03:54,613 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0054215/
+2025-08-04 07:03:54,710 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt1745960/
+2025-08-04 07:03:54,780 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0112573/
+2025-08-04 07:03:54,862 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0091763/
+2025-08-04 07:03:54,972 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0095327/
+2025-08-04 07:03:55,120 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0050976/
+2025-08-04 07:03:55,131 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0118715/
+2025-08-04 07:03:55,138 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0078748/
+2025-08-04 07:03:55,262 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0056172/
+2025-08-04 07:03:55,375 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0119488/
+2025-08-04 07:03:55,448 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0052618/
+2025-08-04 07:03:55,457 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0198781/
+2025-08-04 07:03:55,589 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0055031/
+2025-08-04 07:03:55,704 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0021749/
+2025-08-04 07:03:55,783 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0057115/
+2025-08-04 07:03:55,944 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0482571/
+2025-08-04 07:03:55,951 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0027977/ | IP: 78.159.82.211 | Biała Podlaska, PL | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:03:55,974 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0052357/ | IP: 82.4.143.31 | Belfast, GB | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:03:56,159 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0105695/ | IP: 86.181.9.221 | Edinburgh, GB | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:03:56,285 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0074958/ | IP: 24.55.187.183 | Cayey, PR | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:03:56,290 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0978762/
+2025-08-04 07:03:56,313 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0073486/
+2025-08-04 07:03:56,320 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0120815/
+2025-08-04 07:03:56,575 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0036775/ | IP: 197.146.184.167 | Casablanca, MA | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:03:56,733 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt1954470/
+2025-08-04 07:03:56,871 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0064116/ | IP: 112.137.36.5 | Tokyo, JP | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:03:56,885 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0034583/ | IP: 175.110.185.108 | Ta’if, SA | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:03:57,177 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0071853/
+2025-08-04 07:03:57,415 [INFO] [STATUS CODE] 200 | Final URL: https://m.imdb.com/title/tt0078788/
+2025-08-04 07:03:57,469 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0110413/
+2025-08-04 07:03:57,491 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt5323662/ | IP: 81.180.65.139 | Chisinau, MD | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:03:57,510 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0060196/ | IP: 180.190.115.138 | Makati City, PH | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:03:57,582 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0109830/
+2025-08-04 07:03:57,716 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0017925/ | IP: 123.20.129.214 | Ho Chi Minh City, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:03:57,745 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0071562/
+2025-08-04 07:03:57,962 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0113247/
+2025-08-04 07:03:58,053 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0118715/ | IP: 86.131.154.202 | Bristol, GB | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:03:58,065 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0078748/ | IP: 94.11.138.156 | London, GB | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:03:58,089 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0112471/ | IP: 222.252.143.35 | Hà Giang, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:03:58,097 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0059742/ | IP: 14.169.230.47 | Ho Chi Minh City, VN | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:03:58,145 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0119488/ | IP: 185.237.63.9 | London, GB | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:03:58,303 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0086190/ | IP: 14.241.121.84 | Da Nang, VN | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:03:58,508 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0044741/ | IP: 221.132.7.115 | Bắc Ninh, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:03:58,653 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0395169/ | IP: 113.186.114.99 | Hưng Yên, VN | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:03:58,661 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0095016/ | IP: 14.244.242.68 | Bắc Giang, VN | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:03:58,734 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0252488/
+2025-08-04 07:03:58,810 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0469494/ | IP: 51.14.192.72 | Bristol, GB | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:03:58,888 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0468569/ | IP: 14.164.34.7 | Thủ Dầu Một, VN | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:03:58,955 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0072684/ | IP: 14.160.120.192 | Ðà Lạt, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:03:59,003 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0042876/ | IP: 31.111.117.4 | Llanelli, GB | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:03:59,045 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0105236/ | IP: 188.26.8.219 | Voluntari, RO | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:03:59,045 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0382932/ | IP: 14.226.236.16 | Ho Chi Minh City, VN | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:03:59,210 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0353969/ | IP: 14.187.249.226 | Ho Chi Minh City, VN | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:03:59,408 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0062622/ | IP: 170.203.218.29 | Calgary, CA | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:03:59,516 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0482571/ | IP: 171.225.200.89 | Haiphong, VN | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:03:59,718 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0198781/ | IP: 14.186.209.58 | Ho Chi Minh City, VN | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:03:59,985 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0042876/
+2025-08-04 07:04:00,017 [INFO] [STATUS CODE] 200 | Final URL: https://m.imdb.com/title/tt1895587/
+2025-08-04 07:04:00,017 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0052357/
+2025-08-04 07:04:00,116 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0074958/
+2025-08-04 07:04:00,212 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0022100/ | IP: 37.152.217.74 | Frant, GB | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:00,300 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0133093/ | IP: 143.177.218.254 | Zevenaar, NL | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:00,329 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0036775/
+2025-08-04 07:04:00,502 [INFO] [STATUS CODE] 200 | Final URL: https://m.imdb.com/title/tt11032374/
+2025-08-04 07:04:00,543 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0034583/
+2025-08-04 07:04:00,555 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0978762/ | IP: 123.28.155.105 | Mỹ Tho, VN | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:00,556 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0060196/
+2025-08-04 07:04:00,615 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0112573/ | IP: 14.188.114.73 | Bắc Ninh, VN | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:00,653 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0064116/
+2025-08-04 07:04:00,664 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0021749/ | IP: 102.213.251.36 | Nairobi, KE | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:00,720 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0087843/ | IP: 206.45.53.233 | Winnipeg, CA | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:00,888 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0055031/ | IP: 14.188.94.216 | Vĩnh Yên, VN | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:00,927 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt5323662/
+2025-08-04 07:04:01,047 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0118715/
+2025-08-04 07:04:01,072 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0112471/
+2025-08-04 07:04:01,149 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0082971/ | IP: 14.181.188.220 | Hà Giang, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:01,205 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0211915/ | IP: 113.172.179.254 | Ho Chi Minh City, VN | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:01,412 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0095327/ | IP: 113.175.174.117 | Bắc Ninh, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:01,555 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0096283/ | IP: 222.254.165.159 | Ho Chi Minh City, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:01,706 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0119488/
+2025-08-04 07:04:01,812 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0062622/
+2025-08-04 07:04:01,830 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0382932/
+2025-08-04 07:04:01,885 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0105695/
+2025-08-04 07:04:02,044 [ERROR] [ERROR] Proxy request failed: HTTPSConnectionPool(host='www.imdb.com', port=443): Read timed out. (read timeout=10)
+2025-08-04 07:04:02,106 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0086190/
+2025-08-04 07:04:02,186 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0095016/
+2025-08-04 07:04:02,366 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0044741/
+2025-08-04 07:04:02,656 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0405159/
+2025-08-04 07:04:02,780 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0042876/ | IP: 178.51.88.76 | Wortegem, BE | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:02,903 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0978762/
+2025-08-04 07:04:03,138 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0180093/ | IP: 101.78.149.138 | Tung Chung, HK | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:03,200 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0109830/ | IP: 113.189.220.121 | Tuyên Quang, VN | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:03,287 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0381681/ | IP: 118.68.203.115 | Ho Chi Minh City, VN | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:03,546 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0395169/
+2025-08-04 07:04:03,681 [INFO] [STATUS CODE] 200 | Final URL: https://m.imdb.com/title/tt0027977/
+2025-08-04 07:04:03,979 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt3011894/ | IP: 123.17.230.186 | Hưng Yên, VN | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:04,000 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0075314/ | IP: 14.229.167.163 | Bắc Giang, VN | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:04,001 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0353969/
+2025-08-04 07:04:04,178 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0055031/
+2025-08-04 07:04:04,193 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0053604/ | IP: 14.167.154.114 | Da Nang, VN | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:04,203 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0112471/ | IP: 83.104.193.72 | Verwood, GB | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:04,273 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0062622/ | IP: 159.2.8.13 | Halifax, CA | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:04,440 [INFO] [STATUS CODE] 200 | Final URL: https://m.imdb.com/title/tt9362722/
+2025-08-04 07:04:04,533 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0072684/
+2025-08-04 07:04:04,744 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0034583/ | IP: 14.224.188.182 | Ho Chi Minh City, VN | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:04,760 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0033467/ | IP: 122.53.222.239 | Calapan, PH | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:04,778 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0105236/
+2025-08-04 07:04:04,860 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0022100/
+2025-08-04 07:04:04,911 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0095327/
+2025-08-04 07:04:05,037 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0095016/ | IP: 90.203.152.154 | London, GB | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:05,109 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0133093/
+2025-08-04 07:04:05,267 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt0064116/ | IP: 38.196.19.32 | San Francisco de Macorís, DO | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:05,286 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0114814/ | IP: 14.167.231.234 | Ðà Lạt, VN | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:05,430 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0087843/
+2025-08-04 07:04:05,503 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt1392190/ | IP: 183.80.142.101 | Huế, VN | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:05,681 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0082971/
+2025-08-04 07:04:05,948 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0017136/ | IP: 113.176.81.158 | Phan Rang-Tháp Chàm, VN | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:05,971 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0017925/
+2025-08-04 07:04:06,076 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt0060196/ | IP: 118.71.193.13 | Haiphong, VN | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:06,204 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0042876/
+2025-08-04 07:04:06,302 [INFO] [STATUS CODE] 200 | Final URL: https://m.imdb.com/title/tt0021749/
+2025-08-04 07:04:06,303 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0381681/
+2025-08-04 07:04:06,369 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0137523/ | IP: 156.207.140.190 | Fāqūs, EG | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:06,481 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0032553/ | IP: 14.235.101.129 | Bắc Giang, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:06,487 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0053604/
+2025-08-04 07:04:06,500 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0382932/ | IP: 103.231.248.191 | Ho Chi Minh City, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:06,530 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0096283/
+2025-08-04 07:04:06,601 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0180093/
+2025-08-04 07:04:06,680 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0109830/
+2025-08-04 07:04:06,763 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0054215/ | IP: 14.186.231.200 | Ho Chi Minh City, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:07,080 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0112471/
+2025-08-04 07:04:07,158 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0075314/
+2025-08-04 07:04:07,194 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt0074958/ | IP: 113.183.54.40 | Hà Giang, VN | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:07,263 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt0118715/ | IP: 14.161.49.172 | Ho Chi Minh City, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:07,599 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0022100/ | IP: 213.130.151.252 | Manchester, GB | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:07,616 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0062622/
+2025-08-04 07:04:07,747 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0033467/
+2025-08-04 07:04:07,755 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0457430/ | IP: 123.18.183.46 | Tuyên Quang, VN | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:07,756 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt2278388/ | IP: 171.224.204.165 | Việt Trì, VN | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:07,884 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt10272386/ | IP: 113.189.100.150 | Nha Trang, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:08,059 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0040897/ | IP: 113.186.2.37 | Thái Nguyên, VN | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:08,176 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0405159/ | IP: 14.188.197.236 | Bắc Ninh, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:08,234 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt1392190/
+2025-08-04 07:04:08,342 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0064116/
+2025-08-04 07:04:08,386 [INFO] [STATUS CODE] 200 | Final URL: https://m.imdb.com/title/tt0059742/
+2025-08-04 07:04:08,547 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0116282/ | IP: 84.65.125.38 | Bletchley, GB | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:08,634 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0469494/
+2025-08-04 07:04:08,791 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt3315342/ | IP: 193.239.176.79 | Bucharest, RO | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:08,846 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0372784/ | IP: 14.187.121.211 | Ho Chi Minh City, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:08,875 [INFO] [STATUS CODE] 200 | Final URL: https://m.imdb.com/title/tt0198781/
+2025-08-04 07:04:08,913 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0060196/
+2025-08-04 07:04:09,131 [INFO] [STATUS CODE] 200 | Final URL: https://m.imdb.com/title/tt0211915/
+2025-08-04 07:04:09,332 [INFO] [STATUS CODE] 200 | Final URL: https://m.imdb.com/title/tt0112573/
+2025-08-04 07:04:09,332 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0381681/ | IP: 89.211.230.142 | Doha, QA | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:09,333 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt0978762/ | IP: 123.20.55.181 | Ho Chi Minh City, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:09,484 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt0044741/ | IP: 123.27.186.207 | Bắc Ninh, VN | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:09,531 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt0095327/ | IP: 131.100.39.199 | Laventille, TT | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:09,533 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0050986/ | IP: 113.175.96.236 | Thái Nguyên, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:09,741 [INFO] [STATUS CODE] 200 | Final URL: https://m.imdb.com/title/tt0468569/
+2025-08-04 07:04:09,878 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0022100/
+2025-08-04 07:04:09,908 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0114814/
+2025-08-04 07:04:09,974 [INFO] [STATUS CODE] 200 | Final URL: https://m.imdb.com/title/tt0482571/
+2025-08-04 07:04:10,040 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt1950186/ | IP: 222.255.203.25 | Cao Bằng, VN | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:10,062 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0382932/
+2025-08-04 07:04:10,091 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0074958/
+2025-08-04 07:04:10,152 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0054215/
+2025-08-04 07:04:10,226 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt0055031/ | IP: 14.182.117.171 | Cao Bằng, VN | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:10,232 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0082971/ | IP: 113.191.14.60 | Tuyên Quang, VN | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:10,257 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0088247/ | IP: 171.237.115.114 | Ninh Bình, VN | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:10,770 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0053604/ | IP: 103.147.185.38 | Hanoi, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:10,837 [INFO] [STATUS CODE] 200 | Final URL: https://m.imdb.com/title/tt0078748/
+2025-08-04 07:04:10,968 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0040897/
+2025-08-04 07:04:10,969 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt0017925/ | IP: 129.222.137.1 | Calgary, CA | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:10,972 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0097165/ | IP: 70.48.83.180 | Salaberry-de-Valleyfield, CA | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:10,977 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0032553/
+2025-08-04 07:04:11,183 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0033467/ | IP: 95.144.124.25 | London, GB | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:11,283 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0180093/ | IP: 113.180.235.25 | Biên Hòa, VN | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:11,310 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt10272386/
+2025-08-04 07:04:11,437 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt0109830/ | IP: 185.190.151.172 | Kyiv, UA | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:11,544 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0118715/
+2025-08-04 07:04:11,682 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt3315342/
+2025-08-04 07:04:11,683 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0457430/
+2025-08-04 07:04:11,825 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0017136/
+2025-08-04 07:04:12,008 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0112641/ | IP: 113.173.87.100 | Ho Chi Minh City, VN | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:12,017 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0137523/
+2025-08-04 07:04:12,316 [INFO] [STATUS CODE] 200 | Final URL: https://m.imdb.com/title/tt3011894/
+2025-08-04 07:04:12,334 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0372784/
+2025-08-04 07:04:12,473 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt0042876/ | IP: 14.179.255.202 | Uyen Hung, VN | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:12,576 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0095327/
+2025-08-04 07:04:12,591 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0095016/
+2025-08-04 07:04:12,633 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0046912/ | IP: 24.235.146.36 | Sarnia, CA | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:12,889 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0978762/
+2025-08-04 07:04:13,033 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0108052/ | IP: 14.166.16.235 | Bắc Ninh, VN | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:13,076 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0405159/
+2025-08-04 07:04:13,237 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0167260/ | IP: 188.138.235.73 | Chisinau, MD | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:13,246 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt15398776/ | IP: 222.252.143.31 | Hà Giang, VN | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:13,302 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0034583/
+2025-08-04 07:04:13,344 [WARNING] [FALLBACK] Todos los intentos con proxy fallaron. Probando con TOR...
+2025-08-04 07:04:13,418 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt0112471/ | IP: 113.168.179.166 | Thái Nguyên, VN | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:13,419 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0082971/
+2025-08-04 07:04:13,591 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0017925/
+2025-08-04 07:04:13,601 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0050986/
+2025-08-04 07:04:13,709 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt4016934/ | IP: 31.51.200.245 | Finchley, GB | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:13,738 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0077416/ | IP: 123.20.76.185 | Ho Chi Minh City, VN | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:13,883 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt1392190/ | IP: 42.188.88.207 | Cyberjaya, MY | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:13,930 [WARNING] [FALLBACK] Todos los intentos con proxy fallaron. Probando con TOR...
+2025-08-04 07:04:13,999 [INFO] [TOR Attempt 1] GET https://www.imdb.com/title/tt0064116/ | IP: 45.141.215.17 | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:14,053 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0266697/ | IP: 14.188.33.103 | Hải Dương, VN | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:14,130 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0114814/ | IP: 14.169.79.97 | Ho Chi Minh City, VN | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:14,131 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt1950186/
+2025-08-04 07:04:14,133 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt0075314/ | IP: 222.253.161.93 | Sóc Trăng, VN | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:14,506 [INFO] [TOR Attempt 1] GET https://www.imdb.com/title/tt0060196/ | IP: 45.141.215.17 | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:14,587 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0033467/
+2025-08-04 07:04:14,597 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0053604/
+2025-08-04 07:04:14,697 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0055031/
+2025-08-04 07:04:14,842 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0208092/ | IP: 14.182.129.146 | Sơn La, VN | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:14,859 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0103064/ | IP: 124.253.152.115 | Chandigarh, IN | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:14,940 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0059578/ | IP: 14.224.4.250 | Tuyên Quang, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:15,069 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0099685/ | IP: 14.167.153.68 | Da Nang, VN | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:15,071 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt5323662/ | IP: N/A | N/A, N/A | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:15,108 [WARNING] [FALLBACK] Todos los intentos con proxy fallaron. Probando con TOR...
+2025-08-04 07:04:15,144 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0040897/ | IP: 14.239.125.84 | Bắc Giang, VN | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:15,253 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0372784/ | IP: 188.3.183.62 | İzmir, TR | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:15,326 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0180093/
+2025-08-04 07:04:15,480 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0816692/ | IP: 86.123.29.185 | Botoşani, RO | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:15,489 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt3315342/ | IP: 86.107.58.119 | Bucharest, RO | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:15,605 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0381681/
+2025-08-04 07:04:15,755 [INFO] [TOR Attempt 1] GET https://www.imdb.com/title/tt0074958/ | IP: 45.141.215.17 | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:15,767 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0086250/ | IP: 113.191.212.83 | Vinh, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:15,808 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt0054215/ | IP: 122.176.65.91 | Kolkata, IN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:15,832 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt1832382/ | IP: 113.169.149.246 | Ho Chi Minh City, VN | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:16,015 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0347149/ | IP: 89.216.114.84 | Užice, RS | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:16,131 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0053291/ | IP: 113.176.34.170 | Thuan Thiện, VN | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:16,503 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0112641/
+2025-08-04 07:04:16,545 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0108052/
+2025-08-04 07:04:16,647 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0041959/ | IP: 91.124.53.210 | Helsinki, FI | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:16,682 [INFO] [STATUS CODE] 200 | Final URL: https://m.imdb.com/title/tt2278388/
+2025-08-04 07:04:16,803 [INFO] [STATUS CODE] 200 | Final URL: https://m.imdb.com/title/tt0116282/
+2025-08-04 07:04:16,825 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt1392190/
+2025-08-04 07:04:16,985 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0043014/ | IP: 14.225.65.119 | Hanoi, VN | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:17,036 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0167260/
+2025-08-04 07:04:17,038 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt0022100/ | IP: 14.189.18.33 | Cao Bằng, VN | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:17,125 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0112471/
+2025-08-04 07:04:17,171 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt4016934/
+2025-08-04 07:04:17,258 [INFO] [STATUS CODE] 200 | Final URL: https://m.imdb.com/title/tt0044741/
+2025-08-04 07:04:17,359 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0042876/
+2025-08-04 07:04:17,425 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0075314/
+2025-08-04 07:04:17,566 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0266697/
+2025-08-04 07:04:17,603 [WARNING] [FALLBACK] Todos los intentos con proxy fallaron. Probando con TOR...
+2025-08-04 07:04:17,646 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0077416/
+2025-08-04 07:04:17,776 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt5323662/
+2025-08-04 07:04:17,857 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0114814/
+2025-08-04 07:04:17,889 [WARNING] [FALLBACK] Todos los intentos con proxy fallaron. Probando con TOR...
+2025-08-04 07:04:17,959 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0059578/
+2025-08-04 07:04:18,221 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0208092/
+2025-08-04 07:04:18,285 [INFO] [TOR Attempt 1] GET https://www.imdb.com/title/tt0095327/ | IP: 45.141.215.17 | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:18,375 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0040897/
+2025-08-04 07:04:18,456 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt2582802/ | IP: 188.83.136.13 | Rio Tinto, PT | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:18,567 [INFO] [TOR Attempt 1] GET https://www.imdb.com/title/tt0978762/ | IP: 45.141.215.17 | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:18,568 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0060196/
+2025-08-04 07:04:18,600 [WARNING] [FALLBACK] Todos los intentos con proxy fallaron. Probando con TOR...
+2025-08-04 07:04:18,864 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0099685/
+2025-08-04 07:04:18,882 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0347149/
+2025-08-04 07:04:19,151 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt3315342/
+2025-08-04 07:04:19,197 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt0095016/ | IP: 14.188.94.104 | Vĩnh Yên, VN | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:19,281 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0816692/
+2025-08-04 07:04:19,287 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0338013/ | IP: 82.199.213.33 | Karbala, IQ | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:19,312 [INFO] [STATUS CODE] 200 | Final URL: https://m.imdb.com/title/tt15398776/
+2025-08-04 07:04:19,356 [INFO] [TOR Attempt 1] GET https://www.imdb.com/title/tt0017925/ | IP: 45.141.215.17 | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:19,392 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0054215/
+2025-08-04 07:04:19,601 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0043014/
+2025-08-04 07:04:19,631 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt0082971/ | IP: 14.244.213.45 | Bắc Ninh, VN | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:19,638 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0086250/
+2025-08-04 07:04:19,704 [WARNING] [FALLBACK] Todos los intentos con proxy fallaron. Probando con TOR...
+2025-08-04 07:04:19,783 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt1832382/
+2025-08-04 07:04:19,942 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0070735/ | IP: 86.179.155.191 | Colchester, GB | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:19,948 [INFO] [STATUS CODE] 200 | Final URL: https://m.imdb.com/title/tt0064116/
+2025-08-04 07:04:20,050 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0077416/ | IP: 198.16.231.108 | Montréal, CA | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:20,144 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0057565/ | IP: 160.155.148.205 | Bingerville, CI | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:20,146 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt2106476/ | IP: 14.187.124.97 | Ho Chi Minh City, VN | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:20,177 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt2582802/
+2025-08-04 07:04:20,216 [INFO] [STATUS CODE] 200 | Final URL: https://m.imdb.com/title/tt0088247/
+2025-08-04 07:04:20,332 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0022100/
+2025-08-04 07:04:20,364 [INFO] [TOR Attempt 1] GET https://www.imdb.com/title/tt0055031/ | IP: 45.141.215.17 | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:20,432 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0264464/ | IP: 113.175.57.75 | Haiphong, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:20,530 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0075148/ | IP: 92.14.220.114 | Derby, GB | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:20,589 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0041959/
+2025-08-04 07:04:20,749 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0053291/
+2025-08-04 07:04:20,890 [INFO] [STATUS CODE] 200 | Final URL: https://m.imdb.com/title/tt0046912/
+2025-08-04 07:04:20,890 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0108052/ | IP: 14.247.147.67 | Lai Châu, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:21,028 [INFO] [STATUS CODE] 200 | Final URL: https://m.imdb.com/title/tt0074958/
+2025-08-04 07:04:21,046 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt0033467/ | IP: 222.254.96.60 | Việt Trì, VN | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:21,065 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0167260/ | IP: 14.163.115.15 | Bắc Ninh, VN | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:21,066 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt0180093/ | IP: 171.248.83.182 | Ho Chi Minh City, VN | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:21,071 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt4016934/ | IP: 178.61.232.155 | Şabāḩ as Sālim, KW | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:21,096 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt23849204/ | IP: 14.163.117.181 | Bắc Ninh, VN | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:21,259 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0032138/ | IP: 123.18.52.45 | Bắc Giang, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:21,292 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0103064/
+2025-08-04 07:04:21,404 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt15097216/ | IP: 113.166.122.211 | Mỹ Tho, VN | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:21,730 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0816692/ | IP: 74.15.225.252 | Châteauguay, CA | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:21,840 [INFO] [STATUS CODE] 200 | Final URL: https://m.imdb.com/title/tt0109830/
+2025-08-04 07:04:21,846 [WARNING] [FALLBACK] Todos los intentos con proxy fallaron. Probando con TOR...
+2025-08-04 07:04:22,004 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0118799/ | IP: 82.11.239.166 | Birkenhead, GB | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:22,159 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0208092/ | IP: 84.46.204.93 | London, GB | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:22,261 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt1392214/ | IP: 51.199.100.192 | Dublin, IE | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:22,402 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0266697/ | IP: 123.20.68.24 | Ho Chi Minh City, VN | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:22,590 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0059578/ | IP: 113.176.31.65 | Cao Bằng, VN | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:22,614 [INFO] [TOR Attempt 1] GET https://www.imdb.com/title/tt1392190/ | IP: 45.141.215.17 | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:22,696 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0338013/
+2025-08-04 07:04:22,703 [INFO] [STATUS CODE] 200 | Final URL: https://m.imdb.com/title/tt0978762/
+2025-08-04 07:04:22,736 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0082971/
+2025-08-04 07:04:22,928 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt0114814/ | IP: 24.222.209.53 | Stephenville, CA | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:22,973 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt5323662/ | IP: 104.200.105.50 | Bridgetown, BB | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:23,045 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0056592/ | IP: 113.175.143.27 | Thanh Hóa, VN | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:23,064 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt2582802/ | IP: 92.114.187.35 | Chisinau, MD | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:23,173 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0347149/ | IP: 14.229.171.221 | Hưng Yên, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:23,210 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0043014/ | IP: 125.235.231.206 | Tây Ninh, VN | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:23,226 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0110357/ | IP: 203.210.237.197 | Thủ Dầu Một, VN | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:23,241 [INFO] [STATUS CODE] 200 | Final URL: https://m.imdb.com/title/tt0097165/
+2025-08-04 07:04:23,495 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0099685/ | IP: 113.188.58.62 | Châu Đốc, VN | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:23,525 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt2106476/
+2025-08-04 07:04:23,588 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0095327/
+2025-08-04 07:04:23,713 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0434409/ | IP: 222.253.108.121 | Ho Chi Minh City, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:23,722 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0089881/ | IP: 154.199.195.88 | Hong Kong, HK | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:23,777 [INFO] [STATUS CODE] 200 | Final URL: https://m.imdb.com/title/tt0017925/
+2025-08-04 07:04:23,865 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0083658/ | IP: 123.20.133.53 | Ho Chi Minh City, VN | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:23,949 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0180093/
+2025-08-04 07:04:23,963 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0070735/
+2025-08-04 07:04:23,964 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0057565/
+2025-08-04 07:04:24,099 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0118849/ | IP: 14.228.197.36 | Hà Giang, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:24,181 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt8579674/ | IP: 123.25.101.198 | Da Nang, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:24,214 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0042192/ | IP: 2.122.193.13 | London, GB | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:24,295 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0032138/
+2025-08-04 07:04:24,389 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0108052/
+2025-08-04 07:04:24,409 [INFO] [STATUS CODE] 200 | Final URL: https://m.imdb.com/title/tt0372784/
+2025-08-04 07:04:24,471 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt15097216/
+2025-08-04 07:04:24,500 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0033467/
+2025-08-04 07:04:24,517 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0035446/ | IP: 14.160.23.41 | Quang Minh, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:24,559 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0167260/
+2025-08-04 07:04:24,637 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0816692/
+2025-08-04 07:04:24,774 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0041959/ | IP: 14.241.170.51 | Dĩ An, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:24,856 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0075148/
+2025-08-04 07:04:25,008 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt23849204/
+2025-08-04 07:04:25,260 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0245429/ | IP: 5.173.154.39 | Świekatowo, PL | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:25,343 [WARNING] [FALLBACK] Todos los intentos con proxy fallaron. Probando con TOR...
+2025-08-04 07:04:25,525 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0059578/
+2025-08-04 07:04:25,559 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0264464/
+2025-08-04 07:04:25,699 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0055031/
+2025-08-04 07:04:25,705 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0031679/ | IP: 123.20.233.226 | Ho Chi Minh City, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:25,727 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt5323662/
+2025-08-04 07:04:25,769 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0084787/ | IP: 142.68.72.8 | Summerside, CA | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:25,884 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0208092/
+2025-08-04 07:04:26,025 [INFO] [TOR Attempt 1] GET https://www.imdb.com/title/tt0022100/ | IP: 45.141.215.17 | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:26,100 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt1392214/
+2025-08-04 07:04:26,239 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0107207/ | IP: 113.173.109.65 | Ho Chi Minh City, VN | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:26,322 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0434409/
+2025-08-04 07:04:26,472 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0110357/
+2025-08-04 07:04:26,488 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt5311514/ | IP: 199.15.79.103 | Kowloon Bay, HK | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:26,601 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0056592/
+2025-08-04 07:04:26,638 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0050825/ | IP: 14.169.128.121 | Ho Chi Minh City, VN | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:26,713 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0046438/ | IP: 90.248.183.197 | Leeds, GB | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:26,809 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0338013/ | IP: N/A | N/A, N/A | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:26,833 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0266697/
+2025-08-04 07:04:26,898 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt2582802/
+2025-08-04 07:04:26,916 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0083658/
+2025-08-04 07:04:26,933 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0099685/
+2025-08-04 07:04:27,291 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt15097216/ | IP: 90.211.234.251 | London, GB | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:27,311 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0075148/ | IP: 156.34.6.141 | Halifax, CA | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:27,658 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0089881/
+2025-08-04 07:04:27,772 [WARNING] [FALLBACK] Todos los intentos con proxy fallaron. Probando con TOR...
+2025-08-04 07:04:27,849 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0361748/ | IP: 113.183.33.29 | Ninh Bình, VN | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:27,862 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt1291584/ | IP: 14.249.253.88 | Hanoi, VN | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:27,886 [INFO] [STATUS CODE] 200 | Final URL: https://m.imdb.com/title/tt0095016/
+2025-08-04 07:04:27,959 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt8579674/
+2025-08-04 07:04:27,986 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0041959/
+2025-08-04 07:04:28,080 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0347149/
+2025-08-04 07:04:28,189 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0114709/ | IP: 72.51.112.248 | Bridgetown, BB | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:28,202 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0346336/ | IP: 69.160.124.22 | Kingston, JM | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:28,235 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt1392190/
+2025-08-04 07:04:28,247 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0245429/
+2025-08-04 07:04:28,261 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0032138/ | IP: 14.249.205.207 | Bắc Giang, VN | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:28,297 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0070735/ | IP: 14.247.157.44 | Vĩnh Yên, VN | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:28,376 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt2106476/ | IP: 14.184.109.255 | Mỹ Tho, VN | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:28,412 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0042192/
+2025-08-04 07:04:28,452 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0084787/
+2025-08-04 07:04:28,606 [INFO] [STATUS CODE] 200 | Final URL: https://m.imdb.com/title/tt4016934/
+2025-08-04 07:04:28,701 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0031679/
+2025-08-04 07:04:28,762 [INFO] [TOR Attempt 1] GET https://www.imdb.com/title/tt0082971/ | IP: 45.141.215.17 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:28,766 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt5074352/ | IP: 113.175.106.100 | Thanh Hóa, VN | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:28,789 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0118849/
+2025-08-04 07:04:28,962 [WARNING] [FALLBACK] Todos los intentos con proxy fallaron. Probando con TOR...
+2025-08-04 07:04:29,171 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0110357/ | IP: 149.88.121.3 | Kingston upon Hull, GB | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:29,229 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt15239678/ | IP: 123.17.31.39 | Hạ Long, VN | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:29,331 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0167261/ | IP: 14.188.205.217 | Việt Trì, VN | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:29,496 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0083658/ | IP: 190.56.194.194 | San Luis Jilotepeque, GT | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:29,522 [WARNING] [FALLBACK] Todos los intentos con proxy fallaron. Probando con TOR...
+2025-08-04 07:04:29,614 [INFO] [TOR Attempt 1] GET https://www.imdb.com/title/tt0180093/ | IP: 45.141.215.17 | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:29,693 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0035446/
+2025-08-04 07:04:29,834 [INFO] [STATUS CODE] 200 | Final URL: https://m.imdb.com/title/tt0118799/
+2025-08-04 07:04:29,841 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0107207/
+2025-08-04 07:04:29,956 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0046438/
+2025-08-04 07:04:30,126 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0075148/
+2025-08-04 07:04:30,209 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt2267998/ | IP: 123.20.55.139 | Ho Chi Minh City, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:30,232 [INFO] [TOR Attempt 1] GET https://www.imdb.com/title/tt0033467/ | IP: 45.141.215.17 | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:30,313 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt1291584/
+2025-08-04 07:04:30,347 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0050825/
+2025-08-04 07:04:30,383 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0434409/ | IP: 222.254.93.13 | Khoái Châu, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:30,509 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0015864/ | IP: 143.58.134.242 | London, GB | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:30,605 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt5311514/
+2025-08-04 07:04:30,719 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0045152/ | IP: 223.178.210.252 | Chandigarh, IN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:30,760 [WARNING] [FALLBACK] Todos los intentos con proxy fallaron. Probando con TOR...
+2025-08-04 07:04:30,760 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt4430212/ | IP: 86.157.190.164 | Seaford, GB | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:30,810 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0111161/ | IP: N/A | N/A, N/A | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:30,840 [INFO] [STATUS CODE] 200 | Final URL: https://m.imdb.com/title/tt0077416/
+2025-08-04 07:04:31,135 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt8579674/ | IP: 195.22.111.139 | Khotyn, UA | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:31,162 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0167404/ | IP: 113.181.145.49 | Yên Bái, VN | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:31,394 [INFO] [TOR Attempt 1] GET https://www.imdb.com/title/tt5323662/ | IP: 45.141.215.17 | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:31,401 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt0059578/ | IP: 113.191.7.55 | Sơn La, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:31,660 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0032138/
+2025-08-04 07:04:31,744 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0338013/
+2025-08-04 07:04:31,793 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt5074352/
+2025-08-04 07:04:31,811 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0031679/ | IP: 92.238.178.106 | Edinburgh, GB | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:31,830 [INFO] [STATUS CODE] 200 | Final URL: https://m.imdb.com/title/tt0022100/
+2025-08-04 07:04:31,969 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0038650/ | IP: 190.112.240.241 | Willemstad, CW | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:31,977 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0245429/ | IP: 14.185.103.16 | Buôn Ma Thuột, VN | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:31,977 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt0108052/ | IP: 113.180.234.131 | Biên Hòa, VN | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:32,001 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0019254/ | IP: 14.228.77.165 | Bắc Ninh, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:32,119 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt15097216/
+2025-08-04 07:04:32,201 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0361748/
+2025-08-04 07:04:32,251 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0070735/
+2025-08-04 07:04:32,390 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0167261/
+2025-08-04 07:04:32,575 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0172495/ | IP: 14.181.16.177 | Sơn La, VN | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:32,598 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0084787/ | IP: 14.226.108.23 | Nam Định, VN | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:32,728 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt1675434/ | IP: 124.217.86.0 | Tarlac City, PH | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:32,731 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt15239678/
+2025-08-04 07:04:32,997 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt1291584/ | IP: 86.167.88.25 | Perranporth, GB | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:33,117 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt29623480/ | IP: 14.255.76.33 | Hanoi, VN | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:33,290 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0110357/
+2025-08-04 07:04:33,445 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0180093/
+2025-08-04 07:04:33,699 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0910970/ | IP: 14.175.36.147 | Tuyên Quang, VN | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:33,815 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt2582802/ | IP: 103.145.254.34 | Hanoi, VN | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:33,854 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0050825/ | IP: 117.4.180.3 | Thái Bình, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:33,887 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0083658/
+2025-08-04 07:04:34,004 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0015864/
+2025-08-04 07:04:34,058 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0407887/ | IP: 14.225.60.77 | Hanoi, VN | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:34,169 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt1454029/ | IP: 123.31.167.169 | Biên Hòa, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:34,176 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0167404/
+2025-08-04 07:04:34,242 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0059578/
+2025-08-04 07:04:34,289 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt4430212/
+2025-08-04 07:04:34,487 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0056592/ | IP: 113.161.57.106 | Ho Chi Minh City, VN | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:34,506 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt5074352/ | IP: 31.111.10.255 | Waltham on the Wolds, GB | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:34,528 [INFO] [STATUS CODE] 200 | Final URL: https://m.imdb.com/title/tt0114814/
+2025-08-04 07:04:34,621 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0031679/
+2025-08-04 07:04:34,659 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0045152/
+2025-08-04 07:04:34,685 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt4633694/ | IP: 81.100.143.93 | Andover, GB | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:34,880 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0082096/ | IP: 169.224.41.142 | Basrah, IQ | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:34,975 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0361748/ | IP: 81.241.159.234 | Brussels, BE | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:35,032 [INFO] [STATUS CODE] 200 | Final URL: https://m.imdb.com/title/tt0043014/
+2025-08-04 07:04:35,109 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0038650/
+2025-08-04 07:04:35,170 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0108052/
+2025-08-04 07:04:35,328 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0434409/
+2025-08-04 07:04:35,350 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt0041959/ | IP: 14.188.24.242 | Cao Bằng, VN | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:35,366 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0068646/ | IP: 113.163.47.55 | Thành Phố Bà Rịa, VN | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:35,425 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0053125/ | IP: 14.241.46.203 | Bắc Ninh, VN | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:35,454 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0071315/ | IP: 86.35.119.185 | Bucharest, RO | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:35,498 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0046438/ | IP: 14.186.59.191 | Ho Chi Minh City, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:35,795 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0084787/
+2025-08-04 07:04:35,913 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt1130884/ | IP: 109.156.154.120 | Banbury, GB | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:36,007 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0169547/ | IP: 113.173.86.124 | Ho Chi Minh City, VN | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:36,216 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0172495/
+2025-08-04 07:04:36,292 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt8503618/ | IP: 113.166.215.244 | Da Nang, VN | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:36,469 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt1454029/
+2025-08-04 07:04:36,521 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt29623480/
+2025-08-04 07:04:36,741 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt1675434/
+2025-08-04 07:04:36,814 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt4729430/ | IP: 149.88.125.27 | Kingston upon Hull, GB | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:36,880 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0407887/
+2025-08-04 07:04:36,954 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt8579674/
+2025-08-04 07:04:37,161 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0050825/
+2025-08-04 07:04:37,173 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0082096/
+2025-08-04 07:04:37,256 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt0075148/ | IP: 113.181.40.246 | Bắc Ninh, VN | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:37,332 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0346336/
+2025-08-04 07:04:37,396 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0056592/
+2025-08-04 07:04:37,458 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0045152/ | IP: 37.57.120.124 | Kyiv, UA | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:37,480 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt0338013/ | IP: 103.165.103.241 | Hashtsāl, IN | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:37,508 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt1049413/ | IP: 65.48.208.172 | Bridgetown, BB | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:37,511 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt5074352/
+2025-08-04 07:04:37,519 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt2106476/
+2025-08-04 07:04:37,575 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0097576/ | IP: 212.95.8.132 | Vienna, AT | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:37,697 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0910970/
+2025-08-04 07:04:37,774 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0015864/ | IP: 14.171.133.112 | Việt Trì, VN | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:37,870 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0019254/
+2025-08-04 07:04:38,006 [INFO] [STATUS CODE] 200 | Final URL: https://m.imdb.com/title/tt0245429/
+2025-08-04 07:04:38,180 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0041959/
+2025-08-04 07:04:38,189 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0068646/
+2025-08-04 07:04:38,256 [INFO] [STATUS CODE] 200 | Final URL: https://m.imdb.com/title/tt0114709/
+2025-08-04 07:04:38,275 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt0032138/ | IP: 14.169.199.162 | Ho Chi Minh City, VN | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:38,376 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0071315/
+2025-08-04 07:04:38,796 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0053125/
+2025-08-04 07:04:38,841 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0167404/ | IP: 113.186.166.144 | Bắc Ninh, VN | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:38,934 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt4430212/ | IP: 123.18.160.109 | Hải Dương, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:39,188 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt1454029/ | IP: 2.125.173.155 | London, GB | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:39,243 [WARNING] [FALLBACK] Todos los intentos con proxy fallaron. Probando con TOR...
+2025-08-04 07:04:39,309 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0038650/ | IP: 14.249.154.2 | Thái Bình, VN | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:39,325 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt6751668/ | IP: 196.74.130.222 | Marrakesh, MA | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:39,351 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0033467/
+2025-08-04 07:04:39,477 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0046438/
+2025-08-04 07:04:39,512 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt29623480/ | IP: 162.246.111.221 | Bridgetown, BB | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:39,598 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0407887/ | IP: 86.147.50.25 | Birmingham, GB | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:39,666 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0107048/ | IP: 31.94.22.143 | Glasgow, GB | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:39,666 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt1345836/ | IP: 2.220.228.101 | London, GB | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:39,692 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt2267998/
+2025-08-04 07:04:39,830 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0172495/ | IP: 103.167.233.199 | Kathmandu, NP | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:39,851 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt3170832/ | IP: 200.26.205.186 | Willemstad, CW | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:39,915 [INFO] [TOR Attempt 1] GET https://www.imdb.com/title/tt0059578/ | IP: 45.141.215.17 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:40,196 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt4729430/
+2025-08-04 07:04:40,249 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0082971/
+2025-08-04 07:04:40,423 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt5323662/
+2025-08-04 07:04:40,489 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt0816692/ | IP: 14.243.46.140 | Da Nang, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:40,621 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0075148/
+2025-08-04 07:04:40,633 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0325980/ | IP: 123.27.72.69 | Tuyên Quang, VN | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:40,711 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt8503618/
+2025-08-04 07:04:41,057 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0082096/ | IP: 113.191.19.77 | Thanh Hóa, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:41,166 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0015864/
+2025-08-04 07:04:41,167 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0071315/ | IP: 181.117.184.23 | Asunción, PY | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:41,201 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0477348/ | IP: 14.182.86.2 | Sơn La, VN | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:41,423 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0169547/
+2025-08-04 07:04:41,664 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0167404/
+2025-08-04 07:04:41,700 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt0031679/ | IP: 188.213.1.143 | Bucharest, RO | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:41,918 [INFO] [STATUS CODE] 200 | Final URL: https://m.imdb.com/title/tt1130884/
+2025-08-04 07:04:42,103 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt1454029/
+2025-08-04 07:04:42,235 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0325980/
+2025-08-04 07:04:42,236 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt4430212/
+2025-08-04 07:04:42,269 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0317248/ | IP: 124.217.112.40 | General Santos, PH | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:42,450 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0407887/
+2025-08-04 07:04:42,499 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0045152/
+2025-08-04 07:04:42,522 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt1345836/
+2025-08-04 07:04:42,626 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0268978/ | IP: 94.0.179.196 | London, GB | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:42,626 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt5074352/ | IP: 88.97.205.1 | Durham, GB | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:42,644 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0910970/ | IP: 123.23.99.42 | Ho Chi Minh City, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:42,647 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0068646/ | IP: 14.168.236.240 | Bến Tre, VN | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:42,653 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0338013/
+2025-08-04 07:04:42,787 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0047296/ | IP: 80.96.70.105 | Bucharest, RO | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:42,790 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt29623480/
+2025-08-04 07:04:42,859 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0120586/ | IP: 201.238.126.86 | Scarborough, TT | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:43,037 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0816692/
+2025-08-04 07:04:43,181 [WARNING] [FALLBACK] Todos los intentos con proxy fallaron. Probando con TOR...
+2025-08-04 07:04:43,491 [INFO] [STATUS CODE] 200 | Final URL: https://m.imdb.com/title/tt2582802/
+2025-08-04 07:04:43,632 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt15239678/ | IP: 82.8.151.196 | Grantham, GB | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:43,750 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt1853728/ | IP: 196.3.196.252 | Oistins, BB | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:43,777 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0097576/
+2025-08-04 07:04:43,900 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt6966692/ | IP: 14.186.157.250 | Ho Chi Minh City, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:43,906 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0050083/ | IP: 123.27.44.44 | Hà Giang, VN | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:43,907 [INFO] [STATUS CODE] 200 | Final URL: https://m.imdb.com/title/tt4633694/
+2025-08-04 07:04:43,919 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt6751668/
+2025-08-04 07:04:43,997 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0058946/ | IP: 14.166.18.67 | Bắc Ninh, VN | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:44,086 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0071315/
+2025-08-04 07:04:44,099 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0102926/ | IP: 14.180.141.114 | Phủ Lý, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:44,153 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0111161/
+2025-08-04 07:04:44,175 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0172495/
+2025-08-04 07:04:44,211 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0477348/
+2025-08-04 07:04:44,217 [INFO] [TOR Attempt 1] GET https://www.imdb.com/title/tt0041959/ | IP: 45.141.215.17 | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:44,223 [INFO] [STATUS CODE] 200 | Final URL: https://m.imdb.com/title/tt1291584/
+2025-08-04 07:04:44,252 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt2024544/ | IP: 123.20.86.207 | Ho Chi Minh City, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:44,317 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0053125/ | IP: 14.249.201.189 | Thanh Hóa, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:44,395 [INFO] [STATUS CODE] 200 | Final URL: https://m.imdb.com/title/tt1049413/
+2025-08-04 07:04:44,454 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0050212/ | IP: 14.181.178.14 | Thanh Hóa, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:44,567 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0253474/ | IP: 190.167.134.22 | Santo Domingo Este, DO | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:44,574 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt0056592/ | IP: 14.228.226.118 | Bắc Ninh, VN | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:44,582 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0169547/ | IP: 82.7.167.211 | Walthamstow, GB | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:44,645 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt0084787/ | IP: 14.160.114.11 | Thành Phố Bà Rịa, VN | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:45,125 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0325980/ | IP: 79.118.166.254 | Vaslui, RO | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:45,259 [INFO] [STATUS CODE] 200 | Final URL: https://m.imdb.com/title/tt0038650/
+2025-08-04 07:04:45,344 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0361748/
+2025-08-04 07:04:45,618 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0082096/
+2025-08-04 07:04:45,666 [WARNING] [FALLBACK] Todos los intentos con proxy fallaron. Probando con TOR...
+2025-08-04 07:04:45,724 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0047296/
+2025-08-04 07:04:45,888 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt5074352/
+2025-08-04 07:04:45,995 [INFO] [STATUS CODE] 200 | Final URL: https://m.imdb.com/title/tt0107048/
+2025-08-04 07:04:46,127 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0317248/
+2025-08-04 07:04:46,192 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0068646/
+2025-08-04 07:04:46,476 [INFO] [TOR Attempt 1] GET https://www.imdb.com/title/tt0075148/ | IP: 45.141.215.17 | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:46,483 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt3170832/
+2025-08-04 07:04:46,519 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0031679/
+2025-08-04 07:04:46,657 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt1305806/ | IP: 142.180.143.156 | Moncton, CA | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:46,675 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0055630/ | IP: 222.254.161.187 | Ho Chi Minh City, VN | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:46,677 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt0015864/ | IP: 41.188.108.99 | Nouakchott, MR | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:46,679 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt2096673/ | IP: 14.164.37.101 | Ho Chi Minh City, VN | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:46,791 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0477348/ | IP: 200.75.96.34 | Barquisimeto, VE | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:46,835 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt15239678/
+2025-08-04 07:04:46,890 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0058946/
+2025-08-04 07:04:46,940 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0910970/
+2025-08-04 07:04:47,102 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0050083/
+2025-08-04 07:04:47,138 [INFO] [STATUS CODE] 200 | Final URL: https://m.imdb.com/title/tt0032138/
+2025-08-04 07:04:47,165 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt6966692/
+2025-08-04 07:04:47,263 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt0407887/ | IP: 170.84.8.47 | Chaguanas, TT | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:47,306 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0111161/ | IP: 86.24.231.162 | Chatham, GB | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:47,327 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt1853728/
+2025-08-04 07:04:47,383 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0053125/
+2025-08-04 07:04:47,442 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0047478/ | IP: 14.181.244.236 | Lai Châu, VN | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:47,463 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt10872600/ | IP: 92.234.80.91 | Bristol, GB | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:47,551 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0102926/
+2025-08-04 07:04:47,554 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt1345836/ | IP: 14.171.126.130 | Hạ Long, VN | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:47,777 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt0167404/ | IP: 14.180.50.43 | Bắc Ninh, VN | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:47,849 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt2119532/ | IP: 14.239.81.134 | Nam Định, VN | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:47,860 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt1028532/ | IP: 14.171.50.6 | Bắc Ninh, VN | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:48,038 [WARNING] [FALLBACK] Todos los intentos con proxy fallaron. Probando con TOR...
+2025-08-04 07:04:48,056 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0036868/ | IP: 93.114.63.81 | London, GB | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:48,119 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0253474/
+2025-08-04 07:04:48,154 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0050212/
+2025-08-04 07:04:48,314 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0266543/ | IP: 14.169.142.144 | Ho Chi Minh City, VN | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:48,419 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt2024544/
+2025-08-04 07:04:48,478 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0169547/
+2025-08-04 07:04:48,845 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt1454029/ | IP: 14.176.2.226 | Cao Bằng, VN | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:49,015 [INFO] [TOR Attempt 1] GET https://www.imdb.com/title/tt0816692/ | IP: 45.141.215.17 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:49,240 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0047296/ | IP: 14.191.238.221 | An Nhơn, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:49,280 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt0172495/ | IP: 95.134.253.178 | Futaba, JP | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:49,345 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0117951/ | IP: 176.101.215.139 | Dnipro, UA | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:49,549 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0892769/ | IP: 14.166.209.224 | Hưng Yên, VN | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:49,591 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0056592/
+2025-08-04 07:04:49,619 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0407887/
+2025-08-04 07:04:49,699 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt29623480/ | IP: 14.239.89.63 | Vinh, VN | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:49,716 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0015864/
+2025-08-04 07:04:49,968 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0084787/
+2025-08-04 07:04:50,101 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0095765/ | IP: 49.36.240.84 | Jaipur, IN | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:50,136 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0317248/ | IP: 14.166.16.21 | Bắc Ninh, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:50,229 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0055630/
+2025-08-04 07:04:50,376 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0477348/
+2025-08-04 07:04:50,438 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0050083/ | IP: 196.121.111.123 | Casablanca, MA | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:50,521 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0076759/ | IP: 14.187.217.137 | Ho Chi Minh City, VN | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:50,624 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt1028532/
+2025-08-04 07:04:50,671 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt0071315/ | IP: 123.20.244.119 | Ho Chi Minh City, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:50,802 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0051201/ | IP: 14.163.124.135 | Hưng Yên, VN | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:50,830 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0111161/
+2025-08-04 07:04:50,892 [WARNING] [FALLBACK] Todos los intentos con proxy fallaron. Probando con TOR...
+2025-08-04 07:04:50,966 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt1345836/
+2025-08-04 07:04:50,984 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt1305806/
+2025-08-04 07:04:51,169 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt6966692/ | IP: 14.188.24.110 | Cao Bằng, VN | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:51,220 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0993846/ | IP: 27.71.135.85 | Ðà Lạt, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:51,225 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0047478/
+2025-08-04 07:04:51,266 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0167404/
+2025-08-04 07:04:51,516 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt2119532/
+2025-08-04 07:04:51,516 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0119217/ | IP: 174.117.230.99 | Bathurst, CA | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:51,544 [WARNING] [FALLBACK] Todos los intentos con proxy fallaron. Probando con TOR...
+2025-08-04 07:04:51,636 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt2096673/
+2025-08-04 07:04:51,675 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0081505/ | IP: 14.182.233.233 | Bắc Ninh, VN | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:51,749 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0120735/ | IP: 14.189.27.195 | Vĩnh Yên, VN | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:51,766 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0325980/
+2025-08-04 07:04:51,814 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt26548265/ | IP: 123.18.103.38 | Bắc Giang, VN | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:51,851 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0036868/
+2025-08-04 07:04:51,873 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0102926/ | IP: 14.168.45.24 | Biên Hòa, VN | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:52,058 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0253474/ | IP: 14.241.62.15 | Lạng Sơn, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:52,391 [INFO] [TOR Attempt 1] GET https://www.imdb.com/title/tt5074352/ | IP: 45.141.215.17 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:52,447 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0266543/
+2025-08-04 07:04:52,735 [INFO] [STATUS CODE] 200 | Final URL: https://m.imdb.com/title/tt0120586/
+2025-08-04 07:04:52,850 [INFO] [TOR Attempt 1] GET https://www.imdb.com/title/tt0031679/ | IP: 45.141.215.17 | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:52,856 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt1201607/ | IP: 113.183.10.146 | Hưng Yên, VN | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:52,876 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0120689/ | IP: 154.159.237.153 | Eldoret, KE | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:52,887 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0117951/
+2025-08-04 07:04:52,920 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0172495/
+2025-08-04 07:04:53,055 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt29623480/
+2025-08-04 07:04:53,203 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt0053125/ | IP: 136.158.11.39 | Marikina City, PH | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:53,204 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0055630/ | IP: 72.27.1.254 | Kingston, JM | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:53,340 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0095765/
+2025-08-04 07:04:53,397 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0050083/
+2025-08-04 07:04:53,610 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt1255953/ | IP: 81.111.190.180 | Bingley, GB | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:53,868 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt1028532/ | IP: 65.48.245.149 | Oistins, BB | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:53,962 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt15239678/ | IP: 14.233.83.198 | Da Nang, VN | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:54,009 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0051201/
+2025-08-04 07:04:54,019 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt1454029/
+2025-08-04 07:04:54,146 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0091251/ | IP: 14.254.73.12 | Đồng Hới, VN | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:54,169 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0317248/
+2025-08-04 07:04:54,247 [INFO] [STATUS CODE] 200 | Final URL: https://m.imdb.com/title/tt0268978/
+2025-08-04 07:04:54,303 [ERROR] [ERROR] TOR request failed: SOCKSHTTPSConnectionPool(host='www.imdb.com', port=443): Max retries exceeded with url: /title/tt0041959/ (Caused by ConnectTimeoutError(<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x7f701cf98550>, 'Connection to www.imdb.com timed out. (connect timeout=10)'))
+2025-08-04 07:04:54,315 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt0169547/ | IP: 192.145.175.216 | Mogadishu, SO | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:54,365 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt6966692/
+2025-08-04 07:04:54,440 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0253474/
+2025-08-04 07:04:54,477 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0071315/
+2025-08-04 07:04:54,613 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0076759/
+2025-08-04 07:04:54,663 [WARNING] [FALLBACK] Todos los intentos con proxy fallaron. Probando con TOR...
+2025-08-04 07:04:54,829 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0892769/
+2025-08-04 07:04:54,918 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0119217/
+2025-08-04 07:04:54,953 [ERROR] [ERROR] TOR request failed: SOCKSHTTPSConnectionPool(host='www.imdb.com', port=443): Read timed out.
+2025-08-04 07:04:55,020 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt4154796/ | IP: 113.184.142.162 | Ho Chi Minh City, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:55,026 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0080684/ | IP: 86.59.148.168 | Sárosd, HU | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:55,026 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt1187043/ | IP: 14.228.46.150 | Tuyên Quang, VN | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:55,026 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0317705/ | IP: 5.149.86.195 | Brčko, BA | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:55,217 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt26548265/
+2025-08-04 07:04:55,682 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0107290/ | IP: 136.158.50.84 | Imus, PH | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:55,683 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0363163/ | IP: N/A | N/A, N/A | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:55,746 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0102926/
+2025-08-04 07:04:55,897 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt2096673/ | IP: 14.169.211.178 | Ho Chi Minh City, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:55,916 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt8267604/ | IP: 80.96.70.118 | Bucharest, RO | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:55,919 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt1375666/ | IP: 113.191.127.209 | Phủ Lý, VN | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:55,945 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0266543/ | IP: 103.89.236.128 | Batangas, PH | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:55,950 [INFO] [TOR Attempt 1] GET https://www.imdb.com/title/tt0407887/ | IP: 45.141.215.17 | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:56,038 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt1201607/
+2025-08-04 07:04:56,109 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0053125/
+2025-08-04 07:04:56,178 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0047296/
+2025-08-04 07:04:56,323 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0055630/
+2025-08-04 07:04:56,481 [ERROR] [ERROR] TOR request failed: SOCKSHTTPSConnectionPool(host='www.imdb.com', port=443): Max retries exceeded with url: /title/tt0075148/ (Caused by ConnectTimeoutError(<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x7f701dbab8d0>, 'Connection to www.imdb.com timed out. (connect timeout=10)'))
+2025-08-04 07:04:56,562 [INFO] [TOR Attempt 2] GET https://www.imdb.com/title/tt0041959/ | IP: 45.141.215.17 | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:56,568 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt0325980/ | IP: 86.172.54.19 | Newton Aycliffe, GB | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:56,824 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt15239678/
+2025-08-04 07:04:56,885 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0110912/ | IP: 123.18.36.154 | Thái Nguyên, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:56,887 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0088763/ | IP: 2.86.131.115 | Filothéi, GR | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:56,974 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt1028532/
+2025-08-04 07:04:56,998 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0364569/ | IP: 113.172.151.103 | Ho Chi Minh City, VN | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:57,060 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0080678/ | IP: 88.97.207.58 | Durham, GB | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:57,074 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0993846/
+2025-08-04 07:04:57,088 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0091251/
+2025-08-04 07:04:57,145 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0095765/ | IP: 117.7.199.2 | Việt Trì, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:57,260 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0120689/
+2025-08-04 07:04:57,365 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt1187043/
+2025-08-04 07:04:57,412 [INFO] [TOR Attempt 2] GET https://www.imdb.com/title/tt0059578/ | IP: 45.141.215.17 | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:57,519 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt1255953/
+2025-08-04 07:04:57,547 [INFO] [STATUS CODE] 200 | Final URL: https://m.imdb.com/title/tt0120735/
+2025-08-04 07:04:57,626 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt1345836/ | IP: 14.176.110.144 | Thủ Dầu Một, VN | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:57,818 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0051201/ | IP: 103.151.238.95 | Ho Chi Minh City, VN | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:57,902 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0114369/ | IP: 27.3.11.105 | Ho Chi Minh City, VN | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:57,923 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt4154756/ | IP: 123.25.122.138 | Tuyên Quang, VN | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:58,038 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0066921/ | IP: 156.254.36.50 | Tung Chung, HK | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:58,100 [WARNING] [FALLBACK] Todos los intentos con proxy fallaron. Probando con TOR...
+2025-08-04 07:04:58,185 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0080684/
+2025-08-04 07:04:58,200 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0090605/ | IP: 113.191.96.195 | Chí Linh, VN | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:04:58,216 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0119217/ | IP: 81.106.157.23 | Nottingham, GB | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:04:58,295 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt4154796/
+2025-08-04 07:04:58,458 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt1979320/ | IP: 171.241.65.225 | Hanoi, VN | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:04:58,504 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0266543/
+2025-08-04 07:04:58,524 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0169547/
+2025-08-04 07:04:58,780 [INFO] [STATUS CODE] 200 | Final URL: https://m.imdb.com/title/tt10872600/
+2025-08-04 07:04:58,897 [INFO] [TOR Attempt 2] GET https://www.imdb.com/title/tt0075148/ | IP: 45.141.215.17 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:59,018 [ERROR] [ERROR] TOR request failed: SOCKSHTTPSConnectionPool(host='www.imdb.com', port=443): Max retries exceeded with url: /title/tt0816692/ (Caused by ConnectTimeoutError(<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x7f6ff45b0d90>, 'Connection to www.imdb.com timed out. (connect timeout=10)'))
+2025-08-04 07:04:59,069 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt0050083/ | IP: 171.224.206.139 | Việt Trì, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:59,287 [INFO] [TOR Attempt 1] GET https://www.imdb.com/title/tt29623480/ | IP: 45.141.215.17 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:59,400 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt2096673/
+2025-08-04 07:04:59,428 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0107290/
+2025-08-04 07:04:59,624 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0119698/ | IP: 109.63.1.145 | Manama, BH | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:04:59,651 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0363163/
+2025-08-04 07:04:59,782 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0364569/
+2025-08-04 07:04:59,856 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0325980/
+2025-08-04 07:04:59,869 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0317705/
+2025-08-04 07:05:00,008 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt6966692/ | IP: 136.228.141.146 | Phnom Penh, KH | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:05:00,106 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0047396/ | IP: 84.46.204.111 | London, GB | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:05:00,172 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0129167/ | IP: 113.173.198.83 | Ho Chi Minh City, VN | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:05:00,332 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0110912/
+2025-08-04 07:05:00,510 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0088763/
+2025-08-04 07:05:00,617 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt0253474/ | IP: 203.162.87.132 | Chợ Gạo, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:05:00,623 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0051201/
+2025-08-04 07:05:00,677 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt8267604/
+2025-08-04 07:05:00,711 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0114369/
+2025-08-04 07:05:01,069 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt1375666/
+2025-08-04 07:05:01,109 [WARNING] [FALLBACK] Todos los intentos con proxy fallaron. Probando con TOR...
+2025-08-04 07:05:01,168 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0095765/
+2025-08-04 07:05:01,201 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt1201607/ | IP: 14.229.85.16 | Bắc Ninh, VN | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:05:01,237 [INFO] [TOR Attempt 2] GET https://www.imdb.com/title/tt0816692/ | IP: 45.141.215.17 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:05:01,243 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt4154756/
+2025-08-04 07:05:01,257 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0015324/ | IP: 14.185.126.129 | Ho Chi Minh City, VN | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:05:01,352 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0986264/ | IP: 14.167.114.48 | Thanh Hóa, VN | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:05:01,358 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt1345836/
+2025-08-04 07:05:01,554 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0119217/
+2025-08-04 07:05:01,653 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt1187043/ | IP: 14.168.68.220 | Thủ Dầu Một, VN | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:05:01,754 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0066921/
+2025-08-04 07:05:01,776 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0056058/ | IP: 103.149.13.11 | Hanoi, VN | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:05:01,824 [WARNING] [FALLBACK] Todos los intentos con proxy fallaron. Probando con TOR...
+2025-08-04 07:05:01,943 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0090605/
+2025-08-04 07:05:01,943 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0050083/
+2025-08-04 07:05:01,978 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt2380307/ | IP: 80.7.90.32 | York, GB | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:05:02,134 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt1028532/ | IP: 188.250.28.139 | Pombal, PT | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:05:02,145 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt1255953/ | IP: 113.177.181.153 | Hanoi, VN | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:05:02,381 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0253474/
+2025-08-04 07:05:02,388 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0073195/ | IP: 113.191.190.18 | Vinh, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:05:02,390 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0081398/ | IP: 190.213.255.240 | Peñal, TT | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:05:02,402 [ERROR] [ERROR] TOR request failed: SOCKSHTTPSConnectionPool(host='www.imdb.com', port=443): Max retries exceeded with url: /title/tt5074352/ (Caused by ConnectTimeoutError(<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x7f701439c910>, 'Connection to www.imdb.com timed out. (connect timeout=10)'))
+2025-08-04 07:05:02,405 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0080684/ | IP: 14.235.172.168 | Hanoi, VN | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:05:02,592 [INFO] [TOR Attempt 1] GET https://www.imdb.com/title/tt0053125/ | IP: 45.141.215.17 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:05:02,683 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0113277/ | IP: 14.171.228.98 | Vĩnh Yên, VN | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:05:02,814 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt0055630/ | IP: 14.225.59.33 | Hanoi, VN | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:05:02,885 [ERROR] [ERROR] TOR request failed: SOCKSHTTPSConnectionPool(host='www.imdb.com', port=443): Max retries exceeded with url: /title/tt0031679/ (Caused by ConnectTimeoutError(<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x7f70146f61d0>, 'Connection to www.imdb.com timed out. (connect timeout=10)'))
+2025-08-04 07:05:03,148 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0047396/
+2025-08-04 07:05:03,163 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0129167/
+2025-08-04 07:05:03,292 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0046268/ | IP: 112.208.78.250 | Barotac Viejo, PH | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:05:03,315 [INFO] [TOR Attempt 1] GET https://www.imdb.com/title/tt15239678/ | IP: 45.141.215.17 | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:05:03,335 [INFO] [STATUS CODE] 200 | Final URL: https://m.imdb.com/title/tt0080678/
+2025-08-04 07:05:03,358 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt6966692/
+2025-08-04 07:05:03,525 [WARNING] [FALLBACK] Todos los intentos con proxy fallaron. Probando con TOR...
+2025-08-04 07:05:03,646 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0114369/ | IP: 46.199.225.99 | Nicosia, CY | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:05:03,722 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0364569/ | IP: 102.177.87.92 | Dar es Salaam, TZ | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:05:03,800 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0119698/
+2025-08-04 07:05:04,092 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0012349/ | IP: 123.28.95.163 | Vũng Tàu, VN | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:05:04,098 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt0266543/ | IP: 14.185.99.105 | Buôn Ma Thuột, VN | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:05:04,461 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0091251/ | IP: 123.27.30.240 | Lạng Sơn, VN | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:05:04,484 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt5027774/ | IP: 14.167.89.146 | Thái Bình, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:05:04,595 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0040522/ | IP: 14.245.161.236 | Da Nang, VN | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:05:04,707 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0066921/ | IP: 83.105.174.229 | London, GB | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:05:04,772 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0015324/
+2025-08-04 07:05:04,785 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt4154756/ | IP: 103.51.23.72 | Kumhāri, IN | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:05:04,857 [WARNING] [FALLBACK] Todos los intentos con proxy fallaron. Probando con TOR...
+2025-08-04 07:05:04,890 [INFO] [STATUS CODE] 200 | Final URL: https://m.imdb.com/title/tt0081505/
+2025-08-04 07:05:05,001 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0476735/ | IP: 14.163.126.59 | Hưng Hà, VN | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:05:05,140 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt2380307/
+2025-08-04 07:05:05,145 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0057012/ | IP: 14.183.193.227 | Thủ Dầu Một, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:05:05,520 [INFO] [TOR Attempt 2] GET https://www.imdb.com/title/tt5074352/ | IP: 45.141.215.17 | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:05:05,520 [INFO] [TOR Attempt 1] GET https://www.imdb.com/title/tt0169547/ | IP: 45.141.215.17 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:05:05,538 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt0051201/ | IP: 79.177.128.65 | Lod, IL | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:05:05,686 [INFO] [TOR Attempt 2] GET https://www.imdb.com/title/tt0031679/ | IP: 45.141.215.17 | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:05:05,907 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0073195/
+2025-08-04 07:05:05,913 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0081398/
+2025-08-04 07:05:05,933 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0092005/ | IP: 185.132.187.120 | Brussels, BE | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:05:05,962 [ERROR] [ERROR] TOR request failed: SOCKSHTTPSConnectionPool(host='www.imdb.com', port=443): Max retries exceeded with url: /title/tt0407887/ (Caused by ConnectTimeoutError(<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x7f701418f510>, 'Connection to www.imdb.com timed out. (connect timeout=10)'))
+2025-08-04 07:05:06,303 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0113277/
+2025-08-04 07:05:06,330 [INFO] [TOR Attempt 1] GET https://www.imdb.com/title/tt0325980/ | IP: 45.141.215.17 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:05:06,446 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt1201607/
+2025-08-04 07:05:06,590 [ERROR] [ERROR] TOR request failed: SOCKSHTTPSConnectionPool(host='www.imdb.com', port=443): Max retries exceeded with url: /title/tt0041959/ (Caused by ConnectTimeoutError(<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x7f701c1ca010>, 'Connection to www.imdb.com timed out. (connect timeout=10)'))
+2025-08-04 07:05:06,637 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0070047/ | IP: 123.27.36.18 | Hà Giang, VN | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:05:06,679 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0055630/
+2025-08-04 07:05:06,686 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt15239678/
+2025-08-04 07:05:06,781 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0129167/ | IP: 125.21.216.114 | Delhi, IN | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:05:06,838 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0047396/ | IP: 113.162.110.138 | Buôn Ma Thuột, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:05:06,944 [WARNING] [FALLBACK] Todos los intentos con proxy fallaron. Probando con TOR...
+2025-08-04 07:05:06,989 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0046268/
+2025-08-04 07:05:07,018 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0066921/
+2025-08-04 07:05:07,263 [INFO] [STATUS CODE] 200 | Final URL: https://m.imdb.com/title/tt1187043/
+2025-08-04 07:05:07,386 [WARNING] [FALLBACK] Todos los intentos con proxy fallaron. Probando con TOR...
+2025-08-04 07:05:07,456 [INFO] [STATUS CODE] 200 | Final URL: https://m.imdb.com/title/tt0056058/
+2025-08-04 07:05:07,469 [ERROR] [ERROR] TOR request failed: SOCKSHTTPSConnectionPool(host='www.imdb.com', port=443): Max retries exceeded with url: /title/tt0059578/ (Caused by ConnectTimeoutError(<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x7f701cfe7710>, 'Connection to www.imdb.com timed out. (connect timeout=10)'))
+2025-08-04 07:05:07,573 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0015324/ | IP: 91.237.241.213 | Novoyavorivs'k, UA | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:05:07,573 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0090605/ | IP: 123.27.178.99 | Tuyên Quang, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:05:07,585 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0266543/
+2025-08-04 07:05:07,618 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0114369/
+2025-08-04 07:05:07,655 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0040522/
+2025-08-04 07:05:07,892 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0364569/
+2025-08-04 07:05:08,016 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0476735/
+2025-08-04 07:05:08,070 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0057012/
+2025-08-04 07:05:08,099 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0091251/
+2025-08-04 07:05:08,117 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0093058/ | IP: 113.181.103.104 | Vinh, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:05:08,118 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt0095765/ | IP: 113.181.164.69 | Cao Bằng, VN | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:05:08,202 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt5027774/
+2025-08-04 07:05:08,234 [INFO] [TOR Attempt 2] GET https://www.imdb.com/title/tt0407887/ | IP: 45.141.215.17 | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:05:08,234 [INFO] [TOR Attempt 1] GET https://www.imdb.com/title/tt0050083/ | IP: 45.141.215.17 | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:05:08,380 [WARNING] [FALLBACK] Todos los intentos con proxy fallaron. Probando con TOR...
+2025-08-04 07:05:08,457 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0169547/
+2025-08-04 07:05:08,530 [INFO] [TOR Attempt 1] GET https://www.imdb.com/title/tt0253474/ | IP: 45.141.215.17 | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:05:08,607 [INFO] [STATUS CODE] 200 | Final URL: https://m.imdb.com/title/tt1979320/
+2025-08-04 07:05:08,695 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt2096673/ | IP: 14.249.218.252 | Cao Bằng, VN | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:05:08,838 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0031679/
+2025-08-04 07:05:08,941 [ERROR] [ERROR] TOR request failed: SOCKSHTTPSConnectionPool(host='www.imdb.com', port=443): Max retries exceeded with url: /title/tt0075148/ (Caused by ConnectTimeoutError(<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x7f6fd45d0b50>, 'Connection to www.imdb.com timed out. (connect timeout=10)'))
+2025-08-04 07:05:08,959 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0080684/
+2025-08-04 07:05:09,019 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0081398/ | IP: 81.104.246.40 | Letchworth Garden City, GB | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:05:09,061 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt5074352/
+2025-08-04 07:05:09,305 [ERROR] [ERROR] TOR request failed: SOCKSHTTPSConnectionPool(host='www.imdb.com', port=443): Max retries exceeded with url: /title/tt29623480/ (Caused by ConnectTimeoutError(<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x7f7014599cd0>, 'Connection to www.imdb.com timed out. (connect timeout=10)'))
+2025-08-04 07:05:09,318 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt2380307/ | IP: 113.186.42.254 | Vĩnh Yên, VN | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:05:09,398 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0090605/
+2025-08-04 07:05:09,585 [INFO] [TOR Attempt 1] GET https://www.imdb.com/title/tt6966692/ | IP: 45.141.215.17 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:05:09,619 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0325980/
+2025-08-04 07:05:09,862 [INFO] [STATUS CODE] 200 | Final URL: https://m.imdb.com/title/tt0986264/
+2025-08-04 07:05:10,299 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0129167/
+2025-08-04 07:05:10,324 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt7286456/ | IP: 14.245.243.71 | Da Nang, VN | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:05:10,461 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0047396/
+2025-08-04 07:05:10,485 [INFO] [TOR Attempt 3] GET https://www.imdb.com/title/tt0041959/ | IP: 45.141.215.17 | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:05:10,497 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt5027774/ | IP: 181.127.188.83 | Capiatá, PY | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:05:10,510 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0046268/ | IP: 75.159.145.67 | Calgary, CA | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:05:10,638 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0073195/ | IP: 14.245.167.90 | Da Nang, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:05:10,653 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0092005/
+2025-08-04 07:05:10,802 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0051201/
+2025-08-04 07:05:10,947 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0040522/ | IP: 151.224.224.85 | London, GB | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:05:10,952 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0015324/
+2025-08-04 07:05:10,994 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0435761/ | IP: 14.186.248.35 | Ho Chi Minh City, VN | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:05:11,035 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0031381/ | IP: 123.26.235.209 | Cầu Diễn, VN | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:05:11,141 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0057012/ | IP: 88.97.178.209 | London, GB | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:05:11,248 [ERROR] [ERROR] TOR request failed: SOCKSHTTPSConnectionPool(host='www.imdb.com', port=443): Max retries exceeded with url: /title/tt0816692/ (Caused by ConnectTimeoutError(<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x7f6ff45d61d0>, 'Connection to www.imdb.com timed out. (connect timeout=10)'))
+2025-08-04 07:05:11,295 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0407887/
+2025-08-04 07:05:11,412 [INFO] [TOR Attempt 2] GET https://www.imdb.com/title/tt29623480/ | IP: 45.141.215.17 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:05:11,451 [INFO] [STATUS CODE] 200 | Final URL: https://m.imdb.com/title/tt1028532/
+2025-08-04 07:05:11,558 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0050083/
+2025-08-04 07:05:11,641 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0476735/ | IP: 125.212.155.208 | Dien Bien Phu, VN | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:05:11,646 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0209144/ | IP: 14.224.102.238 | Cao Bằng, VN | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:05:11,647 [INFO] [TOR Attempt 3] GET https://www.imdb.com/title/tt0059578/ | IP: 45.141.215.17 | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:05:11,690 [WARNING] [FALLBACK] Todos los intentos con proxy fallaron. Probando con TOR...
+2025-08-04 07:05:11,702 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0405094/ | IP: 66.9.160.163 | Freetown, SL | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:05:11,759 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0095765/
+2025-08-04 07:05:11,772 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0086879/ | IP: 113.182.242.51 | Thuận An, VN | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:05:11,778 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt4154756/
+2025-08-04 07:05:11,793 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt0066921/ | IP: 46.201.43.246 | Kolomyia, UA | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:05:11,967 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt2096673/
+2025-08-04 07:05:12,146 [INFO] [STATUS CODE] 200 | Final URL: https://m.imdb.com/title/tt0070047/
+2025-08-04 07:05:12,242 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt6966692/
+2025-08-04 07:05:12,438 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt2380307/
+2025-08-04 07:05:12,605 [ERROR] [ERROR] TOR request failed: SOCKSHTTPSConnectionPool(host='www.imdb.com', port=443): Max retries exceeded with url: /title/tt0053125/ (Caused by ConnectTimeoutError(<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x7f6ff45cb290>, 'Connection to www.imdb.com timed out. (connect timeout=10)'))
+2025-08-04 07:05:12,629 [INFO] [TOR Attempt 1] GET https://www.imdb.com/title/tt0055630/ | IP: 45.141.215.17 | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:05:12,848 [INFO] [TOR Attempt 3] GET https://www.imdb.com/title/tt0075148/ | IP: 45.141.215.17 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:05:13,223 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt5027774/
+2025-08-04 07:05:13,501 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0093058/
+2025-08-04 07:05:13,562 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0041959/
+2025-08-04 07:05:13,803 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt0114369/ | IP: 113.161.33.109 | Ho Chi Minh City, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:05:14,298 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt0090605/ | IP: 154.182.86.252 | Banī Suwayf, EG | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:05:14,445 [ERROR] [ERROR] Proxy request failed: HTTPSConnectionPool(host='www.imdb.com', port=443): Read timed out. (read timeout=10)
+2025-08-04 07:05:14,466 [INFO] [STATUS CODE] 200 | Final URL: https://m.imdb.com/title/tt0253474/
+2025-08-04 07:05:14,620 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0066921/
+2025-08-04 07:05:14,638 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0086879/
+2025-08-04 07:05:14,728 [INFO] [TOR Attempt 2] GET https://www.imdb.com/title/tt0053125/ | IP: 45.141.215.17 | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:05:14,733 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0476735/
+2025-08-04 07:05:15,161 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt0091251/ | IP: 14.236.254.46 | Đồng Hới, VN | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:05:15,299 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt29623480/
+2025-08-04 07:05:15,355 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0435761/
+2025-08-04 07:05:15,393 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0209144/
+2025-08-04 07:05:15,417 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0405094/
+2025-08-04 07:05:15,428 [INFO] [TOR Attempt 3] GET https://www.imdb.com/title/tt0816692/ | IP: 45.141.215.17 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:05:15,739 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt7286456/
+2025-08-04 07:05:15,742 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0073195/
+2025-08-04 07:05:15,824 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt0015324/ | IP: 188.27.130.49 | Cluj-Napoca, RO | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:05:15,843 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0046268/
+2025-08-04 07:05:16,123 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0075148/
+2025-08-04 07:05:16,415 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0055630/
+2025-08-04 07:05:16,582 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0057012/
+2025-08-04 07:05:16,743 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt0047396/ | IP: 113.183.70.101 | Bắc Giang, VN | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:05:17,007 [WARNING] [FALLBACK] Todos los intentos con proxy fallaron. Probando con TOR...
+2025-08-04 07:05:17,189 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0031381/
+2025-08-04 07:05:17,320 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0114369/
+2025-08-04 07:05:17,377 [INFO] [STATUS CODE] 200 | Final URL: https://m.imdb.com/title/tt0012349/
+2025-08-04 07:05:17,527 [INFO] [STATUS CODE] 200 | Final URL: https://m.imdb.com/title/tt0081398/
+2025-08-04 07:05:17,972 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0053125/
+2025-08-04 07:05:18,053 [INFO] [TOR Attempt 1] GET https://www.imdb.com/title/tt2096673/ | IP: 45.141.215.17 | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:05:18,133 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0816692/
+2025-08-04 07:05:18,603 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0090605/
+2025-08-04 07:05:18,631 [INFO] [Proxy Attempt 1] GET https://www.imdb.com/title/tt0120737/ | IP: 162.253.253.8 | Leesburg, US | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:05:18,763 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0059578/
+2025-08-04 07:05:19,062 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0209144/ | IP: 111.119.49.184 | Kathmandu, NP | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:05:19,065 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0091251/
+2025-08-04 07:05:19,094 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0435761/ | IP: 122.170.197.176 | Pimpri, IN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:05:19,171 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt2380307/ | IP: 123.18.226.35 | Bắc Ninh, VN | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:05:19,182 [INFO] [STATUS CODE] 200 | Final URL: https://m.imdb.com/title/tt0040522/
+2025-08-04 07:05:19,448 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0405094/ | IP: 14.178.174.245 | Thanh Hóa, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:05:19,568 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0086879/ | IP: 14.227.247.254 | Ðà Lạt, VN | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:05:19,625 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt0476735/ | IP: 82.9.93.117 | Cardiff, GB | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:05:19,626 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0047396/
+2025-08-04 07:05:19,631 [WARNING] [FALLBACK] Todos los intentos con proxy fallaron. Probando con TOR...
+2025-08-04 07:05:19,800 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt7286456/ | IP: 14.235.1.166 | Việt Trì, VN | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:05:20,366 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt1255953/ | IP: 113.160.205.63 | Haiphong, VN | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:05:20,452 [INFO] [TOR Attempt 1] GET https://www.imdb.com/title/tt0066921/ | IP: 45.141.215.17 | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:05:20,713 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt0364569/ | IP: 83.5.164.206 | Warsaw, PL | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:05:21,137 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt5027774/ | IP: 14.186.242.15 | Ho Chi Minh City, VN | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:05:21,369 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0120737/
+2025-08-04 07:05:21,678 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt2096673/
+2025-08-04 07:05:22,341 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0209144/
+2025-08-04 07:05:22,966 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0435761/
+2025-08-04 07:05:23,250 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0066921/
+2025-08-04 07:05:23,325 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0405094/
+2025-08-04 07:05:23,587 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt2380307/
+2025-08-04 07:05:23,656 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0364569/
+2025-08-04 07:05:23,933 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0476735/
+2025-08-04 07:05:24,140 [INFO] [Proxy Attempt 2] GET https://www.imdb.com/title/tt0120737/ | IP: 178.43.242.13 | Warsaw, PL | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:05:24,378 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt1255953/
+2025-08-04 07:05:24,503 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0086879/
+2025-08-04 07:05:24,635 [WARNING] [FALLBACK] Todos los intentos con proxy fallaron. Probando con TOR...
+2025-08-04 07:05:25,169 [INFO] [STATUS CODE] 200 | Final URL: https://m.imdb.com/title/tt7286456/
+2025-08-04 07:05:25,233 [INFO] [TOR Attempt 1] GET https://www.imdb.com/title/tt0047396/ | IP: 45.141.215.17 | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:05:26,991 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0120737/
+2025-08-04 07:05:27,257 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt0209144/ | IP: 81.157.111.63 | Thetford, GB | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:05:28,416 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0047396/
+2025-08-04 07:05:28,586 [WARNING] [FALLBACK] Todos los intentos con proxy fallaron. Probando con TOR...
+2025-08-04 07:05:28,655 [WARNING] [FALLBACK] Todos los intentos con proxy fallaron. Probando con TOR...
+2025-08-04 07:05:28,932 [WARNING] [FALLBACK] Todos los intentos con proxy fallaron. Probando con TOR...
+2025-08-04 07:05:29,037 [INFO] [STATUS CODE] 200 | Final URL: https://m.imdb.com/title/tt0015324/
+2025-08-04 07:05:29,175 [INFO] [TOR Attempt 1] GET https://www.imdb.com/title/tt2380307/ | IP: 45.141.215.17 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:05:29,337 [INFO] [TOR Attempt 1] GET https://www.imdb.com/title/tt0364569/ | IP: 45.141.215.17 | UA: Mozilla/5.0 (Linux; Android 6.0; Nexus 5) AppleWebKit/537.36 Chrome/90.0.4430.91 Mobile Safari/537.36
+2025-08-04 07:05:29,405 [INFO] [STATUS CODE] 200 | Final URL: https://m.imdb.com/title/tt5027774/
+2025-08-04 07:05:29,601 [INFO] [TOR Attempt 1] GET https://www.imdb.com/title/tt0476735/ | IP: 45.141.215.17 | UA: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36
+2025-08-04 07:05:29,684 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt0405094/ | IP: 123.18.101.233 | Bắc Giang, VN | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:05:31,259 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0209144/
+2025-08-04 07:05:32,070 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt2380307/
+2025-08-04 07:05:32,827 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0476735/
+2025-08-04 07:05:33,447 [INFO] [Proxy Attempt 3] GET https://www.imdb.com/title/tt0120737/ | IP: 14.169.162.155 | Ho Chi Minh City, VN | UA: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/537.36
+2025-08-04 07:05:33,647 [INFO] [STATUS CODE] 200 | Final URL: https://m.imdb.com/title/tt0364569/
+2025-08-04 07:05:33,914 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0405094/
+2025-08-04 07:05:39,596 [INFO] [STATUS CODE] 202 | Final URL: https://www.imdb.com/title/tt0120737/
+2025-08-04 07:05:44,597 [WARNING] [FALLBACK] Todos los intentos con proxy fallaron. Probando con TOR...
+2025-08-04 07:05:45,634 [INFO] [TOR Attempt 1] GET https://www.imdb.com/title/tt0120737/ | IP: 45.141.215.17 | UA: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/88.0.4324.96 Safari/537.36
+2025-08-04 07:05:49,116 [INFO] [STATUS CODE] 200 | Final URL: https://www.imdb.com/title/tt0120737/

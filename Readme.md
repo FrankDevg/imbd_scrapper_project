@@ -16,7 +16,7 @@ Se ha cumplido con el 100% de los requisitos solicitados, tanto obligatorios com
 | **Arquitectura Avanzada** | ✅ Sí | Se implementó **Clean Architecture + DDD** y el patrón **Factory** para desacoplar la lógica de negocio de la infraestructura (ej. persistencia, scraping). |
 | **Persistencia CSV + SQL** | ✅ Sí | Los datos se persisten de forma híbrida en archivos CSV y en un esquema relacional PostgreSQL con una relación `N:M` entre películas y actores. |
 | **SQL Analítico (20%)** | ✅ Sí | Se crearon consultas analíticas complejas utilizando **funciones de ventana (`OVER/PARTITION BY`)**, vistas, índices y justificación de particionamiento. |
-| **Proxies y Red (10%)** | ✅ Sí | Se implementó una estrategia de rotación de IPs utilizando la **red TOR**, con logs que evidencian el cambio de IP por request y la capacidad de reintentar ante fallos de conexión. |
+| **Proxies y Red (10%)** | ✅ Sí | Se implementó una arquitectura distribuida con múltiples capas de evasión: conexión mediante **VPN real (ProtonVPN vía Docker)**, uso de **proxies premium (DataImpulse)** y fallback automático a la **red TOR**. Además, se incluyó un sistema de **reintentos con backoff exponencial** y validación de IP para garantizar la obtención del dato. |
 | **Dockerizado y Portable** | ✅ Sí | Todo el entorno (scraper, base de datos) se levanta con un solo comando (`docker-compose up`), garantizando la replicabilidad del entorno. |
 | **Comparación Herramientas (10%)** | ✅ Sí | Se incluye una sección detallada justificando cuándo y cómo migrar a **Playwright/Selenium** para escenarios de JavaScript dinámico y CAPTCHAs. |
 | **Evidencia y Documentación** | ✅ Sí | El repositorio incluye logs, scripts SQL, CSVs generados y este README detallado como evidencia del trabajo realizado. |
@@ -138,12 +138,49 @@ imbd_scraper_project/
 └── README.md                    # Documentación completa del sistema
 
 ```
+## 🧱 Filosofía de Arquitectura y Decisiones Técnicas
+
+### ¿Por qué Clean Architecture + Domain-Driven Design (DDD)?
+Un enfoque profesional exige construir un **sistema mantenible y escalable**.
+
+- **Separación de Responsabilidades (SoC):** Las dependencias apuntan hacia adentro. La lógica de negocio no sabe nada sobre la base de datos ni el scraping.
+- **Testabilidad Aislada:** Las capas `domain` y `application` se pueden testear unitariamente sin dependencias externas.
+- **Modelado del Dominio:** Entidades como `Movie` y `Actor` reflejan el lenguaje del problema, con validaciones integradas.
+
+### ¿Por qué el Patrón Factory?
+Se utiliza para desacoplar la lógica de negocio de las implementaciones concretas.
+
+- Permite cambiar la fuente de persistencia (CSV, PostgreSQL, MongoDB) sin modificar la lógica del caso de uso.
+- Cumple con el Principio Abierto/Cerrado.
+
+---
+
+### 🧩 Estrategia de Red Distribuida: VPN + Proxies + TOR
+
+El scraper está preparado para ejecutar en ambientes con **alta sensibilidad al bloqueo**, usando una combinación de estrategias en capas para garantizar la recolección de datos:
+
+| Tecnología        | Propósito                                    | Implementación                                                      |
+|------------------|----------------------------------------------|----------------------------------------------------------------------|
+| **VPN (ProtonVPN)**     | Cambiar geolocalización y evitar bloqueo regional | Montada en **Docker**, validación de país vía healthcheck            |
+| **Proxies Premium**     | IPs rotativas anónimas, baja latencia            | Integración con **DataImpulse**, rotación automática por cada request |
+| **TOR (Fallback)**      | Red distribuida anónima gratuita                 | Activación automática en caso de fallo en las otras capas            |
+
+Además, se integró un **sistema de reintentos inteligentes con backoff exponencial** que asegura que la petición se repita en caso de fallo, cambiando IP si es necesario, y dejando trazabilidad en logs con la IP usada.
+
+---
+
+### 🔧 Posibles Mejoras Futuras
+
+- **Proxy Pool Dinámico** con rotación basada en reputación/IP-bans.
+- **Auto-restart de TOR/VPN** si el healthcheck falla.
+- Integración con **servicios anti-CAPTCHA** como 2Captcha o Anti-Captcha.
+- Compatibilidad con **geolocalización dinámica por país**, seleccionando el proxy o VPN más adecuado según el sitio.
 
 ---
 
 ## 🐳 Instrucciones de Despliegue con Docker
 
-1. Crear el archivo `.env` 
+1. Crear el archivo `.env` en la carpeta raiz  
 ### 📄 Archivo `.env` (proporcionado solo con fines de evaluación)
 
 Este archivo contiene la configuración necesaria para conectar con los servicios de base de datos, proxies y VPN utilizados en el entorno del scraper.
