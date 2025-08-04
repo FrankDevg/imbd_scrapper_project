@@ -239,36 +239,6 @@ Incluye:
 
 Aunque este proyecto está construido con `requests` y `BeautifulSoup` por su requerimiento y control detallado del flujo, está preparado para escalar hacia herramientas como **Playwright** o **Selenium** en los siguientes escenarios:
 
-### 🔧 Configuración avanzada del navegador
-- **Modo headless** configurable (visible/invisible).
-- Modificación de **headers dinámicos** (User-Agent, Referer, etc.).
-- **Evasión de detección WebDriver** mediante técnicas como redefinir `navigator.webdriver` o usar extensiones anti-bot.
-
-### 🎯 Selectores dinámicos con espera explícita
-- Uso de `wait_for_selector` en Playwright o `WebDriverWait` con `expected_conditions` en Selenium.
-- Evita errores por contenido cargado asincrónicamente.
-
-### 🛡️ Manejo de JavaScript y CAPTCHAs
-- Renderizado completo del DOM con JS habilitado.
-- Detección y resolución de CAPTCHAs mediante integración con servicios externos como **2Captcha**, **AntiCaptcha**, o estrategias por OCR.
-
-### ⚙️ Control de concurrencia
-- Playwright: múltiples **browser contexts** en paralelo.
-- Selenium: ejecución distribuida con **Selenium Grid** o containers aislados por worker.
-- Posibilidad de usar **colas de scraping (ej. Celery, RabbitMQ)** para tareas distribuidas.
-
-### 📌 Justificación de uso
-Estas herramientas deben considerarse cuando:
-- IMDb o el sitio objetivo usa JavaScript para cargar datos clave.
-- Se presentan mecanismos de bloqueo activo (CAPTCHA, WAF).
-- Se desea simular comportamiento humano real (scroll, clics, etc.).
-
-En este proyecto no fueron necesarias porque IMDb expone los datos principales vía HTML y GraphQL, pero se documenta cómo escalar si cambia el comportamiento del sitio.
-
-## 🧩 Implementación con Playwright o Selenium
-
-Este proyecto puede ser escalado con **Playwright** o **Selenium** en caso de que IMDb modifique su comportamiento o protección contra bots. A continuación, se describe cómo se implementaría esta adaptación.
-
 ### 🔧 Configuración avanzada de navegador
 Ambas herramientas permiten lanzar navegadores con configuraciones avanzadas:
 
@@ -309,7 +279,68 @@ Aunque **Scrapy** es potente y extensible, **Playwright** y **Selenium** ofrecen
 - Se requiere **simular interacción humana real**: scroll, clics, selección dinámica.
 - El sitio tiene **bloqueos activos** como CAPTCHAs, honeypots o detección de tráfico automatizado.
 
-> En este proyecto, Scrapy no era necesario porque IMDb expone sus datos principales vía HTML y GraphQL. No obstante, el sistema está preparado para adaptarse si eso cambia.
+## 🧩 Implementación con Playwright o Selenium
+
+Gracias a la aplicación de Clean Architecture y DDD, el sistema permite **agregar nuevos engines de scraping** (como Playwright o Selenium) sin reemplazar ni modificar la implementación actual basada en `requests + BeautifulSoup`.
+
+### 🔄 ¿Cómo se logra esto?
+
+La clave está en el uso de interfaces y fábricas desacopladas:
+
+- `ScraperInterface` en `domain/` define el contrato único que todas las implementaciones deben seguir.
+- Cada implementación (ej. `ImdbScraperRequests`, `ImdbScraperPlaywright`) vive en su propio archivo dentro de `infrastructure/scraper/`.
+- Una fábrica central (`get_scraper()`) puede decidir qué engine usar.
+
+### ⚙️ Alternativa para elegir el engine
+
+Se puede agregar una variable de entorno en `config.py` para permitir elegir dinámicamente el motor de scraping:
+
+```python
+# shared/config/config.py
+SCRAPER_ENGINE = "Playwright"
+```
+
+```python
+# infrastructure/scraper/factory.py
+from infrastructure.scraper.imdb_scraper_requests import ImdbScraperRequests
+from infrastructure.scraper.imdb_scraper_playwright import ImdbScraperPlaywright
+from shared.config import config
+
+def get_scraper(source: str, engine: str = "requests") -> ScraperInterface:
+    source_clean = source.strip().lower()
+    engine_clean = engine.strip().lower()
+
+    if source_clean == "imdb":
+        if engine_clean == "requests":
+            from infrastructure.scraper.imdb_scraper import ImdbScraper
+            return ImdbScraper()
+        elif engine_clean == "playwright":
+            from infrastructure.scraper.imdb_scraper_playwright import ImdbScraperPlaywright
+            return ImdbScraperPlaywright()
+
+    raise ValueError(f"Scraper no soportado: source='{source}', engine='{engine}'")
+
+```
+
+### 🔁 ¿Y si quiero usar ambos al mismo tiempo?
+
+También es posible. Puedes inyectar ambos scrapers en un **composite scraper** que combine o compare resultados, o usarlos como fallback uno del otro:
+
+```python
+class CompositeScraper(ScraperInterface):
+    def __init__(self, primary_scraper, secondary_scraper):
+        self.primary = primary_scraper
+        self.secondary = secondary_scraper
+
+    def scrape(self):
+        try:
+            return self.primary.scrape()
+        except Exception:
+            return self.secondary.scrape()
+```
+
+> Esto aporta escalabilidad sin comprometer el diseño, permitiendo usar múltiples motores sin reescribir los casos de uso.
+
 
 ---
 
