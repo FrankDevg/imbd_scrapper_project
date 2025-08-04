@@ -13,8 +13,8 @@ El diseño se fundamenta en principios de **Clean Architecture** y **Domain-Driv
 - [🧩 Estrategia de Red Distribuida: VPN + Proxies + TOR](#️-estrategia-de-red-distribuida-vpn--proxies--tor)
 - [🐳 Instrucciones de Despliegue con Docker](#-instrucciones-de-despliegue-con-docker)
 - [🧠 SQL Analítico](#-sql-analítico)
-- [🧵 Concurrencia Aplicada en el Scraper](#-concurrencia-aplicada-en-el-scraper)
 - [🕸️ Comparación Técnica – Scrapy vs Playwright/Selenium](#️-comparación-técnica--scrapy-vs-playwrightselenium)
+- [🧵 Concurrencia Aplicada en el Scraper](#-concurrencia-aplicada-en-el-scraper)
 - [📦 Entregables Finales](#-entregables-finales)
 - [📣 Créditos](#-créditos)
 ---
