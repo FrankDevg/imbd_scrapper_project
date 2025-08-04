@@ -1,5 +1,9 @@
 # shared/config/config.py
 import os
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 # --- Configuración base de IMDb ---
 BASE_URL = "https://www.imdb.com"
 CHART_TOP_PATH = "/chart/top/"
@@ -12,6 +16,8 @@ GRAPHQL_OPERATION = "Top250MoviesPagination"
 GRAPHQL_LOCALE = "en-US"
 GRAPHQL_VERSION = 1
 NUM_MOVIES = 100
+TOR_WAIT_AFTER_ROTATION = 10  # segundos de espera tras rotar IP TOR
+
 # --- User-Agent Rotation ---
 USER_AGENTS = [
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/91.0.4472.124 Safari/537.36",
@@ -21,21 +27,29 @@ USER_AGENTS = [
 ]
 
 # --- Proxy Config ---
-PROXY_LIST = [
-    "http://123.45.67.89:8080",
-    "http://98.76.54.32:3128"
-]
+PROXY_HOST = os.getenv("PROXY_HOST")
+PROXY_PORT = os.getenv("PROXY_PORT")
+PROXY_USER = os.getenv("PROXY_USER")
+PROXY_PASS = os.getenv("PROXY_PASS")
 
 TOR_PROXY = {
-    'http': 'socks5h://127.0.0.1:9050',
-    'https': 'socks5h://127.0.0.1:9050',
+    "http": "socks5h://127.0.0.1:9050",
+    "https": "socks5h://127.0.0.1:9050"
 }
 
-USE_TOR = True
+PROXY_HOST = os.getenv("PROXY_HOST")
+PROXY_PORT = os.getenv("PROXY_PORT")
+PROXY_USER = os.getenv("PROXY_USER")
+PROXY_PASS = os.getenv("PROXY_PASS")
+PROXY_LIST = [ ]
+USE_CUSTOM_PROXY = all([PROXY_HOST, PROXY_PORT, PROXY_USER, PROXY_PASS])
+USE_TOR =not USE_CUSTOM_PROXY
 MAX_RETRIES = 3
 RETRY_DELAYS = [1, 3, 5]
 REQUEST_TIMEOUT = 10
-MAX_THREADS = 100
+MAX_THREADS = 50
+BLOCK_CODES = [202,403, 404, 429]
+
 # --- GraphQL Config ---
 GRAPHQL_URL = "https://caching.graphql.imdb.com/"
 GRAPHQL_HASH = "2db1d515844c69836ea8dc532d5bff27684fdce990c465ebf52d36d185a187b3"

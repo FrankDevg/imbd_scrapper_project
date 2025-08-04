@@ -1,5 +1,4 @@
-# docker/docker-compose.yml
-
+version: "3.9"
 services:
   postgres:
     image: postgres:15
@@ -13,9 +12,39 @@ services:
       - "${POSTGRES_PORT}:5432"
     volumes:
       - pgdata:/var/lib/postgresql/data
-      - ./sql/schema.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./sql:/docker-entrypoint-initdb.d
     networks:
       - app_net
+
+  tor:
+    image: dperson/torproxy
+    container_name: tor_proxy
+    ports:
+      - "9050:9050"  # puerto SOCKS5
+    command: "-a 'ImbdScraper' -p 9050"
+    networks:
+      - app_net
+
+  scraper:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: imdb_scraper
+    depends_on:
+      - postgres
+      - tor
+    networks:
+      - app_net
+    env_file:
+      - .env
+    volumes:
+      - .:/app
+    command: >
+      sh -c "echo 'Esperando a que Postgres esté listo...' &&
+            while ! nc -z postgres 5432; do sleep 1; done &&
+            echo 'Postgres listo. Iniciando scraper...' &&
+            python presentation/run_scraper.py"
+
 
 volumes:
   pgdata:

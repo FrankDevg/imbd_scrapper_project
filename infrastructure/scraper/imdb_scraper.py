@@ -8,20 +8,20 @@ from domain.models import Movie, Actor
 from domain.interfaces.scraper_interface import ScraperInterface
 from infrastructure.scraper.utils import make_request
 from shared.config import config
-from infrastructure.scraper.network_utils import get_random_user_agent
 
 import logging
-import os
-import json
 import requests
 import re
+import random
 
 logger = logging.getLogger(__name__)
 
 class ImdbScraper(ScraperInterface):
-    def __init__(self,use_case: SaveMovieWithActorsCsvUseCase,  base_url: str = config.BASE_URL):
+    def __init__(self, use_case: SaveMovieWithActorsCsvUseCase, base_url: str = config.BASE_URL):
         self.base_url = base_url
         self.use_case = use_case
+        self.total_bytes_used = 0
+
     def scrape(self, save_use_case=None) -> None:
         logger.info(f"Iniciando scraping desde IMDb...")
 
@@ -37,6 +37,8 @@ class ImdbScraper(ScraperInterface):
             )
 
         logger.info(f"Scraping completado.")
+        logger.info(f"[TOTAL] Tráfico total usado por el scraper: {self.total_bytes_used / (1024 ** 2):.2f} MB")
+        print('Tráfico total usado por el scraper: {:.2f} MB'.format(self.total_bytes_used / (1024 ** 2)))
 
     def _scrape_and_save_movie_detail(self, indexed_id: tuple[int, str]) -> None:
         movie = self._scrape_movie_detail(indexed_id)
@@ -48,16 +50,18 @@ class ImdbScraper(ScraperInterface):
         try:
             detail_path = config.TITLE_DETAIL_PATH.format(id=imdb_id)
             detail_url = self.base_url + detail_path
-            detail_resp = make_request(detail_url, use_tor=config.USE_TOR)
+            detail_resp = make_request(detail_url)
 
             if detail_resp is None:
                 return None
 
             detail_soup = BeautifulSoup(detail_resp.text, "html.parser")
+            self.total_bytes_used += len(detail_resp.content)
 
             title_tag = detail_soup.select_one(config.SELECTORS["title"])
             year_tag = detail_soup.select_one(config.SELECTORS["year"])
             rating_tag = detail_soup.select_one(config.SELECTORS["rating"])
+
             title = title_tag.text.strip() if title_tag else "N/A"
             year = int(year_tag.text.strip()) if year_tag else 0
             rating = float(rating_tag.text.strip()) if rating_tag else 0.0
@@ -105,7 +109,7 @@ class ImdbScraper(ScraperInterface):
 
         # HTML
         chart_url = config.BASE_URL + config.CHART_TOP_PATH
-        resp = make_request(chart_url, use_tor=config.USE_TOR)
+        resp = make_request(chart_url)
         cookies = resp.cookies if resp else None
         if resp and resp.status_code == 200:
             soup = BeautifulSoup(resp.text, "html.parser")
@@ -118,43 +122,56 @@ class ImdbScraper(ScraperInterface):
             ids.update(html_ids)
 
         # GraphQL
+        graphql_ids = self.fetch_graphql_ids(cookies)
+        ids.update(graphql_ids)
+
+        return list(ids)
+
+    def fetch_graphql_ids(self, cookies: Optional[dict]) -> List[str]:
+        """
+        Realiza la petición GraphQL para obtener IDs adicionales de películas.
+        """
         try:
             headers = {
-                "User-Agent": get_random_user_agent(),
+                "User-Agent": random.choice(config.USER_AGENTS),
                 "Accept": "application/graphql+json, application/json",
                 "Content-Type": "application/json"
             }
-            resp_graphql = requests.post(
+
+            payload = {
+                "operationName": config.GRAPHQL_OPERATION,
+                "variables": {
+                    "first": config.NUM_MOVIES,
+                    "isInPace": False,
+                    "locale": config.GRAPHQL_LOCALE
+                },
+                "extensions": {
+                    "persistedQuery": {
+                        "sha256Hash": config.GRAPHQL_HASH,
+                        "version": config.GRAPHQL_VERSION
+                    }
+                }
+            }
+
+            proxies = config.TOR_PROXY if config.USE_TOR else None
+
+            resp = requests.post(
                 config.GRAPHQL_URL,
                 headers=headers,
                 cookies=cookies,
-                json={
-                    "operationName": config.GRAPHQL_OPERATION,
-                    "variables": {
-                        "first": config.NUM_MOVIES,
-                        "isInPace": False,
-                        "locale": config.GRAPHQL_LOCALE
-                    },
-                    "extensions": {
-                        "persistedQuery": {
-                            "sha256Hash": config.GRAPHQL_HASH,
-                            "version": config.GRAPHQL_VERSION
-                        }
-                    }
-                },
-                proxies=config.TOR_PROXY if config.USE_TOR else None,
+                json=payload,
+                proxies=proxies,
                 timeout=config.REQUEST_TIMEOUT
             )
-            
-            if resp_graphql.status_code == 200:
-                data = resp_graphql.json()
+
+            if resp.status_code == 200:
+                data = resp.json()
                 edges = data.get("data", {}).get("chartTitles", {}).get("edges", [])
-                graphql_ids = [edge["node"]["id"] for edge in edges if edge.get("node", {}).get("id")]
-                logger.info(f"[GraphQL] IDs obtenidos: {len(graphql_ids)}")
-                ids.update(graphql_ids)
+                ids = [edge["node"]["id"] for edge in edges if edge.get("node", {}).get("id")]
+                logger.info(f"[GraphQL] IDs obtenidos: {len(ids)}")
+                return ids
             else:
-                logger.warning(f"[GraphQL] Status: {resp_graphql.status_code} Body: {resp_graphql.text}")
+                logger.warning(f"[GraphQL] Status: {resp.status_code} Body: {resp.text}")
         except Exception as e:
             logger.error(f"[GraphQL] Error: {e}")
-
-        return list(ids)
+        return []

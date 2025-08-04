@@ -1,6 +1,6 @@
 # infrastructure/scraper/factory.py
 
-from domain.scraper_interface import ScraperInterface
+from domain.interfaces.scraper_interface import ScraperInterface
 from infrastructure.scraper.imdb_scraper import ImdbScraper
 
 def get_scraper(source: str) -> ScraperInterface:

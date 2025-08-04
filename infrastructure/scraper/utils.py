@@ -1,45 +1,102 @@
-# infrastructure/scraper/utils.py
-
+import random
 import time
 import requests
 from typing import Optional
 from requests.exceptions import RequestException
+
 from shared.config import config
 from shared.logger.logging_config import setup_logger
-from infrastructure.scraper.network_utils import get_random_user_agent, get_proxy
+from infrastructure.factory.proxy_factory import get_proxy_provider
+from infrastructure.factory.tor_factory import get_tor_rotator 
 
 logger = setup_logger(__name__)
+proxy_provider = get_proxy_provider()
+tor_rotator = get_tor_rotator()
 
-def make_request(url: str, use_tor: bool = False) -> Optional[requests.Response]:
-    """
-    Realiza una petición HTTP a la URL dada, con rotación de User-Agent y soporte opcional para proxy TOR.
-    Reintenta automáticamente con delay si hay error de red o status inesperado.
-    """
-    for attempt, delay in zip(range(1, config.MAX_RETRIES + 1), config.RETRY_DELAYS):
-        try:
-            headers = {"User-Agent": get_random_user_agent()}
-            proxy = get_proxy(use_tor=use_tor)
 
-            logger.info(f"[Attempt {attempt}] GET {url} | Proxy: {'TOR' if use_tor else 'None'} | UA: {headers['User-Agent']}")
+def _get_headers():
+    return {
+        "User-Agent": random.choice(config.USER_AGENTS)
+    }
 
-            response = requests.get(
-                url,
-                headers=headers,
-                proxies=proxy,
-                timeout=config.REQUEST_TIMEOUT
-            )
+def _log_status(response: requests.Response):
+    logger.info(f"[STATUS CODE] {response.status_code} | Final URL: {response.url}")
 
-            logger.info(f"[STATUS CODE] {response.status_code} | Final URL: {response.url}")
+def _should_rotate_tor(status_code: int) -> bool:
+    return status_code in config.BLOCK_CODES
 
-            if response.status_code in [200, 202]:
-                return response
-            else:
-                logger.warning(f"[WARNING] Respuesta inesperada: HTTP {response.status_code}")
+def _request_with_proxy(url: str, attempt: int) -> Optional[requests.Response]:
+    headers = _get_headers()
+    proxies = proxy_provider.get_proxy()
+    ip, city, country = proxy_provider.get_proxy_location(proxies)
+    logger.info(f"[Proxy Attempt {attempt}] GET {url} | IP: {ip} | {city}, {country} | UA: {headers['User-Agent']}")
 
-        except RequestException as e:
-            logger.error(f"[ERROR] Request fallida a {url}: {e}")
-
-        time.sleep(delay)
-
-    logger.error(f"[ERROR] Fallo total tras {config.MAX_RETRIES} intentos → {url}")
+    try:
+        response = requests.get(url, headers=headers, proxies=proxies, timeout=config.REQUEST_TIMEOUT)
+        _log_status(response)
+        if response.status_code == 200:
+            return response
+    except RequestException as e:
+        logger.error(f"[ERROR] Proxy request failed: {e}")
     return None
+
+def _request_with_tor(url: str, attempt: int, allow_rotation: bool = True) -> Optional[requests.Response]:
+    headers = _get_headers()
+    proxies = config.TOR_PROXY
+    ip = tor_rotator.get_current_ip()
+    logger.info(f"[TOR Attempt {attempt}] GET {url} | IP: {ip} | UA: {headers['User-Agent']}")
+
+    try:
+        response = requests.get(url, headers=headers, proxies=proxies, timeout=config.REQUEST_TIMEOUT)
+        _log_status(response)
+
+        if response.status_code == 200:
+            return response
+        elif _should_rotate_tor(response.status_code) and allow_rotation:
+            logger.warning(f"[TOR] Código {response.status_code} recibido. Rotando IP TOR...")
+            tor_rotator.rotate_ip()
+            time.sleep(config.TOR_WAIT_AFTER_ROTATION)
+            return _request_with_tor(url, attempt + 1, allow_rotation=False)  # evita bucles infinitos
+
+    except RequestException as e:
+        logger.error(f"[ERROR] TOR request failed: {e}")
+    return None
+
+def make_request(url: str) -> Optional[requests.Response]:
+    """
+    Realiza una petición HTTP:
+
+    - Si config.USE_TOR = True → hace 3 intentos con TOR.
+    - Si config.USE_TOR = False → hace 3 intentos con proxy, luego 3 intentos con TOR.
+    """
+    retries = config.MAX_RETRIES
+
+    if config.USE_TOR:
+        for attempt in range(1, retries + 1):
+            response = _request_with_tor(url, attempt)
+            if response and response.status_code == 200:
+                return response
+            time.sleep(config.RETRY_DELAYS[min(attempt - 1, len(config.RETRY_DELAYS) - 1)])
+
+        logger.error(f"[TOR ERROR] Todos los intentos con TOR fallaron → {url}")
+        return None
+
+    # PROXY primero
+    for attempt in range(1, retries + 1):
+        response = _request_with_proxy(url, attempt)
+        if response and response.status_code == 200:
+            return response
+        time.sleep(config.RETRY_DELAYS[min(attempt - 1, len(config.RETRY_DELAYS) - 1)])
+
+    # FALLBACK a TOR (3 intentos)
+    logger.warning("[FALLBACK] Todos los intentos con proxy fallaron. Probando con TOR...")
+
+    for attempt in range(1, retries + 1):
+        response = _request_with_tor(url, attempt)
+        if response and response.status_code == 200:
+            return response
+        time.sleep(config.RETRY_DELAYS[min(attempt - 1, len(config.RETRY_DELAYS) - 1)])
+
+    logger.error(f"[ERROR] Proxy y TOR fallaron → {url}")
+    return None
+

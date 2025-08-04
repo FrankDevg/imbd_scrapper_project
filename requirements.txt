@@ -1,3 +1,6 @@
-requests==2.32.4
-beautifulsoup4==4.12.3
+requests
+bs4
 psycopg2-binary
+python-dotenv
+stem
+requests[socks]
