@@ -293,7 +293,7 @@ La clave está en el uso de interfaces y fábricas desacopladas:
 
 ### ⚙️ Alternativa para elegir el engine
 
-Se puede agregar una variable de entorno en `config.py` para permitir elegir dinámicamente el motor de scraping:
+Se debe cambiar una variable de entorno en `config.py` para permitir elegir dinámicamente el motor de scraping:
 
 ```python
 # shared/config/config.py
