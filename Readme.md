@@ -15,6 +15,7 @@ El diseño se fundamenta en principios de **Clean Architecture** y **Domain-Driv
 - [🧠 SQL Analítico](#-sql-analítico)
 - [🕸️ Comparación Técnica – Scrapy vs Playwright/Selenium](#️-comparación-técnica--scrapy-vs-playwrightselenium)
 - [🧵 Concurrencia Aplicada en el Scraper](#-concurrencia-aplicada-en-el-scraper)
+- [## 🔍 Decisiones Técnicas Clave](#-decisiones-técnicas-clave)
 - [📦 Entregables Finales](#-entregables-finales)
 - [📣 Créditos](#-créditos)
 ---
@@ -279,6 +280,71 @@ Se podrían reemplazar por workers distribuidos en producción para escalar hori
 
 ---
 
+## 🔍 Decisiones Técnicas Clave
+
+### 🧠 1. SQL Directo en lugar de ORM
+Decidí **no utilizar un ORM como SQLAlchemy** y optar por sentencias SQL explícitas, basándome en:
+
+- ✅ **Simplicidad del modelo de datos** (películas, actores y relación N:M).
+- ✅ **Mayor control sobre las operaciones** de escritura, validaciones y consultas analíticas.
+- ✅ **Separación limpia por repositorios**, que permite desacoplar la lógica de persistencia y facilitar una futura migración a un ORM sin modificar los casos de uso.
+- ✅ **Mejor rendimiento para scraping masivo**, al evitar capas adicionales de abstracción.
+
+> Esta decisión no limita la escalabilidad futura, ya que el diseño permite incorporar ORM cuando sea necesario.
+
+---
+
+### 🌐 2. Scraping distribuido con rotación de IPs y red privada
+
+Para garantizar robustez y anonimato en la extracción de datos, el scraper está configurado con:
+
+- 🧅 **Red TOR** activa para rotación básica de IPs.
+- 🔄 **User-Agent aleatorios y headers realistas** en cada solicitud.
+- 🧰 **Proxies premium de Data Impulso**, integrados con fallback automático.
+- 🔐 **VPN real instalada dentro de Docker**, conectada a la red interna.
+- 💣 Tolerancia a fallos mediante reintentos automáticos y separación del canal de scraping y persistencia.
+
+---
+
+### 🗂️ 3. Persistencia híbrida (CSV + PostgreSQL)
+
+Para garantizar versatilidad en el análisis y almacenamiento:
+
+- 🧾 **CSV**: Exportación directa a `movies.csv`, `actors.csv` y `movie_actor.csv`, útil para revisión rápida o carga en herramientas externas.
+- 🛢️ **PostgreSQL**: Almacenamiento estructurado de películas, actores y relaciones, ideal para análisis SQL avanzado y consultas cruzadas.
+- 🧱 Cada mecanismo de persistencia se implementó como un repositorio independiente bajo el patrón Strategy, permitiendo su uso simultáneo o alternativo.
+
+---
+
+### 🧼 4. Arquitectura Limpia (Clean Architecture + DDD)
+
+Todo el proyecto fue estructurado en capas bien definidas:
+
+- `domain/`: Modelos de negocio y contratos de repositorios (interfaces).
+- `application/`: Casos de uso desacoplados.
+- `infrastructure/`: Implementaciones concretas (scraper, CSV, DB).
+- `presentation/`: Punto de entrada (`run_scraper.py`).
+- `shared/`: Configuración, logging y constantes.
+
+> Esta estructura facilita pruebas unitarias, extensibilidad y mantenimiento a largo plazo.
+
+---
+
+### 🐋 5. Entorno Dockerizado con Red Privada Segura
+
+El entorno de ejecución está totalmente containerizado y preparado para producción:
+
+- `docker-compose.yml` levanta servicios clave:
+  - Scraper
+  - PostgreSQL
+  - Red TOR
+  - **VPN montada en la red interna**
+- Se utilizaron:
+  - ✅ **Redes internas de Docker**
+  - ✅ **Volúmenes persistentes**
+  - ✅ **Variables externas (.env)**
+- Se integraron **healthchecks propios de cada imagen Docker** para garantizar estabilidad de los servicios antes de ejecutar el scraping.
+---
 ## 📦 Entregables Finales
 
 - 🗃️ Código en GitHub
