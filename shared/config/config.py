@@ -49,7 +49,8 @@ RETRY_DELAYS = [1, 3, 5]
 REQUEST_TIMEOUT = 10
 MAX_THREADS = 50
 BLOCK_CODES = [202,403, 404, 429]
-
+URL_IPINFO="https://ipinfo.io/json"
+URL_IPHAZIP = "https://icanhazip.com/"
 # --- GraphQL Config ---
 GRAPHQL_URL = "https://caching.graphql.imdb.com/"
 GRAPHQL_HASH = "2db1d515844c69836ea8dc532d5bff27684fdce990c465ebf52d36d185a187b3"

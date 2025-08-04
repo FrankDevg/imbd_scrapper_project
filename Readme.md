@@ -136,23 +136,7 @@ imbd_scraper_project/
 ├── Dockerfile                   # Imagen del scraper
 ├── requirements.txt             # Dependencias del proyecto
 └── README.md                    # Documentación completa del sistema
-
 ```
-## 🧱 Filosofía de Arquitectura y Decisiones Técnicas
-
-### ¿Por qué Clean Architecture + Domain-Driven Design (DDD)?
-Un enfoque profesional exige construir un **sistema mantenible y escalable**.
-
-- **Separación de Responsabilidades (SoC):** Las dependencias apuntan hacia adentro. La lógica de negocio no sabe nada sobre la base de datos ni el scraping.
-- **Testabilidad Aislada:** Las capas `domain` y `application` se pueden testear unitariamente sin dependencias externas.
-- **Modelado del Dominio:** Entidades como `Movie` y `Actor` reflejan el lenguaje del problema, con validaciones integradas.
-
-### ¿Por qué el Patrón Factory?
-Se utiliza para desacoplar la lógica de negocio de las implementaciones concretas.
-
-- Permite cambiar la fuente de persistencia (CSV, PostgreSQL, MongoDB) sin modificar la lógica del caso de uso.
-- Cumple con el Principio Abierto/Cerrado.
-
 ---
 
 ### 🧩 Estrategia de Red Distribuida: VPN + Proxies + TOR
@@ -161,7 +145,7 @@ El scraper está preparado para ejecutar en ambientes con **alta sensibilidad al
 
 | Tecnología        | Propósito                                    | Implementación                                                      |
 |------------------|----------------------------------------------|----------------------------------------------------------------------|
-| **VPN (ProtonVPN)**     | Cambiar geolocalización y evitar bloqueo regional | Montada en **Docker**, validación de país vía healthcheck            |
+| **VPN (ProtonVPN)**     | Cambiar geolocalización y evitar bloqueo regional | Montada en **Docker**, validación de país vía healthcheck por imagen qmcgaw/gluetun            |
 | **Proxies Premium**     | IPs rotativas anónimas, baja latencia            | Integración con **DataImpulse**, rotación automática por cada request |
 | **TOR (Fallback)**      | Red distribuida anónima gratuita                 | Activación automática en caso de fallo en las otras capas            |
 
@@ -254,7 +238,7 @@ Cuando el sitio use JS dinámico, CAPTCHAs o detección de bots.
 - 🐘 Scripts SQL en `/sql/`
 - 📄 CSVs generados en `/data/`
 - 🧾 Logs con rotación IP en `/logs/`
-- 📘 Documentación técnica (este archivo)
+- 📘 Documentación técnica (este archivo) y Documento de arquitectura `/docs/`
 
 ---
 
