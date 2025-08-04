@@ -136,7 +136,7 @@ imbd_scraper_project/
 ├── Dockerfile                   # Imagen del scraper
 ├── requirements.txt             # Dependencias del proyecto
 └── README.md                    # Documentación completa del sistema
-
+```
 ---
 
 ### 🧩 Estrategia de Red Distribuida: VPN + Proxies + TOR
