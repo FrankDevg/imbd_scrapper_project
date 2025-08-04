@@ -80,6 +80,7 @@ imbd_scraper_project/
 │   │   ├── proxy_interface.py
 │   │   ├── scraper_interface.py
 │   │   ├── tor_interface.py
+│   │   ├── use_case_interface.py
 │   │   └── __init__.py
 │   ├── models/                   # Entidades del dominio
 │   │   ├── actor.py
