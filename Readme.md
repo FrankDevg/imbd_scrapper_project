@@ -301,24 +301,31 @@ SCRAPER_ENGINE = "Playwright"
 ```
 
 ```python
-# infrastructure/scraper/factory.py
-from infrastructure.scraper.imdb_scraper_requests import ImdbScraperRequests
-from infrastructure.scraper.imdb_scraper_playwright import ImdbScraperPlaywright
-from shared.config import config
+# infrastructure/factory/scraper_factory.py
+from domain.interfaces.use_case_interface import UseCaseInterface
+from domain.interfaces.scraper_interface import ScraperInterface
 
-def get_scraper(source: str, engine: str = "requests") -> ScraperInterface:
-    source_clean = source.strip().lower()
-    engine_clean = engine.strip().lower()
+def get_scraper(source: str = "imdb", engine: str = "requests", use_case: UseCaseInterface = None) -> ScraperInterface:
+    
+    if use_case is None:
+        raise ValueError("Se requiere un 'use_case' para inicializar el scraper.")
+
+    source_clean = source.lower().strip()
+    engine_clean = engine.lower().strip()
 
     if source_clean == "imdb":
         if engine_clean == "requests":
             from infrastructure.scraper.imdb_scraper import ImdbScraper
-            return ImdbScraper()
+            return ImdbScraper(use_case=use_case, engine=engine_clean)
+
         elif engine_clean == "playwright":
             from infrastructure.scraper.imdb_scraper_playwright import ImdbScraperPlaywright
-            return ImdbScraperPlaywright()
+            return ImdbScraperPlaywright(use_case=use_case, engine=engine_clean)
 
-    raise ValueError(f"Scraper no soportado: source='{source}', engine='{engine}'")
+        else:
+            raise ValueError(f"Motor '{engine_clean}' no soportado para IMDb.")
+
+    raise ValueError(f"Source '{source}' no es reconocido.")
 
 ```
 

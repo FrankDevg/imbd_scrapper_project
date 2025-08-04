@@ -1,3 +1,5 @@
+# docker-compose.yml
+
 version: "3.9"
 
 services:
@@ -17,14 +19,20 @@ services:
     networks:
       - app_net
 
+  # --- SECCIÓN CORREGIDA ---
   tor:
     image: dperson/torproxy
     container_name: tor_proxy
+    restart: always
     ports:
-      - "9050:9050"
-    command: "-p 9050"
+      - "9050:9050" # Puerto SOCKS para el tráfico
+      - "9051:9051" # Puerto de Control para comandos (cambiar IP)
+    # Se añade un comando para iniciar TOR con el puerto de control habilitado y sin contraseña.
+    command: >
+      sh -c "tor --SocksPort 0.0.0.0:9050 --ControlPort 0.0.0.0:9051 --HashedControlPassword '' --CookieAuthentication 0"
     networks:
       - app_net
+  # --- FIN DE LA SECCIÓN CORREGIDA ---
 
   vpn:
     image: qmcgaw/gluetun
@@ -37,7 +45,7 @@ services:
       - OPENVPN_PASSWORD=${VPN_PASSWORD}
       - SERVER_COUNTRIES=Argentina
     ports:
-      - "8888:8888" 
+      - "8888:8888"
     networks:
       - vpn_net
 
@@ -64,7 +72,7 @@ services:
         echo 'Postgres listo. Iniciando scraper...' &&
         python presentation/cli/run_scraper.py &&
         echo 'Scraper finalizado. Ejecutando queries.sql...' &&
-        apt update && apt install -y postgresql-client &&
+        apt-get update && apt-get install -y postgresql-client &&
         PGPASSWORD=$POSTGRES_PASSWORD psql -h postgres -U $POSTGRES_USER -d $POSTGRES_DB -f sql/queries.sql &&
         echo 'Consultas SQL ejecutadas. Manteniendo contenedor activo...' &&
         tail -f /dev/null

@@ -1,3 +1,4 @@
+from domain.interfaces.use_case_interface import UseCaseInterface
 
 from application.use_cases.save_movie_with_actors_csv_use_case import SaveMovieWithActorsCsvUseCase
 from application.use_cases.save_movie_with_actors_postgres_use_case import SaveMovieWithActorsPostgresUseCase
@@ -14,7 +15,7 @@ from infrastructure.persistence.postgres.repositories.actor_postgres_repository 
 from infrastructure.persistence.postgres.repositories.movie_actor_postgres_repository import MovieActorPostgresRepository
 
 
-def get_csv_use_case() -> SaveMovieWithActorsCsvUseCase:
+def get_csv_use_case() -> UseCaseInterface:
     """
     Fábrica que construye el caso de uso de guardado usando repositorios CSV.
 
@@ -36,7 +37,7 @@ def get_csv_use_case() -> SaveMovieWithActorsCsvUseCase:
     )
 
 
-def get_save_movie_with_actors_postgres_use_case() -> SaveMovieWithActorsPostgresUseCase:
+def get_save_movie_with_actors_postgres_use_case() -> UseCaseInterface:
     """
     Fábrica que construye el caso de uso de guardado usando repositorios PostgreSQL.
 
@@ -58,7 +59,7 @@ def get_save_movie_with_actors_postgres_use_case() -> SaveMovieWithActorsPostgre
     )
 
 
-def get_composite_use_case() -> CompositeSaveMovieWithActorsUseCase:
+def get_composite_use_case() -> UseCaseInterface:
     """
     Fábrica que construye el caso de uso compuesto, que guarda tanto en CSV como en PostgreSQL.
 
@@ -69,4 +70,7 @@ def get_composite_use_case() -> CompositeSaveMovieWithActorsUseCase:
     """
     csv_use_case = get_csv_use_case()
     postgres_use_case = get_save_movie_with_actors_postgres_use_case()
-    return CompositeSaveMovieWithActorsUseCase(csv_use_case, postgres_use_case)
+    
+    use_cases_list = [csv_use_case, postgres_use_case]
+    
+    return CompositeSaveMovieWithActorsUseCase(use_cases=use_cases_list)

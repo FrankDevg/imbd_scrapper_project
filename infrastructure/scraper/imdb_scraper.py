@@ -23,7 +23,7 @@ class ImdbScraper(ScraperInterface):
     Guarda los resultados utilizando un caso de uso que persiste en CSV (u otra capa de infraestructura).
     """
 
-    def __init__(self, use_case: SaveMovieWithActorsCsvUseCase, base_url: str = config.BASE_URL):
+    def __init__(self, use_case: SaveMovieWithActorsCsvUseCase,engine="requests", base_url: str = config.BASE_URL):
         """
         Constructor del scraper.
 
@@ -33,6 +33,7 @@ class ImdbScraper(ScraperInterface):
         """
         self.base_url = base_url
         self.use_case = use_case
+        self.engine = engine
         self.total_bytes_used = 0  # Para medir el tráfico total usado
 
     def scrape(self, save_use_case=None) -> None:

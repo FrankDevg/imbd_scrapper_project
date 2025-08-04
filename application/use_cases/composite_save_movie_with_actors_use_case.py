@@ -1,37 +1,35 @@
+
+from concurrent.futures import ThreadPoolExecutor
+from typing import List
 from domain.models.movie import Movie
-from application.use_cases.save_movie_with_actors_csv_use_case import SaveMovieWithActorsCsvUseCase
-from application.use_cases.save_movie_with_actors_postgres_use_case import SaveMovieWithActorsPostgresUseCase
+from domain.interfaces.use_case_interface import UseCaseInterface
 
-class CompositeSaveMovieWithActorsUseCase:
+class CompositeSaveMovieWithActorsUseCase(UseCaseInterface):
     """
-    Caso de uso compuesto que encapsula la lógica de guardado de una película con sus actores
-    en múltiples destinos de persistencia (CSV y PostgreSQL).
-
-    Este patrón permite desacoplar el orquestador de las implementaciones concretas de almacenamiento,
-    facilitando la extensión a nuevos repositorios si es necesario.
+    Caso de uso compuesto que orquesta la ejecución de múltiples casos de uso de guardado
+    de forma concurrente.
     """
 
-    def __init__(
-        self,
-        csv_use_case: SaveMovieWithActorsCsvUseCase,
-        postgres_use_case: SaveMovieWithActorsPostgresUseCase
-    ):
+    def __init__(self, use_cases: List[UseCaseInterface]):
         """
         Constructor del caso de uso compuesto.
 
         Args:
-            csv_use_case (SaveMovieWithActorsCsvUseCase): Caso de uso encargado de guardar en CSV.
-            postgres_use_case (SaveMovieWithActorsPostgresUseCase): Caso de uso encargado de guardar en PostgreSQL.
+            use_cases (List[UseCaseInterface]): Una lista de casos de uso que implementan
+                                                la UseCaseInterface.
         """
-        self.csv_use_case = csv_use_case
-        self.postgres_use_case = postgres_use_case
+        self.use_cases = use_cases
+        # Limita el número de hilos para no saturar recursos. 2 en este caso.
+        self.max_workers = len(use_cases)
 
     def execute(self, movie: Movie) -> None:
         """
-        Ejecuta ambos casos de uso de guardado (CSV y PostgreSQL) en paralelo.
+        Ejecuta todos los casos de uso de la lista en paralelo usando un pool de hilos.
 
         Args:
             movie (Movie): Objeto Movie que contiene la información a persistir.
         """
-        self.csv_use_case.execute(movie)
-        self.postgres_use_case.execute(movie)
+        with ThreadPoolExecutor(max_workers=self.max_workers) as executor:
+            # executor.map aplica la función execute a cada caso de uso en la lista
+            # de forma concurrente, pasando el mismo objeto 'movie' a cada uno.
+            list(executor.map(lambda uc: uc.execute(movie), self.use_cases))
