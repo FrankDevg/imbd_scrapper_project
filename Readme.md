@@ -229,7 +229,7 @@ Incluye:
 
 ---
 
-## 4️⃣ Comparación Técnica: Selenium o Playwright (10%)
+## 4️⃣ Comparación Técnica: Selenium o Playwright
 
 Aunque este proyecto está construido con `requests` y `BeautifulSoup` por su requerimiento y control detallado del flujo, está preparado para escalar hacia herramientas como **Playwright** o **Selenium** en los siguientes escenarios:
 
