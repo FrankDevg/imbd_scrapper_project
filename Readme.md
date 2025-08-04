@@ -217,18 +217,48 @@ Incluye:
 
 ---
 
-## 🕸️ Comparación Técnica – Scrapy vs Playwright/Selenium
+## 4️⃣ Comparación Técnica: Selenium o Playwright (10%)
 
-Scrapy fue descartado por su sobreestructura para este caso. Usamos Requests + BeautifulSoup por ser más liviano.
+Aunque este proyecto está construido con `requests` y `BeautifulSoup` por su requerimiento y control detallado del flujo, está preparado para escalar hacia herramientas como **Playwright** o **Selenium** en los siguientes escenarios:
 
-**¿Cuándo escalar?**  
-Cuando el sitio use JS dinámico, CAPTCHAs o detección de bots.
+### 🔧 Configuración avanzada del navegador
+- **Modo headless** configurable (visible/invisible).
+- Modificación de **headers dinámicos** (User-Agent, Referer, etc.).
+- **Evasión de detección WebDriver** mediante técnicas como redefinir `navigator.webdriver` o usar extensiones anti-bot.
 
-### Con Playwright o Selenium:
-- Modo headless configurable.
-- Esperas explícitas para selectores dinámicos.
-- Resolución de CAPTCHA con IP rotativa o servicios como 2Captcha.
-- Control de concurrencia con workers o browser context.
+### 🎯 Selectores dinámicos con espera explícita
+- Uso de `wait_for_selector` en Playwright o `WebDriverWait` con `expected_conditions` en Selenium.
+- Evita errores por contenido cargado asincrónicamente.
+
+### 🛡️ Manejo de JavaScript y CAPTCHAs
+- Renderizado completo del DOM con JS habilitado.
+- Detección y resolución de CAPTCHAs mediante integración con servicios externos como **2Captcha**, **AntiCaptcha**, o estrategias por OCR.
+
+### ⚙️ Control de concurrencia
+- Playwright: múltiples **browser contexts** en paralelo.
+- Selenium: ejecución distribuida con **Selenium Grid** o containers aislados por worker.
+- Posibilidad de usar **colas de scraping (ej. Celery, RabbitMQ)** para tareas distribuidas.
+
+### 📌 Justificación de uso
+Estas herramientas deben considerarse cuando:
+- IMDb o el sitio objetivo usa JavaScript para cargar datos clave.
+- Se presentan mecanismos de bloqueo activo (CAPTCHA, WAF).
+- Se desea simular comportamiento humano real (scroll, clics, etc.).
+
+En este proyecto no fueron necesarias porque IMDb expone los datos principales vía HTML y GraphQL, pero se documenta cómo escalar si cambia el comportamiento del sitio.
+
+---
+
+## 🧵 Concurrencia Aplicada en el Scraper
+
+El scraper utiliza **`ThreadPoolExecutor`** desde la librería `concurrent.futures` para acelerar la recolección de información de detalle por película.
+
+### 🧠 Detalles técnicos:
+- Se limita el número de threads para evitar saturar la red o el endpoint.
+- Cada hilo ejecuta la función de extracción del detalle de la película (`/title/{id}/`) en paralelo.
+- Esto mejora el rendimiento sin comprometer la trazabilidad ni la estructura del log.
+
+Se podrían reemplazar por workers distribuidos en producción para escalar horizontalmente.
 
 ---
 
