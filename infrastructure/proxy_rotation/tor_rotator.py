@@ -35,7 +35,7 @@ class TorRotator(TorInterface):
             str: IP pública actual como string. Retorna cadena vacía si falla.
         """
         try:
-            response = requests.get("http://icanhazip.com", proxies=self.proxy, timeout=10)
+            response = requests.get(config.URL_IPHAZIP, proxies=self.proxy, timeout=10)
             return response.text.strip()
         except requests.RequestException:
             return ""

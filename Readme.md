@@ -238,7 +238,7 @@ Cuando el sitio use JS dinámico, CAPTCHAs o detección de bots.
 - 🐘 Scripts SQL en `/sql/`
 - 📄 CSVs generados en `/data/`
 - 🧾 Logs con rotación IP en `/logs/`
-- 📘 Documentación técnica (este archivo)
+- 📘 Documentación técnica (este archivo) y Documento de arquitectura `/docs/`
 
 ---
 

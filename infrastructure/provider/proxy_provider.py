@@ -62,7 +62,7 @@ class ProxyProvider(ProxyProviderInterface):
             tuple[str, str, str]: (IP pública, ciudad, país). Si hay error, retorna ('N/A', 'N/A', 'N/A').
         """
         try:
-            resp = requests.get("https://ipinfo.io/json", proxies=proxy, timeout=config.REQUEST_TIMEOUT)
+            resp = requests.get(config.URL_IPINFO, proxies=proxy, timeout=config.REQUEST_TIMEOUT)
             if resp.status_code == 200:
                 data = resp.json()
                 ip = data.get("ip", "N/A")
