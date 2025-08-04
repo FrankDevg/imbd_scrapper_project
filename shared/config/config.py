@@ -4,6 +4,7 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv()
+SCRAPER_ENGINE="requests"  # Puede ser "playwright" o "selenium"
 # --- Configuración base de IMDb ---
 BASE_URL = "https://www.imdb.com"
 CHART_TOP_PATH = "/chart/top/"

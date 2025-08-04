@@ -1,26 +1,34 @@
-# infrastructure/scraper/factory.py
-
+from domain.interfaces.use_case_interface import UseCaseInterface
 from domain.interfaces.scraper_interface import ScraperInterface
-from infrastructure.scraper.imdb_scraper import ImdbScraper
 
-def get_scraper(source: str) -> ScraperInterface:
+def get_scraper(source: str = "imdb", engine: str = "requests", use_case: UseCaseInterface = None) -> ScraperInterface:
     """
-    Fábrica que retorna una implementación concreta de ScraperInterface según la fuente indicada.
-
-    Esta función permite seleccionar dinámicamente el scraper apropiado a partir del nombre de la fuente.
+    Devuelve una instancia del scraper según la fuente y el motor especificado.
 
     Args:
-        source (str): Nombre de la fuente desde donde se desea hacer scraping (ej. "imdb").
+        source (str): Fuente del scraper, por defecto 'imdb'.
+        engine (str): Motor de scraping (requests, tor, vpn, playwright, etc.).
+        use_case (UseCaseInterface): Caso de uso que maneja la persistencia.
 
     Returns:
-        ScraperInterface: Instancia concreta del scraper correspondiente.
-
-    Raises:
-        ValueError: Si la fuente especificada no está soportada.
+        ScraperInterface: Implementación concreta del scraper.
     """
-    source_clean = source.strip().lower()
+    if use_case is None:
+        raise ValueError("Se requiere un 'use_case' para inicializar el scraper.")
+
+    source_clean = source.lower().strip()
+    engine_clean = engine.lower().strip()
 
     if source_clean == "imdb":
-        return ImdbScraper()
+        if engine_clean == "requests":
+            from infrastructure.scraper.imdb_scraper import ImdbScraper
+            return ImdbScraper(use_case=use_case, engine=engine_clean)
 
-    raise ValueError(f"Scraper no soportado: '{source}'")
+        # elif engine_clean == "playwright":
+        #     from infrastructure.scraper.imdb_scraper_playwright import ImdbScraperPlaywright
+        #     return ImdbScraperPlaywright(use_case=use_case, engine=engine_clean)
+
+        else:
+            raise ValueError(f"Motor '{engine_clean}' no soportado para IMDb.")
+
+    raise ValueError(f"Source '{source}' no es reconocido.")

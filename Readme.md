@@ -5,7 +5,20 @@ Este proyecto es la solución integral a la prueba técnica, demostrando la capa
 El diseño se fundamenta en principios de **Clean Architecture** y **Domain-Driven Design (DDD)**, está completamente **orquestado con Docker**, y documenta una estrategia clara para escalar hacia herramientas como Playwright o Selenium si las defensas del sitio objetivo lo requiriesen.
 
 ---
+## 🧭 Tabla de Contenido
 
+- [✅ Objetivos Cumplidos y Cobertura de Requisitos](#-objetivos-cumplidos-y-cobertura-de-requisitos)
+- [🏛️ Filosofía de Arquitectura y Decisiones Técnicas](#️-filosofía-de-arquitectura-y-decisiones-técnicas)
+- [🧱 Estructura del Proyecto](#-estructura-del-proyecto)
+- [🧩 Estrategia de Red Distribuida: VPN + Proxies + TOR](#-estrategia-de-red-distribuida-vpn--proxies--tor)
+- [🐳 Instrucciones de Despliegue con Docker](#-instrucciones-de-despliegue-con-docker)
+- [🧠 SQL Analítico](#-sql-analítico)
+- [4️⃣ Comparación y Escalabilidad: Scrapy vs. Playwright/Selenium](#4️⃣-comparación-y-escalabilidad-scrapy-vs-playwrightselenium)
+- [🧵 Concurrencia Aplicada en el Scraper](#-concurrencia-aplicada-en-el-scraper)
+- [🔍 Decisiones Técnicas Clave](#-decisiones-técnicas-clave)
+- [📦 Entregables Finales](#-entregables-finales)
+- [📣 Créditos](#-créditos)
+---
 ## ✅ Objetivos Cumplidos y Cobertura de Requisitos
 
 Se ha cumplido con el 100% de los requisitos solicitados, tanto obligatorios como opcionales, para demostrar una competencia exhaustiva en cada área evaluada.
@@ -194,8 +207,13 @@ VPN_COUNTRY=Argentina
 
 ```
 2. Ejecutar:
+   
 ```bash
-docker-compose up --build
+docker-compose build --no-cache
+```
+
+```bash
+docker-compose up
 ```
 
 - PostgreSQL expuesto en `localhost:5432`.
@@ -217,21 +235,200 @@ Incluye:
 
 ---
 
-## 🕸️ Comparación Técnica – Scrapy vs Playwright/Selenium
+## 4️⃣ Comparación y Escalabilidad: Scrapy vs. Playwright/Selenium
 
-Scrapy fue descartado por su sobreestructura para este caso. Usamos Requests + BeautifulSoup por ser más liviano.
+Aunque este proyecto está construido con `requests` y `BeautifulSoup` por su requerimiento y control detallado del flujo, está preparado para escalar hacia herramientas como **Playwright** o **Selenium** en los siguientes escenarios:
 
-**¿Cuándo escalar?**  
-Cuando el sitio use JS dinámico, CAPTCHAs o detección de bots.
+### 🔧 Configuración avanzada de navegador
+Ambas herramientas permiten lanzar navegadores con configuraciones avanzadas:
 
-### Con Playwright o Selenium:
-- Modo headless configurable.
-- Esperas explícitas para selectores dinámicos.
-- Resolución de CAPTCHA con IP rotativa o servicios como 2Captcha.
-- Control de concurrencia con workers o browser context.
+- **Modo headless o visible** (`headless=True/False`).
+- **Modificación de headers personalizados** como User-Agent, Referer, Accept-Language, etc.
+- **Evasión de detección WebDriver**:
+  - Redefinir `navigator.webdriver`.
+  - Inyectar scripts personalizados en el contexto de la página.
+  - Usar extensiones anti-bot o librerías como `stealth.min.js` en Playwright.
+
+### 🎯 Selectores dinámicos con espera explícita
+- **Playwright**: `page.wait_for_selector("selector")` asegura que el DOM esté listo.
+- **Selenium**: `WebDriverWait(driver, timeout).until(expected_conditions.presence_of_element_located(...))` permite esperar elementos dinámicos cargados vía JavaScript.
+
+Esto evita fallos comunes en scraping dinámico (ej: `element not found` o `NoneType`).
+
+### 🛡️ Manejo de JavaScript rendering y CAPTCHAs
+- **Renderizado completo del DOM** habilitado por defecto al usar navegadores reales.
+- **CAPTCHAs**:
+  - Detectar presencia de CAPTCHA mediante selectores.
+  - Resolverlo usando APIs de servicios como **2Captcha**, **AntiCaptcha**, **DeathByCaptcha**.
+  - Alternativamente, utilizar OCR básico si el CAPTCHA es visualmente simple.
+
+### ⚙️ Control de concurrencia
+- **Playwright**:
+  - Permite abrir múltiples contextos (`browser.new_context()`) o múltiples páginas en paralelo.
+  - Ideal para scraping distribuido sin overhead de múltiples procesos.
+
+- **Selenium**:
+  - Compatible con **Selenium Grid** para distribuir instancias en múltiples nodos.
+  - Puede ejecutarse en contenedores paralelos coordinados mediante colas (ej. **Celery**, **RabbitMQ**).
+
+- **Ambas** pueden integrarse en workers asíncronos si se envuelven correctamente.
+
+### 📌 Justificación vs Scrapy
+Aunque **Scrapy** es potente y extensible, **Playwright** y **Selenium** ofrecen ventajas cuando:
+- El contenido depende de **JavaScript o eventos del navegador**.
+- Se requiere **simular interacción humana real**: scroll, clics, selección dinámica.
+- El sitio tiene **bloqueos activos** como CAPTCHAs, honeypots o detección de tráfico automatizado.
+
+## 🧩 Implementación con Playwright o Selenium
+
+Gracias a la aplicación de Clean Architecture y DDD, el sistema permite **agregar nuevos engines de scraping** (como Playwright o Selenium) sin reemplazar ni modificar la implementación actual basada en `requests + BeautifulSoup`.
+
+### 🔄 ¿Cómo se logra esto?
+
+La clave está en el uso de interfaces y fábricas desacopladas:
+
+- `ScraperInterface` en `domain/` define el contrato único que todas las implementaciones deben seguir.
+- Cada implementación (ej. `ImdbScraperRequests`, `ImdbScraperPlaywright`) vive en su propio archivo dentro de `infrastructure/scraper/`.
+- Una fábrica central (`get_scraper()`) puede decidir qué engine usar.
+
+### ⚙️ Alternativa para elegir el engine
+
+Se debe cambiar una variable de entorno en `config.py` para permitir elegir dinámicamente el motor de scraping:
+
+```python
+# shared/config/config.py
+SCRAPER_ENGINE = "Playwright"
+```
+
+```python
+# infrastructure/factory/scraper_factory.py
+from domain.interfaces.use_case_interface import UseCaseInterface
+from domain.interfaces.scraper_interface import ScraperInterface
+
+def get_scraper(source: str = "imdb", engine: str = "requests", use_case: UseCaseInterface = None) -> ScraperInterface:
+    
+    if use_case is None:
+        raise ValueError("Se requiere un 'use_case' para inicializar el scraper.")
+
+    source_clean = source.lower().strip()
+    engine_clean = engine.lower().strip()
+
+    if source_clean == "imdb":
+        if engine_clean == "requests":
+            from infrastructure.scraper.imdb_scraper import ImdbScraper
+            return ImdbScraper(use_case=use_case, engine=engine_clean)
+
+        elif engine_clean == "playwright":
+            from infrastructure.scraper.imdb_scraper_playwright import ImdbScraperPlaywright
+            return ImdbScraperPlaywright(use_case=use_case, engine=engine_clean)
+
+        else:
+            raise ValueError(f"Motor '{engine_clean}' no soportado para IMDb.")
+
+    raise ValueError(f"Source '{source}' no es reconocido.")
+
+```
+
+### 🔁 ¿Y si quiero usar ambos al mismo tiempo?
+
+También es posible. Puedes inyectar ambos scrapers en un **composite scraper** que combine o compare resultados, o usarlos como fallback uno del otro:
+
+```python
+class CompositeScraper(ScraperInterface):
+    def __init__(self, primary_scraper, secondary_scraper):
+        self.primary = primary_scraper
+        self.secondary = secondary_scraper
+
+    def scrape(self):
+        try:
+            return self.primary.scrape()
+        except Exception:
+            return self.secondary.scrape()
+```
+
+> Esto aporta escalabilidad sin comprometer el diseño, permitiendo usar múltiples motores sin reescribir los casos de uso.
+
 
 ---
 
+## 🧵 Concurrencia Aplicada en el Scraper
+
+El scraper utiliza **`ThreadPoolExecutor`** desde la librería `concurrent.futures` para acelerar la recolección de información de detalle por película.
+
+### 🧠 Detalles técnicos:
+- Se limita el número de threads para evitar saturar la red o el endpoint.
+- Cada hilo ejecuta la función de extracción del detalle de la película (`/title/{id}/`) en paralelo.
+- Esto mejora el rendimiento sin comprometer la trazabilidad ni la estructura del log.
+
+Se podrían reemplazar por workers distribuidos en producción para escalar horizontalmente.
+
+---
+
+## 🔍 Decisiones Técnicas Clave
+
+### 🧠 1. SQL Directo en lugar de ORM
+Decidí **no utilizar un ORM como SQLAlchemy** y optar por sentencias SQL explícitas, basándome en:
+
+- ✅ **Simplicidad del modelo de datos** (películas, actores y relación N:M).
+- ✅ **Mayor control sobre las operaciones** de escritura, validaciones y consultas analíticas.
+- ✅ **Separación limpia por repositorios**, que permite desacoplar la lógica de persistencia y facilitar una futura migración a un ORM sin modificar los casos de uso.
+- ✅ **Mejor rendimiento para scraping masivo**, al evitar capas adicionales de abstracción.
+
+> Esta decisión no limita la escalabilidad futura, ya que el diseño permite incorporar ORM cuando sea necesario.
+
+---
+
+### 🌐 2. Scraping distribuido con rotación de IPs y red privada
+
+Para garantizar robustez y anonimato en la extracción de datos, el scraper está configurado con:
+
+- 🧅 **Red TOR** activa para rotación básica de IPs.
+- 🔄 **User-Agent aleatorios y headers realistas** en cada solicitud.
+- 🧰 **Proxies premium de Data Impulso**, integrados con fallback automático.
+- 🔐 **VPN real instalada dentro de Docker**, conectada a la red interna.
+- 💣 Tolerancia a fallos mediante reintentos automáticos y separación del canal de scraping y persistencia.
+
+---
+
+### 🗂️ 3. Persistencia híbrida (CSV + PostgreSQL)
+
+Para garantizar versatilidad en el análisis y almacenamiento:
+
+- 🧾 **CSV**: Exportación directa a `movies.csv`, `actors.csv` y `movie_actor.csv`, útil para revisión rápida o carga en herramientas externas.
+- 🛢️ **PostgreSQL**: Almacenamiento estructurado de películas, actores y relaciones, ideal para análisis SQL avanzado y consultas cruzadas.
+- 🧱 Cada mecanismo de persistencia se implementó como un repositorio independiente bajo el patrón Strategy, permitiendo su uso simultáneo o alternativo.
+
+---
+
+### 🧼 4. Arquitectura Limpia (Clean Architecture + DDD)
+
+Todo el proyecto fue estructurado en capas bien definidas:
+
+- `domain/`: Modelos de negocio y contratos de repositorios (interfaces).
+- `application/`: Casos de uso desacoplados.
+- `infrastructure/`: Implementaciones concretas (scraper, CSV, DB).
+- `presentation/`: Punto de entrada (`run_scraper.py`).
+- `shared/`: Configuración, logging y constantes.
+
+> Esta estructura facilita pruebas unitarias, extensibilidad y mantenimiento a largo plazo.
+
+---
+
+### 🐋 5. Entorno Dockerizado con Red Privada Segura
+
+El entorno de ejecución está totalmente containerizado y preparado para producción:
+
+- `docker-compose.yml` levanta servicios clave:
+  - Scraper
+  - PostgreSQL
+  - Red TOR
+  - **VPN montada en la red interna**
+- Se utilizaron:
+  - ✅ **Redes internas de Docker**
+  - ✅ **Volúmenes persistentes**
+  - ✅ **Variables externas (.env)**
+- Se integraron **healthchecks propios de cada imagen Docker** para garantizar estabilidad de los servicios antes de ejecutar el scraping.
+---
 ## 📦 Entregables Finales
 
 - 🗃️ Código en GitHub

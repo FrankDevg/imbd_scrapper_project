@@ -1,4 +1,3 @@
-# infrastructure/network/proxy_provider_factory.py
 
 from domain.interfaces.proxy_interface import ProxyProviderInterface
 from infrastructure.provider.proxy_provider import ProxyProvider
