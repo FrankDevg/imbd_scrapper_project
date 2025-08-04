@@ -5,7 +5,19 @@ Este proyecto es la solución integral a la prueba técnica, demostrando la capa
 El diseño se fundamenta en principios de **Clean Architecture** y **Domain-Driven Design (DDD)**, está completamente **orquestado con Docker**, y documenta una estrategia clara para escalar hacia herramientas como Playwright o Selenium si las defensas del sitio objetivo lo requiriesen.
 
 ---
+## 🧭 Tabla de Contenido
 
+- [✅ Objetivos Cumplidos y Cobertura de Requisitos](#-objetivos-cumplidos-y-cobertura-de-requisitos)
+- [🏛️ Filosofía de Arquitectura y Decisiones Técnicas](#️-filosofía-de-arquitectura-y-decisiones-técnicas)
+- [🧱 Estructura del Proyecto](#️-estructura-del-proyecto)
+- [🧩 Estrategia de Red Distribuida: VPN + Proxies + TOR](#️-estrategia-de-red-distribuida-vpn--proxies--tor)
+- [🐳 Instrucciones de Despliegue con Docker](#-instrucciones-de-despliegue-con-docker)
+- [🧠 SQL Analítico](#-sql-analítico)
+- [🧵 Concurrencia Aplicada en el Scraper](#-concurrencia-aplicada-en-el-scraper)
+- [🕸️ Comparación Técnica – Scrapy vs Playwright/Selenium](#️-comparación-técnica--scrapy-vs-playwrightselenium)
+- [📦 Entregables Finales](#-entregables-finales)
+- [📣 Créditos](#-créditos)
+---
 ## ✅ Objetivos Cumplidos y Cobertura de Requisitos
 
 Se ha cumplido con el 100% de los requisitos solicitados, tanto obligatorios como opcionales, para demostrar una competencia exhaustiva en cada área evaluada.
