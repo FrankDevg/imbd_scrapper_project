@@ -206,8 +206,13 @@ VPN_COUNTRY=Argentina
 
 ```
 2. Ejecutar:
+   
 ```bash
-docker-compose up --build
+docker-compose build --no-cache
+```
+
+```bash
+docker-compose up
 ```
 
 - PostgreSQL expuesto en `localhost:5432`.
