@@ -15,7 +15,7 @@ El diseño se fundamenta en principios de **Clean Architecture** y **Domain-Driv
 - [🧠 SQL Analítico](#-sql-analítico)
 - [🕸️ Comparación Técnica – Scrapy vs Playwright/Selenium](#️-comparación-técnica--scrapy-vs-playwrightselenium)
 - [🧵 Concurrencia Aplicada en el Scraper](#-concurrencia-aplicada-en-el-scraper)
-- [## 🔍 Decisiones Técnicas Clave](#-decisiones-técnicas-clave)
+- [🔍 Decisiones Técnicas Clave](#-decisiones-técnicas-clave)
 - [📦 Entregables Finales](#-entregables-finales)
 - [📣 Créditos](#-créditos)
 ---
