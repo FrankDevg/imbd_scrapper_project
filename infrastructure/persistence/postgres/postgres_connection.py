@@ -1,4 +1,3 @@
-# infrastructure/persistence/postgres/postgres_connection.py
 
 import psycopg2
 from shared.config import config

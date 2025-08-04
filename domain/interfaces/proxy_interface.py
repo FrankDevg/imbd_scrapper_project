@@ -1,4 +1,3 @@
-# domain/interfaces/proxy_interface.py
 
 from abc import ABC, abstractmethod
 from typing import Optional, Dict
