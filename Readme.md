@@ -63,93 +63,106 @@ TOR ofrece:
 
 ```
 imbd_scraper_project/
-├── application/                  # Casos de uso orquestando lógica de dominio
+├── .env                          # Variables de entorno (no versionar)
+├── .gitignore                   # Ignora __pycache__, .env, logs, etc.
+├── docker-compose.yml           # Orquestación de servicios: scraper, DB, TOR, VPN
+├── Dockerfile                   # Imagen del scraper (instala psql, dependencias, etc.)
+├── Readme.md                    # Documentación principal
+├── requirements.txt             # Dependencias del proyecto
+
+├── application/                 # Casos de uso orquestando la lógica de negocio
+│   ├── __init__.py
 │   └── use_cases/
 │       ├── composite_save_movie_with_actors_use_case.py
 │       ├── save_movie_with_actors_csv_use_case.py
 │       ├── save_movie_with_actors_postgres_use_case.py
 │       └── __init__.py
-│
-├── data/                         # Archivos CSV generados automáticamente
+
+├── data/                        # Archivos CSV generados automáticamente
 │   ├── actors.csv
 │   ├── movies.csv
 │   └── movie_actor.csv
-│
-├── domain/                       # Modelos, interfaces y contratos de repositorio
-│   ├── interfaces/               # Interfaces de scraper, proxy, etc.
+
+├── docs/                        # Documentación técnica (PDF, diagramas)
+│   └── IMBDSCRAPER_Documento_Arquitectura.pdf
+
+├── domain/                      # Modelo de dominio + interfaces de uso
+│   ├── __init__.py
+│   ├── interfaces/              # Contratos (abstracciones)
 │   │   ├── proxy_interface.py
 │   │   ├── scraper_interface.py
 │   │   ├── tor_interface.py
 │   │   ├── use_case_interface.py
 │   │   └── __init__.py
-│   ├── models/                   # Entidades del dominio
+│   ├── models/                  # Entidades del dominio
 │   │   ├── actor.py
 │   │   ├── movie.py
 │   │   ├── movie_actor.py
 │   │   └── __init__.py
-│   └── repositories/            # Contratos de repositorios
+│   └── repositories/            # Interfaces de repositorio
 │       ├── actor_repository.py
 │       ├── movie_actor_repository.py
 │       ├── movie_repository.py
 │       └── __init__.py
-│
-├── infrastructure/              # Implementaciones tecnológicas
-│   ├── factory/                 # Factories para desacoplar la creación de objetos
-│   │   ├── db_factory.py
-│   │   ├── proxy_factory.py
-│   │   ├── scraper_factory.py
-│   │   ├── tor_factory.py
-│   │   ├── use_case_factory.py
+
+├── infrastructure/              # Implementación técnica de la arquitectura
+│   ├── __init__.py
+│   ├── factory/                 # Contenedor de dependencias y factories
+│   │   ├── dependency_container.py
 │   │   └── __init__.py
-│   ├── persistence/             # Implementaciones concretas de persistencia
+│   ├── network/                 # Proveedor de proxies y rotador de TOR
+│   │   ├── proxy_provider.py
+│   │   ├── tor_rotator.py
+│   │   └── __init__.py
+│   ├── persistence/             # Persistencia CSV y PostgreSQL
+│   │   ├── __init__.py
 │   │   ├── csv/
-│   │   │   ├── init_csv_files.py
+│   │   │   ├── __init__.py
 │   │   │   └── repositories/
 │   │   │       ├── actor_csv_repository.py
 │   │   │       ├── movie_actor_csv_repository.py
-│   │   │       └── movie_csv_repository.py
+│   │   │       ├── movie_csv_repository.py
+│   │   │       └── __init__.py
 │   │   └── postgres/
 │   │       ├── postgres_connection.py
 │   │       └── repositories/
 │   │           ├── actor_postgres_repository.py
 │   │           ├── movie_actor_postgres_repository.py
-│   │           └── movie_postgres_repository.py
-│   ├── proxy_rotation/          # Lógica de rotación TOR
-│   │   └── tor_rotator.py
-│   ├── provider/                # Lógica de selección de proxy (ej. TOR, otros)
-│   │   └── proxy_provider.py
-│   └── scraper/                 # Implementación del scraper principal
+│   │           ├── movie_postgres_repository.py
+│   │           └── __init__.py
+│   ├── provider/                # (Deprecable si ya se migró a /network)
+│   │   └── __init__.py
+│   ├── proxy_rotation/          # (Deprecable también; quedó solo __pycache__)
+│   └── scraper/                 # Scraper principal y herramientas
 │       ├── imdb_scraper.py
 │       ├── utils.py
 │       └── __init__.py
-│
-├── logs/                        # Archivos de logs del scraper
+
+├── logs/                        # Logs generados por el scraper
 │   └── scraper.log
-│
-├── presentation/                # CLI o interfaces externas
+
+├── presentation/                # CLI o interfaces de entrada al sistema
+│   ├── __init__.py
 │   └── cli/
 │       ├── run_scraper.py       # Punto de entrada principal
 │       └── __init__.py
-│
-├── shared/                      # Utilidades globales
-│   ├── config/                  # Configuraciones centralizadas
-│   │   └── config.py
-│   └── logger/                  # Configuración de logging
-│       └── logging_config.py
-│
-├── sql/                         # Scripts SQL para DB
+
+├── shared/                      # Recursos reutilizables a lo largo del sistema
+│   ├── __init__.py
+│   ├── config/
+│   │   ├── config.py
+│   │   └── __init__.py
+│   └── logger/
+│       ├── logging_config.py
+│       └── __init__.py
+
+├── sql/                         # Scripts SQL ejecutables dentro del contenedor
 │   ├── 01_schema.sql
 │   ├── 02_procedures.sql
 │   ├── 03_views.sql
 │   ├── load_from_csv.sql
 │   └── queries.sql
-│
-├── .env                         # Configuraciones de entorno (no versionar)
-├── .gitignore                   # Ignora .env, __pycache__, etc.
-├── docker-compose.yml           # Orquestación del proyecto con PostgreSQL
-├── Dockerfile                   # Imagen del scraper
-├── requirements.txt             # Dependencias del proyecto
-└── README.md                    # Documentación completa del sistema
+
 ```
 ---
 
