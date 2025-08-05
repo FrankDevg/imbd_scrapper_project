@@ -3,7 +3,6 @@ from typing import Optional
 from domain.models.movie import Movie
 from domain.repositories.movie_repository import MovieRepository
 from psycopg2 import DatabaseError
-from infrastructure.persistence.postgres.postgres_connection import get_cursor
 
 logger = logging.getLogger(__name__)
 
@@ -19,7 +18,7 @@ class MoviePostgresRepository(MovieRepository):
         Guarda una película usando un procedimiento almacenado y retorna el objeto completo.
         """
         try:
-            with get_cursor() as cur:
+            with self.conn.cursor() as cur:
                 cur.execute("SELECT * FROM upsert_movie(%s, %s, %s, %s, %s, %s);", (
                     movie.imdb_id, movie.title, movie.year, movie.rating,
                     movie.duration_minutes, movie.metascore
@@ -46,7 +45,7 @@ class MoviePostgresRepository(MovieRepository):
         Busca una película por su ID de IMDb en la base de datos.
         """
         try:
-            with get_cursor() as cur:
+            with self.conn.cursor() as cur:
                 cur.execute("""
                     SELECT id, imdb_id, title, year, rating, duration_minutes, metascore 
                     FROM movies WHERE imdb_id = %s

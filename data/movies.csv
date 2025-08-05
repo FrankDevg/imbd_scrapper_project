@@ -1,251 +1,251 @@
 id,imdb_id,title,year,rating,duration_minutes,metascore
-1,tt0057115,The Great Escape,1963,8.2,172,86
+1,tt0116282,Фарґо,1996,8.1,98,88
 2,tt0073486,One Flew Over the Cuckoo's Nest,1975,8.7,133,84
-3,tt0245429,Sen to Chihiro no kamikakushi,2001,8.6,124,96
-4,tt0090605,Aliens,1986,8.4,137,84
-5,tt0050083,12 Angry Men,1957,9.0,96,97
-6,tt3011894,Relatos salvajes,2014,8.1,122,77
-7,tt0108052,Schindler's List,1993,9.0,195,95
-8,tt0110912,Pulp Fiction,1994,8.8,154,95
-9,tt0042876,Rashômon,1950,8.1,88,98
-10,tt0993846,The Wolf of Wall Street,2013,8.2,180,75
-11,tt0347149,Hauru no ugoku shiro,2004,8.2,119,82
-12,tt0082096,Das Boot,1981,8.4,149,85
-13,tt0053291,Some Like It Hot,1959,8.2,121,98
-14,tt0059742,The Sound of Music,1965,8.1,172,63
-15,tt1954470,Gangs of Wasseypur,2012,8.2,321,89
-16,tt0032553,The Great Dictator,1940,8.4,125,
-17,tt0038650,It's a Wonderful Life,1946,8.6,130,89
-18,tt0054215,Psycho,1960,8.5,109,97
-19,tt4430212,Drishyam,2015,8.2,163,
-20,tt0062622,2001: A Space Odyssey,1968,8.3,149,84
-21,tt0116282,Fargo,1996,8.1,98,88
-22,tt0027977,Modern Times,1936,8.5,87,96
-23,tt0050986,Smultronstället,1957,8.1,92,88
-24,tt1305806,El secreto de sus ojos,2009,8.2,129,80
-25,tt0064116,C'era una volta il West,1968,8.5,166,82
-26,tt0353969,Salinui chueok,2003,8.1,131,82
-27,tt0031381,Gone with the Wind,1939,8.2,238,97
-28,tt0088763,Back to the Future,1985,8.5,116,87
-29,tt0364569,Oldeuboi,2003,8.3,120,78
-30,tt0120382,The Truman Show,1998,8.2,103,90
-31,tt0066921,A Clockwork Orange,1971,8.2,136,77
-32,tt1291584,Warrior,2011,8.1,140,71
-33,tt0381681,Before Sunset,2004,8.1,80,91
-34,tt0395169,Hotel Rwanda,2004,8.1,121,79
-35,tt0091251,Idi i smotri,1985,8.3,142,
-36,tt0017136,Metropolis,1927,8.3,153,98
-37,tt0071562,The Godfather Part II,1974,9.0,202,90
-38,tt0363163,Der Untergang,2004,8.2,156,82
-39,tt4729430,Klaus,2019,8.2,96,65
-40,tt10872600,Spider-Man: No Way Home,2021,8.2,148,71
-41,tt0209144,Memento,2000,8.4,113,83
-42,tt4154756,Avengers: Infinity War,2018,8.4,149,68
-43,tt0325980,Pirates of the Caribbean: The Curse of the Black Pearl,2003,8.1,143,63
-44,tt0086190,Star Wars: Episode VI - Return of the Jedi,1983,8.3,131,58
-45,tt1950186,Ford v Ferrari,2019,8.1,152,81
-46,tt0046438,Tôkyô monogatari,1953,8.1,137,100
-47,tt0434409,V for Vendetta,2005,8.1,132,62
-48,tt1130884,Shutter Island,2010,8.2,138,63
-49,tt0060196,"Il buono, il brutto, il cattivo",1966,8.8,161,90
-50,tt0118849,Bacheha-ye aseman,1997,8.2,89,77
-51,tt0107048,Groundhog Day,1993,8.0,101,72
-52,tt0266697,Kill Bill: Vol. 1,2003,8.2,111,69
-53,tt2096673,Inside Out,2015,8.1,95,94
-54,tt0047296,On the Waterfront,1954,8.1,108,91
-55,tt0055630,Yôjinbô,1961,8.2,110,93
-56,tt0105236,Reservoir Dogs,1992,8.3,99,81
-57,tt9362722,Spider-Man: Across the Spider-Verse,2023,8.5,140,86
-58,tt0120737,The Lord of the Rings: The Fellowship of the Ring,2001,8.9,178,92
-59,tt0476735,Babam ve Oglum,2005,8.2,112,
-60,tt0078788,Apocalypse Now,1979,8.4,147,94
-61,tt0040897,The Treasure of the Sierra Madre,1948,8.2,126,98
-62,tt0096283,Tonari no Totoro,1988,8.1,86,87
-63,tt0095016,Die Hard,1988,8.2,132,72
-64,tt1895587,Spotlight,2015,8.1,129,93
-65,tt0338013,Eternal Sunshine of the Spotless Mind,2004,8.3,108,89
-66,tt0099685,GoodFellas,1990,8.7,145,92
-67,tt2582802,Whiplash,2014,8.5,106,89
-68,tt1028532,Hachi: A Dog's Tale,2009,8.1,93,
-69,tt0117951,Trainspotting,1996,8.1,93,83
-70,tt0435761,Toy Story 3,2010,8.3,103,92
-71,tt0019254,La passion de Jeanne d'Arc,1928,8.1,110,98
-72,tt0080684,Star Wars: Episode V - The Empire Strikes Back,1980,8.7,124,82
-73,tt2380307,Coco,2017,8.4,105,81
-74,tt0978762,Mary and Max.,2009,8.1,92,72
-75,tt0050976,Det sjunde inseglet,1957,8.1,96,88
-76,tt0036775,Double Indemnity,1944,8.3,107,95
-77,tt0047478,Shichinin no samurai,1954,8.6,207,98
-78,tt0317705,The Incredibles,2004,8.0,115,90
-79,tt0114369,Se7en,1995,8.6,127,65
-80,tt1255953,Incendies,2010,8.3,131,80
-81,tt0012349,The Kid,1921,8.2,68,
-82,tt0022100,M - Eine Stadt sucht einen Mörder,1931,8.3,117,
-83,tt11032374,Gekijô-ban Kimetsu no Yaiba Mugen Ressha-hen,2020,8.2,117,72
-84,tt0015864,The Gold Rush,1925,8.1,95,90
-85,tt0051201,Witness for the Prosecution,1957,8.4,116,76
-86,tt0052357,Vertigo,1958,8.2,128,100
-87,tt0266543,Finding Nemo,2003,8.2,100,90
-88,tt5074352,Dangal,2016,8.3,161,
-89,tt0021749,City Lights,1931,8.5,87,99
-90,tt0405159,Million Dollar Baby,2004,8.1,132,86
-91,tt2106476,Jagten,2012,8.3,115,77
-92,tt0482571,The Prestige,2006,8.5,130,66
-93,tt0075314,Taxi Driver,1976,8.2,114,94
-94,tt0088247,The Terminator,1984,8.1,107,84
-95,tt0074958,Network,1976,8.1,121,83
-96,tt0892769,How to Train Your Dragon,2010,8.1,98,75
-97,tt29623480,The Wild Robot,2024,8.2,102,85
-98,tt0109830,Forrest Gump,1994,8.8,142,82
-99,tt0077416,The Deer Hunter,1978,8.1,183,90
-100,tt0070735,The Sting,1973,8.2,129,83
-101,tt0059578,Per qualche dollaro in più,1965,8.2,132,74
-102,tt4154796,Avengers: Endgame,2019,8.4,181,78
-103,tt3315342,Logan,2017,8.1,137,77
-104,tt0816692,Interstellar,2014,8.7,169,74
-105,tt0068646,The Godfather,1972,9.2,175,100
-106,tt0112471,Before Sunrise,1995,8.1,101,79
-107,tt7286456,Joker,2019,8.3,122,59
-108,tt0167261,The Lord of the Rings: The Two Towers,2002,8.8,179,87
-109,tt0133093,The Matrix,1999,8.7,136,73
-110,tt8503618,Hamilton,2020,8.3,160,88
-111,tt0086879,Amadeus,1984,8.4,160,87
-112,tt0084787,The Thing,1982,8.2,109,57
-113,tt0041959,The Third Man,1949,8.1,104,97
-114,tt0118715,The Big Lebowski,1998,8.1,117,71
-115,tt0111161,The Shawshank Redemption,1994,9.3,142,82
-116,tt0167260,The Lord of the Rings: The Return of the King,2003,9.0,201,94
-117,tt15398776,Oppenheimer,2023,8.3,180,90
-118,tt0129167,The Iron Giant,1999,8.1,86,85
-119,tt0120586,American History X,1998,8.5,119,62
-120,tt0080678,The Elephant Man,1980,8.2,124,78
-121,tt6966692,Green Book,2018,8.2,130,69
-122,tt0058946,La battaglia di Algeri,1966,8.1,121,96
-123,tt3170832,Room,2015,8.1,118,86
-124,tt0050825,Wege zum Ruhm,1957,8.4,88,90
-125,tt0056592,Wer die Nachtigall stört,1962,8.3,129,88
-126,tt2119532,Hacksaw Ridge - Die Entscheidung,2016,8.1,139,71
-127,tt0119217,Good Will Hunting: Der gute Will Hunting,1997,8.3,126,71
-128,tt8579674,1917,2019,8.2,119,78
-129,tt0317248,City of God,2002,8.6,130,79
-130,tt0093058,Full Metal Jacket,1987,8.2,116,78
-131,tt1375666,Inception,2010,8.8,148,74
-132,tt0119698,Prinzessin Mononoke,1997,8.3,133,78
-133,tt4633694,Spider-Man: A New Universe,2018,8.4,117,87
-134,tt1205489,Gran Torino,2008,8.1,116,73
-135,tt15239678,Dune: Part Two,2024,8.5,166,79
-136,tt5323662,A Silent Voice,2016,8.1,130,78
-137,tt4016934,Die Taschendiebin,2016,8.1,145,85
-138,tt0198781,Die Monster AG,2001,8.1,92,79
-139,tt0167404,The Sixth Sense - Nicht jede Gabe ist ein Segen,1999,8.2,107,64
-140,tt0758758,Into the Wild,2007,8.0,148,73
-141,tt23849204,12th Fail,2023,8.7,147,
-142,tt1454029,The Help,2011,8.1,146,62
-143,tt0120815,Der Soldat James Ryan,1998,8.6,169,91
-144,tt0208092,Snatch: Schweine und Diamanten,2000,8.2,104,55
-145,tt0107290,Jurassic Park,1993,8.2,127,68
-146,tt0032138,Das zauberhafte Land,1939,8.1,102,92
-147,tt0076759,Star Wars: Episode IV - Eine neue Hoffnung,1977,8.6,121,90
-148,tt1832382,Nader und Simin - eine Trennung,2011,8.3,123,95
-149,tt0268978,A Beautiful Mind: Genie und Wahnsinn,2001,8.2,135,72
-150,tt1187043,3 Idiots,2009,8.4,170,67
-151,tt0057565,Zwischen Himmel und Hölle,1963,8.4,143,90
-152,tt1745960,Top Gun: Maverick,2022,8.2,130,78
-153,tt0047396,Das Fenster zum Hof,1954,8.5,112,100
-154,tt0052618,Ben Hur,1959,8.1,212,90
-155,tt0407887,Departed: Unter Feinden,2006,8.5,151,85
-156,tt0081505,Shining,1980,8.4,146,68
-157,tt0081398,Wie ein wilder Stier,1980,8.1,129,90
-158,tt0103064,Terminator 2: Tag der Abrechnung,1991,8.6,137,75
-159,tt0053604,Das Appartement,1960,8.3,125,94
-160,tt0114814,Die üblichen Verdächtigen,1995,8.5,106,76
-161,tt0082971,Jäger des verlorenen Schatzes,1981,8.4,115,86
-162,tt1853728,Django Unchained,2012,8.5,165,81
-163,tt0078748,Alien: Das unheimliche Wesen aus einer fremden Welt,1979,8.5,117,89
-164,tt0986264,Taare Zameen Par: Ein Stern auf Erden,2007,8.3,162,
-165,tt0910970,WALL·E - Der Letzte räumt die Erde auf,2008,8.4,98,95
-166,tt0102926,Das Schweigen der Lämmer,1991,8.6,118,86
-167,tt1049413,Oben,2009,8.3,96,88
-168,tt5311514,Your Name.,2016,8.4,106,81
-169,tt10272386,The Father,2020,8.2,97,88
-170,tt0043014,Boulevard der Dämmerung,1950,8.4,110,94
-171,tt26548265,Maharaja,2024,8.4,141,
-172,tt0031679,Mr. Smith geht nach Washington,1939,8.1,129,73
-173,tt0113247,Hass,1995,8.1,98,
-174,tt0172495,Gladiator,2000,8.5,155,67
-175,tt0095765,Cinema Paradiso,1988,8.5,174,80
-176,tt0073195,Der weiße Hai,1975,8.1,124,87
-177,tt0110413,Léon: Der Profi,1994,8.5,110,64
-178,tt0346336,Die besten Jahre,2003,8.5,374,89
-179,tt0017925,Der General,1926,8.1,78,
-180,tt0097576,Indiana Jones und der letzte Kreuzzug,1989,8.2,127,65
-181,tt0086250,Scarface,1983,8.3,170,65
-182,tt0477348,No Country for Old Men,2007,8.2,122,92
-183,tt0075148,Rocky,1976,8.1,120,70
-184,tt0033467,Citizen Kane,1941,8.3,119,100
-185,tt0042192,Alles über Eva,1950,8.2,138,98
-186,tt0071315,Chinatown,1974,8.1,130,92
-187,tt0050212,Die Brücke am Kwai,1957,8.1,161,88
-188,tt2024544,12 Years a Slave,2013,8.1,134,96
-189,tt0071853,Die Ritter der Kokosnuß,1975,8.2,91,91
-190,tt0114709,Toy Story,1995,8.3,81,96
-191,tt0036868,Die besten Jahre unseres Lebens,1946,8.1,170,93
-192,tt0095327,Die letzten Glühwürmchen,1988,8.5,88,94
-193,tt0169547,American Beauty,1999,8.3,122,84
-194,tt0015324,Sherlock Holmes Jr.,1924,8.1,45,
-195,tt0120689,The Green Mile,1999,8.6,189,61
-196,tt0040522,Fahrraddiebe,1948,8.2,89,
-197,tt0087843,Es war einmal in Amerika,1984,8.3,229,75
-198,tt1345836,The Dark Knight Rises,2012,8.4,164,78
-199,tt0468569,The Dark Knight,2008,9.1,152,85
-200,tt0091763,Platoon,1986,8.1,120,92
-201,tt0034583,Casablanca,1942,8.5,102,100
-202,tt0032551,Früchte des Zorns,1940,8.1,129,96
-203,tt0089881,Ran,1985,8.2,160,97
-204,tt0044741,Ikiru: Einmal wirklich leben,1952,8.3,143,92
-205,tt0120735,Bube Dame König grAS,1998,8.1,107,67
-206,tt0057012,"Dr. Seltsam oder: Wie ich lernte, die Bombe zu lieben",1964,8.3,95,97
-207,tt0055031,Urteil von Nürnberg,1961,8.3,179,60
-208,tt15097216,Jai Bhim,2021,8.6,164,
-209,tt0092005,Stand by Me: Das Geheimnis eines Sommers,1986,8.1,89,75
-210,tt0252488,Hababam Sinifi Sinifta Kaldi,1975,8.6,95,
-211,tt0053125,Der unsichtbare Dritte,1959,8.3,136,98
-212,tt0072684,Barry Lyndon,1975,8.1,185,89
-213,tt0457430,Pans Labyrinth,2006,8.2,118,98
-214,tt0372784,Batman Begins,2005,8.2,140,70
-215,tt0046268,Lohn der Angst,1953,8.1,150,85
-216,tt1392214,Prisoners,2013,8.2,153,70
-217,tt1201607,Harry Potter und die Heiligtümer des Todes - Teil 2,2011,8.1,130,85
-218,tt0112573,Braveheart,1995,8.3,178,68
-219,tt2278388,Grand Budapest Hotel,2014,8.1,99,88
-220,tt0211915,Die fabelhafte Welt der Amelie,2001,8.3,122,70
-221,tt0361748,Inglourious Basterds,2009,8.4,153,69
-222,tt1979320,Rush - Alles für den Sieg,2013,8.1,123,74
-223,tt0118799,Das Leben ist schön,1997,8.6,116,58
-224,tt0469494,There Will Be Blood,2007,8.2,158,93
-225,tt0045152,Du sollst mein Glücksstern sein,1952,8.3,103,99
-226,tt0382932,Ratatouille,2007,8.1,111,96
-227,tt0107207,Im Namen des Vaters,1993,8.1,133,84
-228,tt6751668,Parasite,2019,8.5,132,97
-229,tt0056172,Lawrence von Arabien,1962,8.3,227,100
-230,tt0137523,Fight Club,1999,8.8,139,67
-231,tt0112641,Casino,1995,8.2,178,73
-232,tt5027774,"Three Billboards Outside Ebbing, Missouri",2017,8.1,115,88
-233,tt0180093,Requiem for a Dream,2000,8.3,102,71
-234,tt1675434,Intouchables,2011,8.5,112,57
-235,tt0046912,Dial M for Murder,1954,8.2,105,75
-236,tt0070047,The Exorcist,1973,8.1,122,83
-237,tt0097165,Dead Poets Society,1989,8.1,128,79
-238,tt0405094,Das Leben der Anderen,2006,8.4,137,89
-239,tt0105695,Unforgiven,1992,8.2,130,85
-240,tt8267604,Capharnaüm,2018,8.4,126,75
-241,tt0253474,The Pianist,2002,8.5,150,85
-242,tt0035446,To Be or Not to Be,1942,8.1,99,86
-243,tt2267998,Gone Girl,2014,8.1,149,79
-244,tt0056058,Seppuku,1962,8.6,133,85
-245,tt0264464,Catch Me If You Can,2002,8.1,141,75
-246,tt0083658,Blade Runner,1982,8.1,117,84
-247,tt1392190,Mad Max: Fury Road,2015,8.1,120,90
-248,tt0113277,Heat,1995,8.3,170,76
-249,tt0110357,The Lion King,1994,8.5,88,88
-250,tt0119488,L.A. Confidential,1997,8.2,138,91
+3,tt0022100,M,1931,8.3,117,
+4,tt0086190,Star Wars: Episode VI - Return of the Jedi,1983,8.3,131,58
+5,tt1187043,3 Idiots,2009,8.4,170,67
+6,tt0114814,Suspecți de serviciu,1995,8.5,106,76
+7,tt0032553,Ο μεγάλος δικτάτωρ,1940,8.4,125,
+8,tt10872600,Omul-Păianjen: Niciun drum spre casă,2021,8.2,148,71
+9,tt0364569,Oldboy,2003,8.3,120,78
+10,tt0208092,Snatch,2000,8.2,104,55
+11,tt0129167,The Iron Giant,1999,8.1,86,85
+12,tt0245429,Spirited Away: W krainie bogów,2001,8.6,124,96
+13,tt0055630,Straż przyboczna,1961,8.2,110,93
+14,tt0050825,Cărările gloriei,1957,8.4,88,90
+15,tt0816692,Interstellar,2014,8.7,169,74
+16,tt8267604,Capharnaüm,2018,8.4,126,75
+17,tt0346336,Kagayakeru Seishun,2003,8.5,374,89
+18,tt0043014,Sunset Blvd.,1950,8.4,110,94
+19,tt4016934,Người Hầu Gái,2016,8.1,145,85
+20,tt26548265,Maharaja,2024,8.4,141,
+21,tt0482571,The Prestige,2006,8.5,130,66
+22,tt1305806,El secreto de sus ojos,2009,8.2,129,80
+23,tt0042876,Rashômon,1950,8.1,88,98
+24,tt0892769,How to Train Your Dragon,2010,8.1,98,75
+25,tt5074352,Dangal,2016,8.3,161,
+26,tt0027977,Thời Đại Tân Kỳ,1936,8.5,87,96
+27,tt0050212,Міст через річку Квай,1957,8.1,161,88
+28,tt1375666,Inception,2010,8.8,148,74
+29,tt0031381,Gone with the Wind,1939,8.2,238,97
+30,tt0074958,Network,1976,8.1,121,83
+31,tt0060196,"The Good, the Bad and the Ugly",1966,8.8,161,90
+32,tt0109830,Forrest Gump,1994,8.8,142,82
+33,tt0114369,Se7en,1995,8.6,127,65
+34,tt2106476,Vânătoarea,2012,8.3,115,77
+35,tt0088247,The Terminator,1984,8.1,107,84
+36,tt0089881,Ran,1985,8.2,160,97
+37,tt0266697,Kill Bill - Vol. 1,2003,8.2,111,69
+38,tt4633694,Spider-Man: Een nieuw universum,2018,8.4,117,87
+39,tt0137523,Fight Club,1999,8.8,139,67
+40,tt9362722,Spider-Man: Across the Spider-Verse,2023,8.5,140,86
+41,tt1130884,Shutter Island,2010,8.2,138,63
+42,tt8579674,1917,2019,8.2,119,78
+43,tt0112573,Braveheart,1995,8.3,178,68
+44,tt0036868,Die besten Jahre unseres Lebens,1946,8.1,170,93
+45,tt0347149,Das wandelnde Schloss,2004,8.2,119,82
+46,tt8503618,Hamilton,2020,8.3,160,88
+47,tt0080678,The Elephant Man,1980,8.2,124,78
+48,tt0338013,Vergiss mein nicht,2004,8.3,108,89
+49,tt0050083,Die zwölf Geschworenen,1957,9.0,96,97
+50,tt1954470,Asian Godfather - Die Gangs von Wasseypur,2012,8.2,321,89
+51,tt0055031,Urteil von Nürnberg,1961,8.3,179,60
+52,tt0071853,Die Ritter der Kokosnuß,1975,8.2,91,91
+53,tt0015324,Sherlock Jr.,1924,8.1,45,
+54,tt0910970,WALL·E - Der Letzte räumt die Erde auf,2008,8.4,98,95
+55,tt5311514,Your Name.,2016,8.4,106,81
+56,tt0095327,Hotaru no haka,1988,8.5,88,94
+57,tt0077416,Die durch die Hölle gehen,1978,8.1,183,90
+58,tt0111161,Die Verurteilten,1994,9.3,142,82
+59,tt0107048,Und täglich grüßt das Murmeltier,1993,8.0,101,72
+60,tt0405159,Million Dollar Baby,2004,8.1,132,86
+61,tt0091763,Platoon,1986,8.1,120,92
+62,tt0405094,Das Leben der Anderen,2006,8.4,137,89
+63,tt0372784,Batman Begins,2005,8.2,140,70
+64,tt0073195,Tubarão,1975,8.1,124,87
+65,tt1454029,The Help,2011,8.1,146,62
+66,tt0017925,Der General,1926,8.1,78,
+67,tt6966692,Green Book,2018,8.2,130,69
+68,tt0045152,Du sollst mein Glücksstern sein,1952,8.3,103,99
+69,tt0054215,Psycho,1960,8.5,109,97
+70,tt0064116,Thưở Ấy Miền Viễn Tây,1968,8.5,166,82
+71,tt0032138,The Wizard of Oz,1939,8.1,102,92
+72,tt0986264,Taare Zameen Par: Ein Stern auf Erden,2007,8.3,162,
+73,tt4154796,Avengers: Endgame,2019,8.4,181,78
+74,tt0169547,American Beauty,1999,8.3,122,84
+75,tt0266543,Đi Tìm Nemo,2003,8.2,100,90
+76,tt1049413,Oben,2009,8.3,96,88
+77,tt0044741,Ikiru,1952,8.3,143,92
+78,tt0978762,"Mary & Max oder: Schrumpfen Schafe, wenn es regnet?",2009,8.1,92,72
+79,tt0107290,Jurassic Park,1993,8.2,127,68
+80,tt0407887,Departed: Unter Feinden,2006,8.5,151,85
+81,tt0066921,A Clockwork Orange,1971,8.2,136,77
+82,tt0434409,Chiến Binh Tự Do,2005,8.1,132,62
+83,tt0071562,Der Pate 2,1974,9.0,202,90
+84,tt0110912,Pulp Fiction,1994,8.8,154,95
+85,tt0087843,Es war einmal in Amerika,1984,8.3,229,75
+86,tt4729430,Klaus,2019,8.2,96,65
+87,tt0082096,Das Boot,1981,8.4,149,85
+88,tt0083658,Der Blade Runner,1982,8.1,117,84
+89,tt15097216,Jai Bhim,2021,8.6,164,
+90,tt0253474,The Pianist,2002,8.5,150,85
+91,tt0047478,Die sieben Samurai,1954,8.6,207,98
+92,tt0119698,Prinzessin Mononoke,1997,8.3,133,78
+93,tt0075148,Rokki,1976,8.1,120,70
+94,tt0092005,Stand by Me: Das Geheimnis eines Sommers,1986,8.1,89,75
+95,tt0070047,"Той, що виганяє диявола",1973,8.1,122,83
+96,tt0059742,"Meine Lieder, meine Träume",1965,8.1,172,63
+97,tt0057115,The Great Escape,1963,8.2,172,86
+98,tt23849204,12th Fail,2023,8.7,147,
+99,tt0059578,Per qualche dollaro in più,1965,8.2,132,74
+100,tt0118799,Hayot go'zal,1997,8.6,116,58
+101,tt0040897,The Treasure of the Sierra Madre,1948,8.2,126,98
+102,tt0112471,Before Sunrise,1995,8.1,101,79
+103,tt1392190,Mad Max: Fury Road,2015,8.1,120,90
+104,tt0382932,Ratatouille,2007,8.1,111,96
+105,tt0198781,Công Ty Quái Vật,2001,8.1,92,79
+106,tt1255953,Incendies,2010,8.3,131,80
+107,tt0108052,Bản Danh Sách Của Schindler,1993,9.0,195,95
+108,tt2278388,Khách Sạn Đế Vương,2014,8.1,99,88
+109,tt0040522,Ladri di biciclette,1948,8.2,89,
+110,tt0056058,Harakiri,1962,8.6,133,85
+111,tt0081505,Ngôi Nhà Ma,1980,8.4,146,68
+112,tt11032374,Demon Slayer: Kimetsu No Yaiba- the Movie - Mugen Train,2020,8.2,117,72
+113,tt0042192,Alles über Eva,1950,8.2,138,98
+114,tt0088763,Back to the Future,1985,8.5,116,87
+115,tt0105236,Reservoir Dogs - Wilde Hunde,1992,8.3,99,81
+116,tt0038650,It's a Wonderful Life,1946,8.6,130,89
+117,tt0118849,Kinder des Himmels,1997,8.2,89,77
+118,tt0435761,Toy Story 3,2010,8.3,103,92
+119,tt1028532,Hachiko - Eine wunderbare Freundschaft,2009,8.1,93,
+120,tt0035446,To Be or Not to Be,1942,8.1,99,86
+121,tt0090605,Aliens: Die Rückkehr,1986,8.4,137,84
+122,tt0046912,Bei Anruf Mord,1954,8.2,105,75
+123,tt0120689,The Green Mile,1999,8.6,189,61
+124,tt0363163,Ngày Tàn Của Hitler,2004,8.2,156,82
+125,tt0107207,Im Namen des Vaters,1993,8.1,133,84
+126,tt0468569,The Dark Knight,2008,9.1,152,85
+127,tt0095765,Cinema Paradiso,1988,8.5,174,80
+128,tt0058946,Cuộc Chiến Giành Độc Lập,1966,8.1,121,96
+129,tt0062622,2001: Chuyến Du Hành Không Gian,1968,8.3,149,84
+130,tt0120382,Truman Show,1998,8.2,103,90
+131,tt0052357,Vertigo: Aus dem Reich der Toten,1958,8.2,128,100
+132,tt0046268,The Wages of Fear,1953,8.1,156,85
+133,tt1745960,Top Gun: Maverick,2022,8.2,130,78
+134,tt0084787,Quái Vật Biến Hình,1982,8.2,109,57
+135,tt0032551,The Grapes of Wrath,1940,8.1,129,96
+136,tt0057565,Tengoku to jigoku,1963,8.4,143,90
+137,tt4154756,Avengers: Infinity War,2018,8.4,149,68
+138,tt7286456,Joker,2019,8.3,122,59
+139,tt0110413,Léon: Der Profi,1994,8.5,110,64
+140,tt0317705,The Incredibles,2004,8.0,115,90
+141,tt0113277,Kỳ Phùng Địch Thủ,1995,8.3,170,76
+142,tt0120735,"Lock, Stock and Two Smoking Barrels",1998,8.1,107,67
+143,tt2582802,Whiplash,2014,8.5,106,89
+144,tt0086250,Scarface,1983,8.3,170,65
+145,tt4430212,Drishyam,2015,8.2,163,
+146,tt0096283,Mein Nachbar Totoro,1988,8.1,86,87
+147,tt0075314,Tài Xế Taxi,1976,8.2,114,94
+148,tt0167261,Der Herr der Ringe: Die zwei Türme,2002,8.8,179,87
+149,tt0086879,Amadeus,1984,8.4,160,87
+150,tt3011894,Relatos salvajes,2014,8.1,122,77
+151,tt5323662,A Silent Voice,2016,8.1,130,78
+152,tt0057012,S.O.S. Πεντάγωνο καλεί Μόσχα,1964,8.3,95,97
+153,tt15398776,Oppenheimer,2023,8.3,180,90
+154,tt0268978,A Beautiful Mind: Genie und Wahnsinn,2001,8.2,135,72
+155,tt1853728,Django Tsunagarezaru Mono,2012,8.5,165,81
+156,tt1345836,The Dark Knight Rises,2012,8.4,164,78
+157,tt0097576,Indiana Jones and the Last Crusade,1989,8.2,127,65
+158,tt0050986,Wild Strawberries,1957,8.1,92,88
+159,tt0041959,Der dritte Mann,1949,8.1,104,97
+160,tt2024544,12 Years a Slave,2013,8.1,134,96
+161,tt0053125,Bắc Tây Bắc,1959,8.3,136,98
+162,tt0036775,Frau ohne Gewissen,1944,8.3,107,95
+163,tt1950186,Ford v Ferrari,2019,8.1,152,81
+164,tt0117951,Trainspotting,1996,8.1,93,83
+165,tt0476735,My Father and My Son,2005,8.2,112,
+166,tt0119217,Good Will Hunting: Der gute Will Hunting,1997,8.3,126,71
+167,tt0019254,Bài Ca Khổ Hình Của Joan of Arc,1928,8.1,110,98
+168,tt0112641,Casino,1995,8.2,178,73
+169,tt0047296,Die Faust im Nacken,1954,8.1,108,91
+170,tt0381681,Before Sunset,2004,8.1,80,91
+171,tt0017136,Metropolis,1927,8.3,153,98
+172,tt0120737,Der Herr der Ringe: Die Gefährten,2001,8.9,178,92
+173,tt0099685,GoodFellas - Drei Jahrzehnte in der Mafia,1990,8.7,145,92
+174,tt1205489,Ngọt Và Đắng,2008,8.1,116,73
+175,tt0317248,City of God,2002,8.6,130,79
+176,tt0993846,The Wolf of Wall Street,2013,8.2,180,75
+177,tt0051201,Zeugin der Anklage,1957,8.4,116,76
+178,tt0118715,Didysis Lebovskis,1998,8.1,117,71
+179,tt0052618,Ben Hur,1959,8.1,212,90
+180,tt2119532,Người Hùng Không Súng,2016,8.1,139,71
+181,tt0076759,Star Wars: Episode IV - Eine neue Hoffnung,1977,8.6,121,90
+182,tt0361748,Inglourious Basterds,2009,8.4,153,69
+183,tt0071315,Chinatown,1974,8.1,130,92
+184,tt0353969,Memories of Murder,2003,8.1,131,82
+185,tt0031679,Mr. Smith Goes to Washington,1939,8.1,129,73
+186,tt0082971,Os Salteadores da Arca Perdida,1981,8.4,115,86
+187,tt0093058,Full Metal Jacket,1987,8.2,116,78
+188,tt0021749,Lichter der Großstadt,1931,8.5,87,99
+189,tt0078788,Апокаліпсис наших днів,1979,8.4,147,94
+190,tt1979320,Rush - Alles für den Sieg,2013,8.1,123,74
+191,tt0167260,Chúa Tể Của Những Chiếc Nhẫn: Sự Quay Trở Lại Của Nhà Vua,2003,9.0,201,94
+192,tt0477348,No Country for Old Men,2007,8.2,122,92
+193,tt0395169,Hotel Rwanda,2004,8.1,121,79
+194,tt0113247,La haine,1995,8.1,98,
+195,tt0068646,Bố Già,1972,9.2,175,100
+196,tt0103064,Terminatorul 2: Ziua judecății,1991,8.6,137,75
+197,tt0209144,Unutma,2000,8.4,113,83
+198,tt0097165,Dead Poets Society,1989,8.1,128,79
+199,tt0469494,There Will Be Blood,2007,8.2,158,93
+200,tt0078748,Alien: Das unheimliche Wesen aus einer fremden Welt,1979,8.5,117,89
+201,tt0095016,Stirb langsam,1988,8.2,132,72
+202,tt0102926,The Silence of the Lambs,1991,8.6,118,86
+203,tt0119488,Bí Mật Los Angeles,1997,8.2,138,91
+204,tt0053291,Manche mögen's heiß,1959,8.2,121,98
+205,tt2267998,Gone Girl,2014,8.1,149,79
+206,tt15239678,Dune: Part Two,2024,8.5,166,79
+207,tt0047396,Rear Window,1954,8.5,112,100
+208,tt0325980,Fluch der Karibik,2003,8.1,143,63
+209,tt0211915,Die fabelhafte Welt der Amelie,2001,8.3,122,70
+210,tt0133093,Matrix,1999,8.7,136,73
+211,tt0252488,Hababam Sinifi: Sinifta Kaldi,1975,8.6,95,
+212,tt0046438,Die Reise nach Tokio,1953,8.1,137,100
+213,tt0015864,The Gold Rush,1925,8.1,95,90
+214,tt1895587,Spotlight,2015,8.1,129,93
+215,tt0264464,Hãy Bắt Tôi Nếu Có Thể,2002,8.1,141,75
+216,tt0105695,Erbarmungslos,1992,8.2,130,85
+217,tt0120815,Der Soldat James Ryan,1998,8.6,169,91
+218,tt0091251,Кел де көр,1985,8.3,142,
+219,tt0120586,Ameerika ajalugu X,1998,8.5,119,62
+220,tt0080684,Star Wars: Episode V - Das Imperium schlägt zurück,1980,8.7,124,82
+221,tt0056172,Lawrence z Arabii,1962,8.3,227,100
+222,tt1675434,Ziemlich beste Freunde,2011,8.5,112,57
+223,tt0033467,Citizen Kane,1941,8.3,119,100
+224,tt0172495,Gladiator,2000,8.5,155,67
+225,tt5027774,"Three Billboards Outside Ebbing, Missouri",2017,8.1,115,88
+226,tt1832382,Cuộc Chia Ly,2011,8.3,123,95
+227,tt1392214,Prisoners,2013,8.2,153,70
+228,tt0457430,Pan's Labyrinth,2006,8.2,118,98
+229,tt0034583,Casablanca,1942,8.5,102,100
+230,tt0114709,Toy Story,1995,8.3,81,96
+231,tt0070735,Der Clou,1973,8.2,129,83
+232,tt0167404,The Sixth Sense - Nicht jede Gabe ist ein Segen,1999,8.2,107,64
+233,tt6751668,Parasite,2019,8.5,132,97
+234,tt1291584,Chiến Binh Quyền Anh,2011,8.1,140,71
+235,tt0758758,În sălbăticie,2007,8.0,148,73
+236,tt0081398,Wie ein wilder Stier,1980,8.1,129,90
+237,tt0012349,Der Vagabund und das Kind,1921,8.2,54,
+238,tt0053604,Căn Hộ Tình Yêu,1960,8.3,125,94
+239,tt0110357,Der König der Löwen,1994,8.5,88,88
+240,tt0056592,Wer die Nachtigall stört,1962,8.3,129,88
+241,tt2380307,Coco - Lebendiger als das Leben!,2017,8.4,105,81
+242,tt29623480,Der wilde Roboter,2024,8.2,102,85
+243,tt0050976,Das siebente Siegel,1957,8.1,96,88
+244,tt3315342,Logan: The Wolverine,2017,8.1,137,77
+245,tt10272386,The Father,2020,8.2,97,88
+246,tt3170832,Raum,2015,8.1,118,86
+247,tt1201607,Harry Potter und die Heiligtümer des Todes - Teil 2,2011,8.1,130,85
+248,tt0180093,Requiem for a Dream,2000,8.3,102,71
+249,tt2096673,Alles steht Kopf,2015,8.1,95,94
+250,tt0072684,Barry Lyndon,1975,8.1,185,89

@@ -1,6 +1,8 @@
 
 from domain.interfaces.use_case_interface import UseCaseInterface
 from domain.interfaces.scraper_interface import ScraperInterface
+from domain.interfaces.proxy_interface import ProxyProviderInterface
+from domain.interfaces.tor_interface import TorInterface
 
 from application.use_cases.save_movie_with_actors_csv_use_case import SaveMovieWithActorsCsvUseCase
 from application.use_cases.save_movie_with_actors_postgres_use_case import SaveMovieWithActorsPostgresUseCase
@@ -61,13 +63,34 @@ class DependencyContainer:
         """Construye el caso de uso compuesto."""
         use_cases = [self.get_csv_use_case(), self.get_postgres_use_case()]
         return CompositeSaveMovieWithActorsUseCase(use_cases)
+    def get_proxy_provider(self) -> ProxyProviderInterface:
+            """Fábrica para el proveedor de proxy."""
+            return ProxyProvider()
 
+    def get_tor_rotator(self) -> TorInterface:
+        """Fábrica para el rotador de TOR."""
+        return TorRotator()
     def get_scraper(self) -> ScraperInterface:
-        """Construye y devuelve el scraper principal."""
+        """
+        Construye y devuelve el scraper principal inyectando TODAS sus dependencias.
+        """
         use_case = self.get_composite_use_case()
-        return ImdbScraper(
-            use_case=use_case,
-            proxy_provider=self.proxy_provider,
-            tor_rotator=self.tor_rotator,
-            engine=self.config.SCRAPER_ENGINE
-        )
+        
+       
+        proxy_provider = self.get_proxy_provider()
+        tor_rotator = self.get_tor_rotator()
+        
+        engine = self.config.SCRAPER_ENGINE.lower()
+
+        if engine == "requests":
+            return ImdbScraper(
+                use_case=use_case, 
+                proxy_provider=proxy_provider, 
+                tor_rotator=tor_rotator,
+                engine=engine
+            )
+        
+        elif engine == "playwright":
+            raise NotImplementedError("El motor 'playwright' aún no está implementado.")
+        else:
+            raise ValueError(f"Motor de scraping '{engine}' no soportado.")

@@ -33,11 +33,13 @@ PROXY_PORT = os.getenv("PROXY_PORT")
 PROXY_USER = os.getenv("PROXY_USER")
 PROXY_PASS = os.getenv("PROXY_PASS")
 
+TOR_HOST="tor"
+TOR_CONTROL_PORT=9051
+TOR_PROXY_PORT =9050
 TOR_PROXY = {
-    "http": "socks5h://tor_proxy:9050",
-    "https": "socks5h://tor_proxy:9050"
+    "http": f"socks5h://{TOR_HOST}:{TOR_PROXY_PORT}",
+    "https": f"socks5h://{TOR_HOST}:{TOR_PROXY_PORT}"
 }
-
 PROXY_HOST = os.getenv("PROXY_HOST")
 PROXY_PORT = os.getenv("PROXY_PORT")
 PROXY_USER = os.getenv("PROXY_USER")

@@ -1,15 +1,18 @@
+# En: infrastructure/scraper/imdb_scraper.py
+
 import logging
 import re
-import random
 from typing import List, Optional
 from concurrent.futures import ThreadPoolExecutor
 from bs4 import BeautifulSoup
+import requests
 
-from domain.models import Movie, Actor
 from domain.interfaces.scraper_interface import ScraperInterface
 from domain.interfaces.use_case_interface import UseCaseInterface
 from domain.interfaces.proxy_interface import ProxyProviderInterface
 from domain.interfaces.tor_interface import TorInterface
+
+from domain.models import Movie, Actor
 from infrastructure.scraper.utils import make_request
 from shared.config import config
 
@@ -19,7 +22,6 @@ class ImdbScraper(ScraperInterface):
     """
     Scraper de películas desde IMDb con soporte para proxies, TOR, y persistencia desacoplada.
     """
-
     def __init__(
         self,
         use_case: UseCaseInterface,
@@ -57,8 +59,10 @@ class ImdbScraper(ScraperInterface):
             movie = self._scrape_movie_detail(indexed_id)
             if movie:
                 self.use_case.execute(movie)
+        except ValueError as e:
+            logger.warning(f"Datos inválidos para {imdb_id}: {e}. Saltando guardado.")
         except Exception as e:
-            logger.error(f"Error inesperado al procesar {imdb_id}: {e}", exc_info=True)
+            logger.error(f"Error inesperado al procesar y guardar {imdb_id}: {e}", exc_info=True)
 
     def _scrape_movie_detail(self, indexed_id: tuple[int, str]) -> Optional[Movie]:
         movie_id_counter, imdb_id = indexed_id
@@ -77,12 +81,19 @@ class ImdbScraper(ScraperInterface):
         self.total_bytes_used += len(response.content)
         soup = BeautifulSoup(response.text, "html.parser")
 
-        title = soup.select_one(config.SELECTORS["title"]).text.strip() if soup.select_one(config.SELECTORS["title"]) else ""
-        year_tag = soup.select_one(config.SELECTORS["year"])
+        # Lógica de parsing segura
+        title_tag = soup.select_one(config.SELECTORS.get("title", ""))
+        title = title_tag.text.strip() if title_tag else ""
+
+        year_tag = soup.select_one(config.SELECTORS.get("year", ""))
         year_str = year_tag.text.strip("()") if year_tag else "0"
-        year = int(re.search(r'\d{4}', year_str).group()) if re.search(r'\d{4}', year_str) else 0
-        rating = float(soup.select_one(config.SELECTORS["rating"]).text.strip()) if soup.select_one(config.SELECTORS["rating"]) else 0.0
-        metascore_tag = soup.select_one(config.SELECTORS["metascore"])
+        year_match = re.search(r'\d{4}', year_str)
+        year = int(year_match.group()) if year_match else 0
+        
+        rating_tag = soup.select_one(config.SELECTORS.get("rating", ""))
+        rating = float(rating_tag.text.strip()) if rating_tag else 0.0
+
+        metascore_tag = soup.select_one(config.SELECTORS.get("metascore", ""))
         metascore = int(metascore_tag.text.strip()) if metascore_tag else None
 
         # Duración en minutos
@@ -91,20 +102,17 @@ class ImdbScraper(ScraperInterface):
         for ul in ul_list:
             for li in ul.find_all("li"):
                 text = li.get_text(strip=True).lower()
-                if re.search(r"\d+h|\d+m", text):
-                    digits = [int(d) for d in re.findall(r"\d+", text)]
-                    if "h" in text and "m" in text and len(digits) == 2:
-                        duration = digits[0] * 60 + digits[1]
-                    elif "h" in text and len(digits) == 1:
-                        duration = digits[0] * 60
-                    elif "m" in text and len(digits) == 1:
-                        duration = digits[0]
+                if re.search(r"(\d+h|\d+m)", text):
+                    hours_match = re.search(r"(\d+)h", text)
+                    minutes_match = re.search(r"(\d+)m", text)
+                    h = int(hours_match.group(1)) if hours_match else 0
+                    m = int(minutes_match.group(1)) if minutes_match else 0
+                    duration = (h * 60) + m
                     break
             if duration:
                 break
 
-
-        cast_tags = soup.select(config.SELECTORS["actors"])[:3]
+        cast_tags = soup.select(config.SELECTORS.get("actors", ""))[:3]
         actors = [
             Actor(id=None, name=cast.text.strip())
             for cast in cast_tags if cast.text.strip()
@@ -131,8 +139,8 @@ class ImdbScraper(ScraperInterface):
             tor_rotator=self.tor_rotator
         )
 
-        cookies = response.cookies if response else None
-        if response and response.status_code == 200:
+        if response:
+            cookies = response.cookies
             soup = BeautifulSoup(response.text, "html.parser")
             html_ids = [
                 a["href"].split("/")[2]
@@ -141,34 +149,19 @@ class ImdbScraper(ScraperInterface):
             ]
             logger.info(f"[HTML] IDs obtenidos: {len(html_ids)}")
             ids.update(html_ids)
-
-        graphql_ids = self._fetch_graphql_ids(cookies)
-        ids.update(graphql_ids)
+            
+            graphql_ids = self._fetch_graphql_ids(cookies)
+            ids.update(graphql_ids)
 
         return list(ids)
 
-    def _fetch_graphql_ids(self, cookies: Optional[dict]) -> List[str]:
+    def _fetch_graphql_ids(self, cookies: Optional[requests.cookies.RequestsCookieJar]) -> List[str]:
         logger.info("Obteniendo IDs adicionales desde GraphQL...")
         try:
-            headers = {
-                "User-Agent": random.choice(config.USER_AGENTS),
-                "Accept": "application/graphql+json, application/json",
-                "Content-Type": "application/json"
-            }
-
             payload = {
                 "operationName": config.GRAPHQL_OPERATION,
-                "variables": {
-                    "first": config.NUM_MOVIES,
-                    "isInPace": False,
-                    "locale": config.GRAPHQL_LOCALE
-                },
-                "extensions": {
-                    "persistedQuery": {
-                        "sha256Hash": config.GRAPHQL_HASH,
-                        "version": config.GRAPHQL_VERSION
-                    }
-                }
+                "variables": { "first": config.NUM_MOVIES, "isInPace": False, "locale": config.GRAPHQL_LOCALE },
+                "extensions": { "persistedQuery": { "sha256Hash": config.GRAPHQL_HASH, "version": config.GRAPHQL_VERSION } }
             }
 
             response = make_request(
@@ -176,8 +169,7 @@ class ImdbScraper(ScraperInterface):
                 proxy_provider=self.proxy_provider,
                 tor_rotator=self.tor_rotator,
                 method="POST",
-                json_payload=payload,
-                headers=headers
+                json_payload=payload
             )
 
             if response:
@@ -186,9 +178,7 @@ class ImdbScraper(ScraperInterface):
                 ids = [edge["node"]["id"] for edge in edges if edge.get("node", {}).get("id")]
                 logger.info(f"[GraphQL] IDs obtenidos: {len(ids)}")
                 return ids
-            else:
-                logger.warning("[GraphQL] No se pudo obtener respuesta válida.")
         except Exception as e:
-            logger.error(f"[GraphQL] Error al procesar la respuesta: {e}")
+            logger.error(f"[GraphQL] Error al procesar la respuesta: {e}", exc_info=True)
 
         return []

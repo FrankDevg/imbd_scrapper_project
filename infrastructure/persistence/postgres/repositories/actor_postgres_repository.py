@@ -3,7 +3,6 @@ from typing import Optional
 from domain.models.actor import Actor
 from domain.repositories.actor_repository import ActorRepository
 from psycopg2 import DatabaseError
-from infrastructure.persistence.postgres.postgres_connection import get_connection,get_cursor
 
 logger = logging.getLogger(__name__)
 
@@ -16,7 +15,7 @@ class ActorPostgresRepository(ActorRepository):
         Guarda un actor usando un procedimiento almacenado y retorna el objeto completo.
         """
         try:
-            with get_cursor() as cur:
+            with self.conn.cursor() as cur:
                 cur.execute("SELECT * FROM upsert_actor(%s);", (actor.name,))
                 actor_data = cur.fetchone()
                 self.conn.commit()
@@ -31,7 +30,7 @@ class ActorPostgresRepository(ActorRepository):
         Busca un actor por su nombre en la base de datos.
         """
         try:
-            with get_cursor() as cur:
+            with self.conn.cursor() as cur:
                 cur.execute("SELECT id, name FROM actors WHERE name = %s", (name,))
                 actor_data = cur.fetchone()
                 if actor_data:

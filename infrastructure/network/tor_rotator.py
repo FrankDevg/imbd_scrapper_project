@@ -1,3 +1,4 @@
+import socket
 import time
 import requests
 from stem import Signal
@@ -5,76 +6,82 @@ from stem.control import Controller
 from domain.interfaces.tor_interface import TorInterface
 from shared.config import config
 from shared.logger.logging_config import setup_logger
+import logging # Importar logging si no está ya
 
-
-logger = setup_logger(__name__)
+logger = logging.getLogger(__name__)
 
 class TorRotator(TorInterface):
     """
     Implementación de la interfaz TorInterface que permite rotar la IP de salida
     mediante la red TOR usando el puerto de control y el protocolo `stem`.
-
-    Utiliza el proxy definido en la configuración y hace control activo sobre la identidad TOR.
     """
 
-    def __init__(self, control_port=9051, wait_time=10, max_retries=3):
+    def __init__(self):
         """
         Constructor del rotador de IP TOR.
-
-        Args:
-            control_port (int): Puerto de control de TOR (por defecto 9051).
-            wait_time (int): Tiempo de espera entre intentos de rotación (en segundos).
-            max_retries (int): Número máximo de intentos para obtener una IP distinta.
+        Lee la configuración desde el objeto 'config' centralizado.
         """
-        self.control_port = control_port
-        self.wait_time = wait_time
-        self.max_retries = max_retries
+        self.control_port = config.TOR_CONTROL_PORT
+        self.wait_time = config.TOR_WAIT_AFTER_ROTATION
+        self.max_retries = config.MAX_RETRIES
         self.proxy = config.TOR_PROXY
+        self.host = config.TOR_HOST
 
     def get_current_ip(self) -> str:
         """
         Consulta la IP pública actual a través de la red TOR.
-
-        Returns:
-            str: IP pública actual como string. Retorna cadena vacía si falla.
         """
         try:
-            response = requests.get(config.URL_IPHAZIP, proxies=self.proxy, timeout=10)
-            return response.text.strip()
-        except requests.RequestException:
+            response = requests.get(config.URL_IPINFO, proxies=self.proxy, timeout=10)
+            response.raise_for_status()
+            return response.json().get("ip", "")
+        except requests.RequestException as e:
+            logger.warning(f"[TOR] No se pudo obtener la IP actual: {e}")
             return ""
 
     def _send_newnym(self) -> bool:
         """
-        Envía una señal NEWNYM al controlador de TOR para solicitar nueva IP.
-        Retorna True si se logró, False si falló.
+        Envía una señal NEWNYM al controlador de TOR para solicitar una nueva IP.
         """
         try:
-            logger.info(f"[TOR] Enviando señal NEWNYM al puerto {self.control_port}...")
-            with Controller.from_port(port=self.control_port) as controller:
-                controller.authenticate()  # Si usas clave: controller.authenticate(password='tu_clave')
+            tor_ip = socket.gethostbyname(self.host)
+            logger.info(f"[TOR] Intentando conectar al puerto de control en {self.host} ({tor_ip}:{self.control_port})...")           
+         
+            # Se especifica la dirección (address) del contenedor de TOR.
+            with Controller.from_port(address=tor_ip , port=self.control_port) as controller:
+                controller.authenticate()  # Asume que no hay contraseña, como configuramos en Docker.
                 controller.signal(Signal.NEWNYM)
+            
             return True
-       
         except Exception as e:
-            logger.exception(f"[TOR] Excepción inesperada al enviar NEWNYM: {e}")
-        return False
+            # Captura errores de conexión (ej. Connection refused)
+            logger.error(f"[TOR] No se pudo conectar al puerto de control de TOR: {e}", exc_info=False)
+            return False
 
     def rotate_ip(self) -> str:
+        """
+        Intenta rotar la IP de TOR, reintentando si la nueva IP es la misma que la original.
+        """
         original_ip = self.get_current_ip()
         logger.info(f"[TOR] IP original antes de rotar: {original_ip}")
         if not original_ip:
+            logger.error("[TOR] No se pudo obtener la IP original. Abortando rotación.")
             return ""
 
         for attempt in range(self.max_retries):
-            logger.info(f"[TOR] Enviando señal NEWNYM intento {attempt + 1}")
-            self._send_newnym()
+            logger.info(f"[TOR] Enviando señal NEWNYM (Intento {attempt + 1}/{self.max_retries})")
+            if not self._send_newnym():
+                # Si no se puede conectar al control port, no tiene sentido seguir intentando.
+                return original_ip
+
             time.sleep(self.wait_time)
             new_ip = self.get_current_ip()
-            logger.info(f"[TOR] Nueva IP después de rotar: {new_ip}")
+            
             if new_ip and new_ip != original_ip:
                 logger.info(f"[TOR] Rotación exitosa: {original_ip} → {new_ip}")
                 return new_ip
+            else:
+                logger.warning(f"[TOR] La IP no cambió. Nueva IP obtenida: {new_ip}")
 
-        logger.warning("[TOR] No se logró rotar la IP después de los intentos.")
+        logger.warning("[TOR] No se logró rotar la IP después de todos los intentos.")
         return original_ip

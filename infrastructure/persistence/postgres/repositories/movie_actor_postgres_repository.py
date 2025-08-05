@@ -4,7 +4,6 @@ from domain.models.movie_actor import MovieActor
 from domain.repositories.movie_actor_repository import MovieActorRepository
 from psycopg2 import DatabaseError
 from psycopg2.extras import execute_values
-from infrastructure.persistence.postgres.postgres_connection import get_connection,get_cursor
 
 logger = logging.getLogger(__name__)
 
@@ -20,7 +19,7 @@ class MovieActorPostgresRepository(MovieActorRepository):
         Guarda una única relación película-actor en PostgreSQL.
         """
         try:
-            with get_cursor() as cur:
+            with self.conn.cursor() as cur:
                 cur.execute("SELECT * from upsert_movie_actor(%s, %s);", 
                             (relation.movie_id, relation.actor_id))
                 self.conn.commit()
@@ -37,7 +36,7 @@ class MovieActorPostgresRepository(MovieActorRepository):
             return
         
         try:
-            with get_cursor() as cur:
+            with self.conn.cursor() as cur:
                 values = [(r.movie_id, r.actor_id) for r in relations]
                 
                 for value in values:

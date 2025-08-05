@@ -296,11 +296,11 @@ Gracias a la aplicación de Clean Architecture y DDD, el sistema permite **agreg
 
 ### 🔄 ¿Cómo se logra esto?
 
-La clave está en el uso de interfaces y fábricas desacopladas:
+La clave está en el uso de interfaces y un contenedor de dependencias desacoplado:
 
 - `ScraperInterface` en `domain/` define el contrato único que todas las implementaciones deben seguir.
-- Cada implementación (ej. `ImdbScraperRequests`, `ImdbScraperPlaywright`) vive en su propio archivo dentro de `infrastructure/scraper/`.
-- Una fábrica central (`get_scraper()`) puede decidir qué engine usar.
+- Cada implementación (ej. `ImdbScraper`, `ImdbScraperPlaywright`) vive en su propio archivo dentro de `infrastructure/scraper/`.
+- El **`DependencyContainer`** centraliza la lógica de construcción. Lee la configuración y decide qué `engine` (motor) de scraper debe instanciar y devolver.
 
 ### ⚙️ Alternativa para elegir el engine
 

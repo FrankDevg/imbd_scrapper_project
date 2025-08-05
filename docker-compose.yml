@@ -19,20 +19,17 @@ services:
     networks:
       - app_net
 
-  # --- SECCIÓN CORREGIDA ---
   tor:
-    image: dperson/torproxy
-    container_name: tor_proxy
-    restart: always
-    ports:
-      - "9050:9050" # Puerto SOCKS para el tráfico
-      - "9051:9051" # Puerto de Control para comandos (cambiar IP)
-    # Se añade un comando para iniciar TOR con el puerto de control habilitado y sin contraseña.
-    command: >
-      sh -c "tor --SocksPort 0.0.0.0:9050 --ControlPort 0.0.0.0:9051 --HashedControlPassword '' --CookieAuthentication 0"
-    networks:
-      - app_net
-  # --- FIN DE LA SECCIÓN CORREGIDA ---
+      image: dperson/torproxy
+      container_name: tor_proxy
+      restart: always
+      ports:
+        - "9050:9050" # Puerto SOCKS para el tráfico
+        - "9051:9051" # Puerto de Control para comandos (cambiar IP)
+      command: >
+        sh -c "tor --SocksPort 0.0.0.0:9050 --ControlPort 0.0.0.0:9051 --HashedControlPassword '' --CookieAuthentication 0"
+      networks:
+        - app_net
 
   vpn:
     image: qmcgaw/gluetun
