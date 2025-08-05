@@ -1,15 +1,18 @@
+import logging
 from domain.models.movie import Movie
 from domain.models.actor import Actor
 from domain.models.movie_actor import MovieActor
-
+from domain.interfaces.use_case_interface import UseCaseInterface
 from domain.repositories.movie_repository import MovieRepository
 from domain.repositories.actor_repository import ActorRepository
 from domain.repositories.movie_actor_repository import MovieActorRepository
 
-class SaveMovieWithActorsCsvUseCase:
+logger = logging.getLogger(__name__)
+
+class SaveMovieWithActorsCsvUseCase(UseCaseInterface):
     """
-    Caso de uso que guarda una película y sus actores asociados en formato CSV,
-    utilizando repositorios desacoplados que representan una relación N:M.
+    Caso de uso que guarda una película y sus actores en formato CSV.
+    Orquesta los repositorios y confía en que los modelos de dominio ya son válidos.
     """
 
     def __init__(
@@ -18,42 +21,45 @@ class SaveMovieWithActorsCsvUseCase:
         actor_repository: ActorRepository,
         movie_actor_repository: MovieActorRepository
     ):
-        """
-        Constructor del caso de uso para persistencia en CSV.
-
-        Args:
-            movie_repository (MovieRepository): Repositorio para guardar películas.
-            actor_repository (ActorRepository): Repositorio para guardar actores.
-            movie_actor_repository (MovieActorRepository): Repositorio para guardar relaciones película-actor.
-        """
         self.movie_repo = movie_repository
         self.actor_repo = actor_repository
         self.movie_actor_repo = movie_actor_repository
 
     def execute(self, movie: Movie) -> None:
         """
-        Ejecuta la validación y el guardado de una película y sus actores en CSV.
-
-        Args:
-            movie (Movie): Objeto que contiene los datos de la película y su reparto.
+        Ejecuta el guardado de una película y sus actores en CSV, manejando duplicados.
         """
-        # Validaciones básicas de datos
-        if not isinstance(movie.title, str) or movie.title.strip() in ["", "N/A"]:
-            return
-        if not isinstance(movie.year, int) or not (1900 <= movie.year <= 2026):
-            return
-        if movie.rating is not None and not (0.0 <= movie.rating <= 10.0):
-            movie.rating = None
-        if movie.duration_minutes is not None and movie.duration_minutes <= 0:
-            movie.duration_minutes = None
-        if movie.metascore is not None and not (0 <= movie.metascore <= 100):
-            movie.metascore = None
+        try:
+            # Manejo de duplicados: comprueba si la película ya existe por su ID de IMDb.
+            # Nota: para CSV, find_by_imdb_id puede ser una operación costosa si el archivo es grande.
+            # Se asume una implementación optimizada o se acepta el costo.
+            existing_movie = self.movie_repo.find_by_imdb_id(movie.imdb_id)
+            if existing_movie:
+                logger.info(f"La película '{movie.title}' ya existe en el CSV. Saltando.")
+                return
 
-        # Guardar película en CSV
-        self.movie_repo.save(movie)
+            # Guarda la película. En CSV, el 'id' puede no generarse automáticamente,
+            # por lo que asumimos que el modelo Movie ya tiene un ID o se maneja internamente.
+            saved_movie = self.movie_repo.save(movie)
 
-        # Guardar actores y relaciones N:M en CSV
-        for actor in movie.actors:
-            if isinstance(actor.name, str) and actor.name.strip():
-                self.actor_repo.save(actor)
-                self.movie_actor_repo.save(MovieActor(movie_id=movie.id, actor_id=actor.id))
+            relations_to_save = []
+            for actor in movie.actors:
+                # Manejo de duplicados de actores.
+                existing_actor = self.actor_repo.find_by_name(actor.name)
+                if existing_actor:
+                    saved_actor = existing_actor
+                else:
+                    saved_actor = self.actor_repo.save(actor)
+                
+                # Asegurarse de que ambos IDs existen antes de crear la relación.
+                if saved_movie.id and saved_actor.id:
+                    relations_to_save.append(
+                        MovieActor(movie_id=saved_movie.id, actor_id=saved_actor.id)
+                    )
+
+            if relations_to_save:
+                self.movie_actor_repo.save_many(relations_to_save)
+                logger.info(f"Guardada película '{saved_movie.title}' en CSV con {len(relations_to_save)} actores.")
+
+        except Exception as e:
+            logger.error(f"Error al escribir en CSV para la película '{movie.title}': {e}")

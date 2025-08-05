@@ -1,20 +1,28 @@
 from abc import ABC, abstractmethod
+from typing import Optional
 from domain.models.actor import Actor
 
 class ActorRepository(ABC):
     """
     Interfaz de repositorio para la entidad Actor.
-
-    Define el contrato que deben cumplir las implementaciones encargadas
-    de guardar actores, ya sea en CSV, base de datos u otro medio de persistencia.
     """
 
     @abstractmethod
-    def save(self, actor: Actor) -> None:
+    def save(self, actor: Actor) -> Actor:
         """
-        Guarda un actor en el medio de persistencia correspondiente.
+        Guarda un actor y retorna la entidad guardada.
+        """
+        pass
+
+    @abstractmethod
+    def find_by_name(self, name: str) -> Optional[Actor]:
+        """
+        Busca un actor por su nombre.
 
         Args:
-            actor (Actor): Objeto Actor que se desea guardar.
+            name (str): Nombre del actor a buscar.
+
+        Returns:
+            Optional[Actor]: El objeto Actor si se encuentra, de lo contrario None.
         """
         pass

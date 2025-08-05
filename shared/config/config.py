@@ -34,8 +34,8 @@ PROXY_USER = os.getenv("PROXY_USER")
 PROXY_PASS = os.getenv("PROXY_PASS")
 
 TOR_PROXY = {
-    "http": "socks5h://tor:9050",
-    "https": "socks5h://tor:9050"
+    "http": "socks5h://tor_proxy:9050",
+    "https": "socks5h://tor_proxy:9050"
 }
 
 PROXY_HOST = os.getenv("PROXY_HOST")
@@ -49,7 +49,7 @@ MAX_RETRIES = 3
 RETRY_DELAYS = [1, 3, 5]
 REQUEST_TIMEOUT = 10
 MAX_THREADS = 50
-BLOCK_CODES = [202,403, 404, 429]
+BLOCK_CODES = [202,403, 404, 429,500]
 URL_IPINFO="https://ipinfo.io/json"
 URL_IPHAZIP = "https://icanhazip.com/"
 # --- GraphQL Config ---
@@ -70,3 +70,4 @@ POSTGRES_USER = os.getenv("POSTGRES_USER", "aruiz")
 POSTGRES_PASSWORD = os.getenv("POSTGRES_PASSWORD", "@ndresruiz@123")
 POSTGRES_HOST = os.getenv("POSTGRES_HOST", "localhost")  # Cambia a "postgres" si usas docker-compose
 POSTGRES_PORT = os.getenv("POSTGRES_PORT", "5432")
+POSTGRES_MAX_CONNECTIONS = 10

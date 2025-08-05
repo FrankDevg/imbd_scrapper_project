@@ -1,3 +1,4 @@
+
 import os
 import sys
 from pathlib import Path
@@ -7,22 +8,30 @@ ROOT_DIR = Path(__file__).resolve().parent.parent.parent
 # Agrega la raíz al sys.path si no está presente, para permitir imports absolutos desde cualquier carpeta
 if str(ROOT_DIR) not in sys.path:
     sys.path.insert(0, str(ROOT_DIR))
-
-
-from infrastructure.factory.scraper_factory import get_scraper  
-from infrastructure.factory.use_case_factory import get_composite_use_case
+    
+from infrastructure.factory.dependency_container import DependencyContainer
 from shared.config import config 
+import logging
+
+logger = logging.getLogger(__name__)
 
 def main():
-    """
-    Punto de entrada principal del scraper.
+    logger.info("Inicializando contenedor de dependencias...")
+    container = DependencyContainer(config)
+    
+    try:
+        logger.info("Construyendo scraper...")
+        scraper = container.get_scraper()
+        
+        logger.info("Iniciando proceso de scraping...")
+        scraper.scrape()
+        logger.info("Proceso de scraping finalizado exitosamente.")
 
-    Inicializa el caso de uso compuesto (CSV + PostgreSQL) y lanza el proceso de scraping
-    utilizando la clase `ImdbScraper` desde una fábrica desacoplada.
-    """
-    use_case = get_composite_use_case()
-    scraper = get_scraper(source="imdb", engine=config.SCRAPER_ENGINE, use_case=use_case)
-    scraper.scrape()
+    except Exception as e:
+        logger.critical(f"Ha ocurrido un error fatal en la aplicación: {e}", exc_info=True)
+    finally:
+        logger.info("Cerrando recursos...")
+        container.close_db_connection()
 
 if __name__ == "__main__":
     main()
