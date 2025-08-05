@@ -70,14 +70,19 @@ services:
         echo 'Esperando a que Postgres esté listo...' &&
         while ! nc -z postgres 5432; do sleep 1; done &&
         echo 'Postgres listo. Iniciando scraper...' &&
+
+        echo 'Esperando a que Tor esté listo...' &&
+        while ! nc -z tor 9050; do sleep 1; done &&
+        echo 'Puerto SOCKS listo. Tor completamente inicializado.' &&
+
         python presentation/cli/run_scraper.py &&
         echo 'Scraper finalizado. Ejecutando queries.sql...' &&
-        apt-get update && apt-get install -y postgresql-client &&
         PGPASSWORD=$POSTGRES_PASSWORD psql -h postgres -U $POSTGRES_USER -d $POSTGRES_DB -f sql/queries.sql &&
         echo 'Consultas SQL ejecutadas. Manteniendo contenedor activo...' &&
         tail -f /dev/null
       "
 
+     
 volumes:
   pgdata:
 

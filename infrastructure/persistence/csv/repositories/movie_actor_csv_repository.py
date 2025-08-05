@@ -11,17 +11,9 @@ relation_lock = threading.Lock()
 
 class MovieActorCsvRepository(MovieActorRepository):
     """
-    Implementación del repositorio para guardar relaciones N:M entre películas y actores en un archivo CSV.
-
-    Esta clase garantiza que el archivo `movie_actor.csv` exista y esté correctamente inicializado,
-    y permite guardar nuevas relaciones de forma segura en entornos concurrentes.
+    Implementación del repositorio para guardar relaciones N:M en un archivo CSV.
     """
-
     def __init__(self):
-        """
-        Inicializa el repositorio asegurando que exista el archivo CSV `movie_actor.csv`
-        y que contenga los encabezados correspondientes.
-        """
         os.makedirs(os.path.dirname(MOVIE_ACTOR_CSV), exist_ok=True)
         if not os.path.exists(MOVIE_ACTOR_CSV):
             with open(MOVIE_ACTOR_CSV, "w", newline="", encoding="utf-8") as f:
@@ -30,17 +22,19 @@ class MovieActorCsvRepository(MovieActorRepository):
 
     def save(self, relation: MovieActor) -> None:
         """
-        Guarda una relación entre una película y un actor en el archivo CSV `movie_actor.csv`.
-
-        Utiliza un lock para garantizar que no haya condiciones de carrera cuando múltiples hilos escriban al archivo.
-
-        Args:
-            relation (MovieActor): Objeto que representa la relación entre una película y un actor.
+        Guarda una única relación película-actor en el archivo CSV.
         """
         with relation_lock:
             with open(MOVIE_ACTOR_CSV, "a", newline="", encoding="utf-8") as f:
                 writer = csv.writer(f)
-                writer.writerow([
-                    relation.movie_id,
-                    relation.actor_id
-                ])
+                writer.writerow([relation.movie_id, relation.actor_id])
+
+    def save_many(self, relations: List[MovieActor]) -> None:
+        """
+        Guarda una lista de relaciones película-actor de forma eficiente usando writerows.
+        """
+        with relation_lock:
+            with open(MOVIE_ACTOR_CSV, "a", newline="", encoding="utf-8") as f:
+                writer = csv.writer(f)
+                rows_to_write = [(rel.movie_id, rel.actor_id) for rel in relations]
+                writer.writerows(rows_to_write)

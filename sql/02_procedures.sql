@@ -1,18 +1,20 @@
 -- =============================================
---  Archivo: procedures.sql
---  Propósito: Procedimientos para inserción segura desde el scraper
+--  Archivo: functions.sql
+--  Propósito: Funciones para la inserción y consulta segura de datos.
 --  Autor: Andrés Ruiz
---  Fecha: 2025-08-03
---  Uso: Llamados desde Python para insertar datos solo si no existen
+--  Fecha: 2025-08-04
+--  Estrategia: Se utilizan FUNCIONES con INSERT ... ON CONFLICT y RETURNING
+--               para realizar operaciones "upsert" atómicas y eficientes,
+--               reduciendo las llamadas a la base de datos desde la aplicación.
 -- =============================================
 
 
 -- =============================================
--- PROCEDURE: insert_movie_if_not_exists
--- Descripción: Inserta una película solo si no existe ya en la tabla `movies`
--- Identificación se realiza por imdb_id
+--  FUNCTION: upsert_movie
+--  Descripción: Inserta o ignora una película basada en su imdb_id (clave única)
+--               y siempre devuelve la fila completa (ya sea la nueva o la existente).
 -- =============================================
-CREATE OR REPLACE PROCEDURE insert_movie_if_not_exists(
+CREATE OR REPLACE FUNCTION upsert_movie(
     p_imdb_id TEXT,
     p_title TEXT,
     p_year INT,
@@ -20,57 +22,62 @@ CREATE OR REPLACE PROCEDURE insert_movie_if_not_exists(
     p_duration INT,
     p_metascore INT
 )
-LANGUAGE plpgsql
-AS $$
+RETURNS SETOF movies AS
+$$
 BEGIN
-    IF NOT EXISTS (
-        SELECT 1 FROM movies WHERE imdb_id = p_imdb_id
-    ) THEN
+    RETURN QUERY
+    WITH inserted AS (
         INSERT INTO movies (imdb_id, title, year, rating, duration_minutes, metascore)
-        VALUES (p_imdb_id, p_title, p_year, p_rating, p_duration, p_metascore);
-    END IF;
+        VALUES (p_imdb_id, p_title, p_year, p_rating, p_duration, p_metascore)
+        ON CONFLICT (imdb_id) DO NOTHING
+        RETURNING *
+    )
+    SELECT * FROM inserted
+    UNION ALL
+    SELECT * FROM movies WHERE imdb_id = p_imdb_id AND NOT EXISTS (SELECT 1 FROM inserted);
 END;
-$$;
+$$ LANGUAGE plpgsql;
 
 
 -- =============================================
--- PROCEDURE: insert_actor_if_not_exists
--- Descripción: Inserta un actor si no existe ya en la tabla `actors`
--- Identificación se realiza por nombre único
+--  FUNCTION: upsert_actor
+--  Descripción: Inserta un actor si no existe (basado en el nombre como clave única)
+--               y siempre devuelve la fila completa del actor.
 -- =============================================
-CREATE OR REPLACE PROCEDURE insert_actor_if_not_exists(
+CREATE OR REPLACE FUNCTION upsert_actor(
     p_name TEXT
 )
-LANGUAGE plpgsql
-AS $$
+RETURNS SETOF actors AS
+$$
 BEGIN
-    IF NOT EXISTS (
-        SELECT 1 FROM actors WHERE name = p_name
-    ) THEN
+    RETURN QUERY
+    WITH inserted AS (
         INSERT INTO actors (name)
-        VALUES (p_name);
-    END IF;
+        VALUES (p_name)
+        ON CONFLICT (name) DO NOTHING
+        RETURNING *
+    )
+    SELECT * FROM inserted
+    UNION ALL
+    SELECT * FROM actors WHERE name = p_name AND NOT EXISTS (SELECT 1 FROM inserted);
 END;
-$$;
+$$ LANGUAGE plpgsql;
 
 
 -- =============================================
--- PROCEDURE: insert_movie_actor_if_not_exists
--- Descripción: Inserta una relación entre película y actor (N:M)
--- Solo si no existe ya en la tabla `movie_actor`
+--  FUNCTION: upsert_movie_actor
+--  Descripción: Inserta una relación película-actor si no existe.
+--               No devuelve nada porque la tabla de relación no tiene datos adicionales.
 -- =============================================
-CREATE OR REPLACE PROCEDURE insert_movie_actor_if_not_exists(
+CREATE OR REPLACE FUNCTION upsert_movie_actor(
     p_movie_id INT,
     p_actor_id INT
 )
-LANGUAGE plpgsql
-AS $$
+RETURNS void AS 
+$$
 BEGIN
-    IF NOT EXISTS (
-        SELECT 1 FROM movie_actor WHERE movie_id = p_movie_id AND actor_id = p_actor_id
-    ) THEN
-        INSERT INTO movie_actor (movie_id, actor_id)
-        VALUES (p_movie_id, p_actor_id);
-    END IF;
+    INSERT INTO movie_actor (movie_id, actor_id)
+    VALUES (p_movie_id, p_actor_id)
+    ON CONFLICT (movie_id, actor_id) DO NOTHING; 
 END;
-$$;
+$$ LANGUAGE plpgsql;

@@ -1,41 +1,50 @@
+import logging
+from typing import List
 from domain.models.movie_actor import MovieActor
 from domain.repositories.movie_actor_repository import MovieActorRepository
 from psycopg2 import DatabaseError
+from psycopg2.extras import execute_values
+from infrastructure.persistence.postgres.postgres_connection import get_connection,get_cursor
+
+logger = logging.getLogger(__name__)
 
 class MovieActorPostgresRepository(MovieActorRepository):
     """
-    Implementación del repositorio para manejar relaciones N:M entre películas y actores
-    utilizando una base de datos PostgreSQL.
-
-    Utiliza un procedimiento almacenado para insertar la relación si no existe previamente.
+    Implementación del repositorio para manejar relaciones N:M en PostgreSQL.
     """
-
     def __init__(self, conn):
-        """
-        Constructor del repositorio.
-
-        Args:
-            conn: Conexión activa a la base de datos PostgreSQL.
-        """
         self.conn = conn
 
-    def save(self, movie_actor: MovieActor) -> None:
+    def save(self, relation: MovieActor) -> None:
         """
-        Guarda una relación entre una película y un actor en PostgreSQL,
-        evitando duplicados mediante un procedimiento almacenado.
-
-        Args:
-            movie_actor (MovieActor): Objeto que representa la relación a guardar.
+        Guarda una única relación película-actor en PostgreSQL.
         """
         try:
-            with self.conn.cursor() as cur:
-                # Llamar al procedimiento almacenado para insertar solo si no existe
-                cur.execute("""
-                    CALL insert_movie_actor_if_not_exists(%s, %s);
-                """, (
-                    movie_actor.movie_id,
-                    movie_actor.actor_id
-                ))
+            with get_cursor() as cur:
+                cur.execute("SELECT * from upsert_movie_actor(%s, %s);", 
+                            (relation.movie_id, relation.actor_id))
                 self.conn.commit()
         except DatabaseError as e:
+            logger.error(f"Error al guardar relación movie_id={relation.movie_id}, actor_id={relation.actor_id}: {e}")
             self.conn.rollback()
+            raise
+
+    def save_many(self, relations: List[MovieActor]) -> None:
+        """
+        Guarda una lista de relaciones película-actor de forma eficiente.
+        """
+        if not relations:
+            return
+        
+        try:
+            with get_cursor() as cur:
+                values = [(r.movie_id, r.actor_id) for r in relations]
+                
+                for value in values:
+                     cur.execute("SELECT * from upsert_movie_actor(%s, %s);", value)
+
+                self.conn.commit()
+        except DatabaseError as e:
+            logger.error(f"Error al guardar múltiples relaciones: {e}")
+            self.conn.rollback()
+            raise
