@@ -12,7 +12,7 @@ logger = logging.getLogger(__name__)
 try:
     connection_pool = pool.SimpleConnectionPool(
         minconn=1,
-        maxconn=config.POSTGRES_MAX_CONNECTIONS,  # Permite hasta 5 conexiones simultáneas
+        maxconn=config.POSTGRES_MAX_CONNECTIONS,  
         dbname=config.POSTGRES_DB,
         user=config.POSTGRES_USER,
         password=config.POSTGRES_PASSWORD,
@@ -45,7 +45,7 @@ def get_connection():
             connection_pool.putconn(connection)
 # infrastructure/persistence/postgres/postgres_connection.py
 
-# ... (El resto del código del pool de conexiones es el mismo) ...
+
 
 # --- Gestor de contexto que ahora retorna un cursor ---
 @contextmanager
@@ -73,5 +73,5 @@ def get_cursor():
         if cur:
             cur.close()
         if conn:
-            conn.commit()  # Opcional: si todo salió bien, confirmamos los cambios
+            conn.commit()  
             connection_pool.putconn(conn)

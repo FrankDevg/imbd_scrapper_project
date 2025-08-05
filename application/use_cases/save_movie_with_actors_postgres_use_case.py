@@ -65,5 +65,5 @@ class SaveMovieWithActorsPostgresUseCase(UseCaseInterface):
                 self.movie_actor_repo.save_many(relations_to_save)
                 logger.info(f"Guardada película '{saved_movie.title}' con {len(relations_to_save)} actores.")
 
-        except Exception as e: # Idealmente, capturar excepciones de BD más específicas
+        except Exception as e: 
             logger.error(f"Error en la base de datos al procesar '{movie.title}': {e}")

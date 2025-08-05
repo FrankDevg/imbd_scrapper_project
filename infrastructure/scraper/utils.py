@@ -118,7 +118,7 @@ def make_request(
     def _send_request(session, method, url, **kwargs):
         return session.post(url, **kwargs) if method.upper() == "POST" else session.get(url, **kwargs)
 
-    # Paso 1: Intentos con proxy personalizado (si no estás en TOR puro)
+    # Paso 1: Intentos con proxy personalizado 
     if not config.USE_TOR:
         for attempt in range(1, retries + 1):
             try:

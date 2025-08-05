@@ -45,11 +45,8 @@ Un enfoque profesional exige construir un **sistema mantenible y escalable**.
 - **Testabilidad Aislada:** Las capas `domain` y `application` se pueden testear unitariamente sin dependencias externas.
 - **Modelado del Dominio:** Entidades como `Movie` y `Actor` reflejan el lenguaje del problema, con validaciones integradas.
 
-### ¿Por qué el Patrón Factory?
-Se utiliza para desacoplar la lógica de negocio de las implementaciones concretas.
-
-- Permite cambiar la fuente de persistencia (CSV, PostgreSQL, MongoDB) sin modificar la lógica del caso de uso.
-- Cumple con el Principio Abierto/Cerrado.
+### ¿Por qué el Patrón Factory y Contenedor de Dependencias?
+Para gestionar la creación de objetos y el ciclo de vida de los recursos (como la conexión a la base de datos), las fábricas individuales se han centralizado en un Contenedor de Inyección de Dependencias. Esta clase actúa como el único punto de ensamblaje de la aplicación, garantizando que los recursos se creen una sola vez y se liberen correctamente, además de desacoplar completamente el punto de entrada de la construcción de sus dependencias.
 
 ### ¿Por qué TOR para la Rotación de IPs?
 TOR ofrece:
